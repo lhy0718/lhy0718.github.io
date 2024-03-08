@@ -6,7 +6,6 @@ categories:
 tags:
   - Chain of Thought
   - Large Language Model
-author: "Hanyong Lee"
 ---
 
 요약: 이 논문은 CoT가 LLM의 성능을 향상시키는 이론적인 이해를 제시한다. 이 논문은 circuit complexity theory를 사용하여 bounded-depth Transformers가 수학/산술문제의 인풋 길이에 대해 super-polynomially하게 커지지 않는 이상 문제를 해결하기 어렵다는 것을 입증하고, 반면 autoregressive Transformers는 상수 크기로도 CoT를 사용하면 문제를 해결할 수 있음을 입증한다. 또한 CoT가 있는 LLM이 동적 프로그래밍으로 알려진 일반적인 의사 결정 문제를 처리할 수 있다는 것을 보여준다.
