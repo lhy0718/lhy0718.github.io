@@ -1,7 +1,12 @@
 ---
 title: "Python Setuptool"
-categories: [python]
-tags: [python, setuptool, python package]
+date: 2021-01-18T15:34:30+09:00
+categories:
+  - python
+tags:
+  - python
+  - setuptool
+  - python package
 ---
 
 ## Setuptool?

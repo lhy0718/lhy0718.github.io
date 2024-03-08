@@ -1,7 +1,13 @@
 ---
 title: "Python 모듈 상대경로로 import 하기"
-categories: [python]
-tags: [python, setuptool, python module, importerror]
+date: 2021-01-18T15:34:30+09:00
+categories:
+  - python
+tags:
+  - python
+  - setuptool
+  - python module
+  - importerror
 ---
 
 ## ImportError
@@ -31,15 +37,15 @@ launch.json 의 `"module"` 값을 (상위 모듈의 이름이 parent 일 때) `"
 ```json
 // launch.json
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Module",
-            "type": "python",
-            "request": "launch",
-            "module": "parent.${fileBasenameNoExtension}"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Module",
+      "type": "python",
+      "request": "launch",
+      "module": "parent.${fileBasenameNoExtension}"
+    }
+  ]
 }
 ```
 
