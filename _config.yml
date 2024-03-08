@@ -63,7 +63,7 @@ author:
   location: "Seoul, South Korea"
   links:
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-link" # Font Awesome icon name https://fontawesome.com/v5/search?
       url: "https://lhy0718.github.io/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
