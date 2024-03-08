@@ -62,6 +62,9 @@ author:
   bio: "Ph.D. student in artificial intelligence at CAU AutoML Lab."
   location: "Seoul, South Korea"
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:glhy0718@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link" # Font Awesome icon name https://fontawesome.com/v5/search?
       url: "https://lhy0718.github.io/"
