@@ -74,9 +74,7 @@ tags:
 
 - Arthimetic Expression과 Linear Equation을 해결하는 두 테스크에 대해 고민
 
----
-
-![Untitled](Towards%20Revealing%20the%20Mystery%20behind%20Chain%20of%20Thou%20e9e604368424461eb30b5e01039f5baa/Untitled.png)
+<img alt="Arthimetic Expressions" src="https://github.com/CAU-AutoML/nlp-paper-review/assets/11364584/7db7fef2-7f72-43e2-ad3c-22b2f24982a7">
 
 - 두 가지 수학 테스크의 분석을 단순화하기 위해 유한체 (finite field)로 일반화
 
