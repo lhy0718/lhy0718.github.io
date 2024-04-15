@@ -1,0 +1,13 @@
+article img {
+  width: 50%;
+  /* align center */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+  article img {
+    width: 100%;
+  }
+}
