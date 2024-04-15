@@ -74,7 +74,7 @@ tags:
 
 - Arthimetic Expression과 Linear Equation을 해결하는 두 테스크에 대해 고민
 
-<img alt="Arthimetic Expressions" src="https://github.com/CAU-AutoML/nlp-paper-review/assets/11364584/7db7fef2-7f72-43e2-ad3c-22b2f24982a7">
+<img width="346" alt="math" src="https://github.com/lhy0718/lhy0718.github.io/assets/11364584/1c87a254-d5c4-4629-beee-ed93f9fc56dd">
 
 - 두 가지 수학 테스크의 분석을 단순화하기 위해 유한체 (finite field)로 일반화
 
