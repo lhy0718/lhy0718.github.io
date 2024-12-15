@@ -2,8 +2,9 @@
 title: "Towards Revealing the Mystery behind Chain of Thought - A Theoretical Perspective (NeurIPS 2023) -- Part 1"
 date: 2023-11-26 00:00:00 +0900
 categories:
-  - NuerIPS
+  - Paper Review
 tags:
+  - NeurIPS
   - Chain of Thought
   - Large Language Model
 ---
