@@ -11,3 +11,7 @@ article img {
     width: 100%;
   }
 }
+
+.page__content {
+  font-size: 0.75em;
+}
