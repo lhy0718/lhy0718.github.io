@@ -403,6 +403,8 @@ By constructing this hierarchical model, an agent was created to translate docum
 
 ### Full Code
 
+
+```python
 # Initialize LLM
 import json
 import operator
@@ -752,3 +754,4 @@ if __name__ == "__main__":
         }
     )
     prograss_bar.close()
+```
