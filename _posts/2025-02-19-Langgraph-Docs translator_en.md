@@ -350,6 +350,7 @@ def cell_synthesizer(state: CellAssignerState):
         cell["source"] = source
         data["cells"].append(cell)
 
+    data["nbformat"], data["nbformat_minor"] = 4, 5
     data["cells"].insert(
         0,
         {
@@ -703,6 +704,7 @@ def cell_synthesizer(state: CellAssignerState):
         cell["source"] = source
         data["cells"].append(cell)
 
+    data["nbformat"], data["nbformat_minor"] = 4, 5
     data["cells"].insert(
         0,
         {
