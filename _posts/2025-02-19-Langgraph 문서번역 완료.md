@@ -13,4 +13,4 @@ tags:
 
 - 저장소: [https://github.com/lhy0718/langgraph](https://github.com/lhy0718/langgraph)
 - gpt-4o-mini 모델을 사용하여 번역을 했고, API 비용은 불필요했던 요청을 포함하여 USD 0.48가 사용되었다.
-- 이슈: 번역한 .ipynb 문서가 github에서 랜더링이 안되는 문제가 있어서 해결 중이다.
+- ~~이슈: 번역한 .ipynb 문서가 github에서 랜더링이 안되는 문제가 있어서 해결 중이다.~~ -> ipynb 파일에 `"nbformat": 4, "nbformat_minor": 5` 를 적용하여 해결
