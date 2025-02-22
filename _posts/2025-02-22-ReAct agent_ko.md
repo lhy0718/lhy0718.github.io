@@ -103,6 +103,12 @@ graph = create_react_agent(model, tools=tools)
 
 그래프 모양은 이렇다.
 
+```python
+from IPython.display import Image, display
+
+display(Image(graph.get_graph(xray=1).draw_mermaid_png()))
+```
+
 ![image](https://github.com/user-attachments/assets/d677b6df-ff11-463b-8a24-f9f6f9d70f72)
 
 
