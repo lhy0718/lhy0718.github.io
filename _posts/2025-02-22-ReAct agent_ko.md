@@ -15,7 +15,7 @@ tags:
 
 # 개요
 
-[ReAct](https://arxiv.org/abs/2210.03629)는 LLM이 환경(웹과 같은)과 상호작용함으로써 기존의 CoT에서 일어나는 환각과 오류전파 문제를 극복하는 방법론이다. Langgraph에서는 해당 논문의 영향을 받아서 미리 구축된 ReAct를 사용하는 방법을 구축했고, [여기서](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent/) 설명하고 있다.
+[ReAct](https://arxiv.org/abs/2210.03629)는 LLM이 환경(웹과 같은)과 상호작용함으로써 기존의 CoT에서 일어나는 환각과 오류전파 문제를 극복하는 방법론이다. Langgraph에서는 해당 논문의 영향을 받아서 미리 구축된 ReAct를 사용하는 기능을 추가했고, [여기서](https://langchain-ai.github.io/langgraph/how-tos/create-react-agent/) 설명하고 있다.
 
 # ReAct agent 구현
 
