@@ -1,6 +1,6 @@
 ---
 title: "[Langgraph] ReAct agent 구현해보기"
-date: 2025-02-22 00:00:00 +0900
+date: 2025-02-22 15:00:00 +0900
 categories:
   - Agents
 tags:
@@ -102,6 +102,9 @@ graph = create_react_agent(model, tools=tools)
 ```
 
 그래프 모양은 이렇다.
+
+![image](https://github.com/user-attachments/assets/d677b6df-ff11-463b-8a24-f9f6f9d70f72)
+
 
 그럼 사용을 해보며 tool이 어떻게 작동하는지 확인해보자.
 
