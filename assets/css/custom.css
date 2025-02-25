@@ -6,6 +6,10 @@ article img {
   margin-right: auto;
 }
 
+article img:hover {
+  filter: brightness(0.7);
+}
+
 @media screen and (max-width: 600px) {
   article img {
     width: 100%;
