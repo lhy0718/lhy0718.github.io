@@ -2,12 +2,12 @@
 title: "Python 모듈 상대경로로 import 하기"
 date: 2021-01-18T15:34:30+09:00
 categories:
-  - python
+  - Python
 tags:
-  - python
-  - setuptool
-  - python module
-  - importerror
+  - Python
+  - Setuptool
+  - Python Module
+  - Importerror
 ---
 
 ## ImportError

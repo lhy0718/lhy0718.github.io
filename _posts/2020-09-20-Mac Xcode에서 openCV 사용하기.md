@@ -2,12 +2,12 @@
 title: "Mac Xcode에서 openCV 사용하기"
 date: 2020-09-20T15:34:30+09:00
 categories:
-  - c++
+  - C++
 tags:
-  - c++
-  - mac
-  - xcode
-  - opencv
+  - C++
+  - Mac
+  - Xcode
+  - Opencv
 ---
 
 Xcode 에서 openCV를 사용하기 위해 [dgrld.tistory.com/34](https://dgrld.tistory.com/34) 이 블로그의 내용을 따라서 진행했다.

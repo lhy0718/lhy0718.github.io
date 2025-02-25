@@ -2,12 +2,12 @@
 title: "priority_queue emplace() vs push()"
 date: 2020-09-20T15:34:30+09:00
 categories:
-  - c++
-  - algorithm
+  - C++
+  - Algorithm
 tags:
-  - c++
-  - algorithm
-  - data structure
+  - C++
+  - Algorithm
+  - Data Structure
 ---
 
 알고리즘 문제 풀다가 c++의 priority_queue에 대해 공부하던 중 emplace()와 push()라는 두 함수의 차이에 대해 궁금해졌다.

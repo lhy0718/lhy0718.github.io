@@ -8,7 +8,7 @@ tags:
   - LLM
   - NLP
   - ToT
-  - NeurIPS 2023
+  - NeurIPS
 ---
 
 Summary: Expanding the Chain-of-Thought (CoT) approach, this paper proposes the Tree of Thoughts (ToT) framework to enable large language models (LLMs) to perform systematic problem-solving.

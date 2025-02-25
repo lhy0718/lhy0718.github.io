@@ -2,14 +2,14 @@
 title: "ONNX Tutorial"
 date: 2021-10-21T15:34:30+09:00
 categories:
-  - machine learning
+  - Machine Learning
 tags:
-  - machine learning
-  - deep learning
-  - onnx
-  - pytorch
-  - tensorflow
-  - huggingface
+  - Machine Learning
+  - Deep Learning
+  - Onnx
+  - Pytorch
+  - Tensorflow
+  - Huggingface
 ---
 
 - 본 튜토리얼은 pytorch와 huggingface model에 초점이 맞추어져 있음을 알립니다.

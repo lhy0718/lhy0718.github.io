@@ -8,7 +8,7 @@ tags:
   - LLM
   - NLP
   - ToT
-  - NeurIPS 2023
+  - NeurIPS
 ---
 
 요약: Chain-of-Thought(CoT) 접근법을 확장하여, LLM이 체계적인 문제 해결을 수행하도록 하는 Tree of Thoughts(ToT) 프레임워크를 제안한다.

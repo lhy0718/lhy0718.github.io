@@ -2,11 +2,11 @@
 title: "Python Setuptool"
 date: 2021-01-18T15:34:30+09:00
 categories:
-  - python
+  - Python
 tags:
-  - python
-  - setuptool
-  - python package
+  - Python
+  - Setuptool
+  - Python Package
 ---
 
 ## Setuptool?
