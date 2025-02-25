@@ -2,7 +2,7 @@
 title: "[Paper Review] Tree of Thoughts: Deliberate Problem Solving with Large Language Models (NeurIPS 2023)"
 date: 2025-02-25 00:00:00 +0900
 categories:
-  - LLM
+  - Paper Review
 tags:
   - Reasoning
   - LLM
