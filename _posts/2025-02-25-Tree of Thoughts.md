@@ -17,7 +17,7 @@ tags:
 
 # 1. Introduction
 
-<img width="712" alt="image" src="https://github.com/user-attachments/assets/acb989e7-b1c0-4d34-b609-58de8d1f05db" />
+<img alt="image" src="https://github.com/user-attachments/assets/acb989e7-b1c0-4d34-b609-58de8d1f05db" />
 
 - 기존의 대규모 언어 모델(LLM)은 일반적인 문제 해결을 수행할 수 있지만, 여전히 **토큰 단위의 좌→우 순차적 결정 과정**에 제한되며, **탐색, 전략적 예측(lookahead), 초기 결정의 중요성**이 요구되는 문제에서 한계를 보인다.
 
@@ -92,7 +92,7 @@ tags:
      - **BFS (너비 우선 탐색)**: 여러 경로를 동시에 탐색하며 최적의 경로를 찾는다.
      - **DFS (깊이 우선 탐색)**: 하나의 유망한 경로를 깊게 탐색하되, 필요할 경우 가지치기를 수행하여 비효율적인 경로를 제거.
 
-<img width="712" alt="image" src="https://github.com/user-attachments/assets/0432cc84-f329-44e4-9a72-478a3795140d" />
+<img alt="image" src="https://github.com/user-attachments/assets/0432cc84-f329-44e4-9a72-478a3795140d" />
 
 ## 3.3 ToT의 장점
 
@@ -111,7 +111,7 @@ tags:
 
 # 4. Experiments
 
-<img width="712" alt="image" src="https://github.com/user-attachments/assets/8d883e2a-c550-4e9b-bb44-71adb7eb671f" />
+<img alt="image" src="https://github.com/user-attachments/assets/8d883e2a-c550-4e9b-bb44-71adb7eb671f" />
 
 - 논문에서는 **Tree of Thoughts(ToT)**가 기존 방법보다 뛰어난 문제 해결 능력을 갖추었음을 입증하기 위해 세 가지 복잡한 문제를 실험한다.
 - 실험 대상 문제:
@@ -121,7 +121,7 @@ tags:
 
 ## 4.1 Game of 24 (수학적 문제 해결)
 
-<img width="712" alt="image" src="https://github.com/user-attachments/assets/2809ef6c-5ec2-4dda-b5ff-b1614b87c61d" />
+<img alt="image" src="https://github.com/user-attachments/assets/2809ef6c-5ec2-4dda-b5ff-b1614b87c61d" />
 
 - **문제 설명**  
   - 주어진 네 개의 숫자(예: 4, 9, 10, 13)를 **사칙연산을 활용해 24를 만드는 방정식을 찾는 문제**이다.
@@ -156,7 +156,7 @@ tags:
 
 ## 4.2 Creative Writing (창의적 글쓰기)
 
-<img width="712" alt="image" src="https://github.com/user-attachments/assets/04b65615-7240-4313-9631-7e9c4fef06cf" />
+<img alt="image" src="https://github.com/user-attachments/assets/04b65615-7240-4313-9631-7e9c4fef06cf" />
 
 - **문제 설명**  
   - 주어진 **4개의 문장**을 포함하는 **일관성 있는 4단락 글쓰기**를 수행하는 문제.
@@ -186,7 +186,7 @@ tags:
 
 ## 4.3 Mini Crosswords (단어 퍼즐)
 
-<img width="712" alt="image" src="https://github.com/user-attachments/assets/cad40a56-01c0-4e05-b18d-3f51f5e93e19" />
+<img alt="image" src="https://github.com/user-attachments/assets/cad40a56-01c0-4e05-b18d-3f51f5e93e19" />
 
 - **문제 설명**  
   - 5×5 낱말 퍼즐을 풀어 **주어진 단어 힌트에 맞는 정답을 채우는 문제**.
