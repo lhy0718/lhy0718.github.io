@@ -15,6 +15,8 @@ tags:
 
 # 1 Introduction
 
+<img alt="image" src="https://github.com/user-attachments/assets/a77d68a7-6dd7-41a1-832b-620d93d49d54" />
+
 Large language models (LLMs) like those discussed by Brown et al. (2020) and Chowdhery et al. (2022) have demonstrated impressive capabilities in zero-shot and few-shot natural language processing tasks. However, these models exhibit several limitations, including the inability to access real-time information, tendencies to hallucinate facts, difficulties with low-resource languages, inadequate mathematical skills, and a lack of awareness of temporal progression.
 
 To address these challenges, a potential solution is providing LLMs with the ability to use external tools, such as search engines and calculators. Current methodologies, however, often rely on extensive human annotations or restrict tool usage to specific tasks, limiting broader applicability.
@@ -29,14 +31,17 @@ Through experimental validation, Toolformer, based on a pretrained 6.7 billion p
 
 # 2 Approach
 
+<img alt="image" src="https://github.com/user-attachments/assets/d7219761-1d25-4cdf-b0b2-20ed25a5dbe7" />
+
 Our goal is to enhance a language model $$ M $$ with the capability to utilize various tools via API calls, ensuring that the inputs and outputs for each API can be represented as text sequences. This facilitates seamless integration of API calls into any text using special tokens to delineate the start and end of each call. An API call is represented as a tuple $$ c = (a_c, i_c) $$, where $$ a_c $$ is the API name and $$ i_c $$ is the input.
 
 The linearization of API calls is defined as:
 
-- $$ e(c) = \text{<API>} a_c(i_c) \text{</API>} $$
-- $$ e(c,r) = \text{<API>} a_c(i_c) \rightarrow r \text{</API>} $$
+<img alt="image" src="https://github.com/user-attachments/assets/5dd2cfa0-e7f7-438f-9586-d83076ca33c9" />
 
 The approach consists of converting a dataset $$ C $$ of plain texts into an augmented dataset $$ C^* $$ with API calls through three primary steps:
+
+<img alt="image" src="https://github.com/user-attachments/assets/1c3ea2e6-3435-4638-b6d3-bbc664195b41" />
 
 1. **Sampling API Calls**: We create prompts that encourage the language model $$ M $$ to suggest API calls for each text example in $$ C $$. We sample potential positions for API calls based on the probability assigned by $$ M $$ and filter them using a defined threshold.
 
@@ -107,6 +112,8 @@ Overall, this section establishes the utility and effectiveness of our approach 
 This section analyzes the modified decoding strategy introduced in a prior section. Instead of consistently generating the most likely token, the strategy allows for generating an `<API>` token if it falls within the top k likely tokens. Performance metrics were evaluated on the T-REx subset of LAMA and WebQS as k varied. As k increases, the model utilizes API calls more frequently, with performance improving in instances where API calls are made. Particularly, the model displayed better calibration when performing API calls, as it selected them for poor-performing cases, although this calibration diminished at higher values of k.
 
 ## Data Quality
+
+<img alt="image" src="https://github.com/user-attachments/assets/e98e78d1-0ee9-48fc-b0a9-9a25d6a329b5" />
 
 The analysis extends to the quality of API calls produced by the model. A qualitative examination of instance examples reveals that advantageous API calls generally correspond with high scores from the metric used for filtering. Conversely, lower scores often suggest less useful API calls, albeit some instances with lower scores still reduce perplexity without providing valuable information. Overall, noise in non-filtered API calls can contribute positively by preventing the model from overly adhering to the outcomes of every API call made.
 
