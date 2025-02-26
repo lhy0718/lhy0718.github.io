@@ -186,3 +186,11 @@ Addressing these limitations could enhance the efficacy and usability of the mod
 # 8 Conclusion
 
 We have presented Toolformer, a self-supervised language model capable of utilizing various tools like search engines, calculators, and translation systems through API calls. Toolformer is trained via fine-tuning on numerous sampled API calls filtered for perplexity reduction in future tokens. This approach significantly enhances the zero-shot performance of a 6.7B parameter GPT-J model, allowing it to surpass the performance of the larger GPT-3 model across various tasks.
+
+---
+
+# Reader's Opinions  
+
+- This study proposed **Toolformer** to enhance the capabilities of generative language models using tools and demonstrated effective performance.  
+- However, since the efficiency of certain API sampling processes is still low, it may be necessary to supplement this with additional training datasets or incorporate further **reasoning** techniques.  
+- It is also important to determine whether to use an API by considering **the cost of each tool** and **the complexity of the task**.  
