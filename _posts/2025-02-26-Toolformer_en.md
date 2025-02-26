@@ -33,8 +33,8 @@ Our goal is to enhance a language model $$ M $$ with the capability to utilize v
 
 The linearization of API calls is defined as:
 
-- $$ e(c) = <API> a_c(i_c) </API> $$
-- $$ e(c,r) = <API> a_c(i_c) \rightarrow r </API> $$
+- $$ e(c) = \text{<API>} a_c(i_c) \text{</API>} $$
+- $$ e(c,r) = \text{<API>} a_c(i_c) \rightarrow r \text{</API>} $$
 
 The approach consists of converting a dataset $$ C $$ of plain texts into an augmented dataset $$ C^* $$ with API calls through three primary steps:
 
@@ -44,7 +44,7 @@ The approach consists of converting a dataset $$ C $$ of plain texts into an aug
 
 3. **Filtering API Calls**: We evaluate the usefulness of each API call and its result by comparing the model's prediction loss with and without the API call and its output. Only API calls that significantly reduce the loss are retained.
 
-After filtering, the remaining API calls are merged with the original texts, and the new dataset $$ C^\* $$ is used to fine-tune $$ M $$. This fine-tuning occurs while maintaining the original content, allowing the language model to learn how to effectively use tools based on feedback.
+After filtering, the remaining API calls are merged with the original texts, and the new dataset $$ C^* $$ is used to fine-tune $$ M $$. This fine-tuning occurs while maintaining the original content, allowing the language model to learn how to effectively use tools based on feedback.
 
 During inference, $$ M $$ continues regular decoding until producing a token indicating the expectation of an API call response. At this point, we interrupt decoding to retrieve the response and continue thereafter.
 
