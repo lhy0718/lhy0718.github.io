@@ -26,6 +26,8 @@ Langgraph 사용법을 익히기 위해 작은 에이전트들을 제작하고 �
 
 다음 장에서는 PDF 읽기 및 섹션 나누는 노드에서 PDF를 파싱하는 방법에 대해 설명하겠다.
 
+---
+
 # LLM 정의
 
 이 에이전트에서는 GPT-4o-mini를 사용할 것이다. 이를 위해 다음과 같이 LLM을 정의하였다.
@@ -38,6 +40,8 @@ load_dotenv() # .env 파일에서 OpenAI, LangSmith 등의 API 키를 불러온�
 
 llm = ChatOpenAI(model="gpt-4o-mini")
 ```
+
+---
 
 # PDF 파싱하기
 
@@ -54,6 +58,8 @@ content = "\n".join([page.page_content for page in pages])
 ```
 
 `async` 함수를 사용하기 때문에 해당 노드의 상위 함수에 `async` 키워드를 붙여주어야 한다. 또한 나중에 graph를 실행할 때 `invoke` 대신에 `ainvoke`를 사용해야 하는 것도 주의해야 한다. 이는 또한 아래에서 설명하겠다.
+
+---
 
 # section_spliter (PDF 파싱 및 섹션 나누는 노드)
 
@@ -154,6 +160,8 @@ async def section_spliter(
 노드에서 중요하게 보아야 하는 부분은 `-> Command[Literal["section_summarizer"]]:` 으로 노드의 리턴값을 명시해주었다는 것이다. 이는 리턴값이 `Command`타입이기 때문이고, `Command`를 리턴할때는 그래프의 edge를 그래프 빌더에 전달하지 않기 때문이다.
 그리고 `goto`에는 다음 노드의 이름과 해당 노드로 제목과 섹션, 언어를 전달한다.
 
+---
+
 # section_summarizer (요약 노드)
 
 section_summarizer는 LLM을 사용하여 전달받은 각 섹션을 요약한다. 이 노드에서는 title로 "Abstract"를 받으면 한 두줄로 요약을 해주고, 그 외의 경우에는 섹션을 제한 없이 요약해준다. 또한 요약결과는 markdown 형식을 따르도록 하였다. 노드의 전체 코드는 아래와 같다.
@@ -183,6 +191,8 @@ def section_summarizer(state: SectionState):
     return {"summary": [res.content]}
 ```
 
+---
+
 # gatherer (결과 병합 및 저장)
 
 gatherer에서는 `state["summary"]`에 병합된 결과들을 후처리하고 .md파일로 저장한다. 이 노드의 전체 코드는 다음과 같다.
@@ -207,6 +217,8 @@ def gatherer(state: OverallState):
 ````
 
 위 코드에서 2 가지의 후처리를 수행하고 있다. 하나는 markdown 코드 블록 형식으로 나온 LLM 출력의 코드 블록을 없애주는 것이고, 다른 하나는 섹션 간에 구분선을 넣어주는 것이다. 그리고 나서는 원래 파일의 이름을 가져와서 .md 확장자를 붙여서 저장한다.
+
+---
 
 # 그래프 빌드 및 실행
 
@@ -241,9 +253,13 @@ await graph.ainvoke({"file_path": "VaRMI.pdf", "language": "한국어"})
 
 이제 논문이 요약된 .md 파일이 생성되었을 것이다. 만약 에러가 나온다면 LLM이 목차를 추출하는 부분에서 오류가 난 것이므로 다시 실행하면 된다.
 
+---
+
 # 결론
 
 이렇게 Langgraph를 사용하여 논문을 요약하는 에이전트를 만들어보았다. 이 에이전트를 사용하여 몇 개의 논문을 요약해보았는데, 10원 내외의 API 요금이 사용된다. 아주 저렴하고 빠르게 논문을 요약하여 읽고 싶을 때 유용하게 사용할 수 있을 것이다.
+
+---
 
 # 전체 코드
 
