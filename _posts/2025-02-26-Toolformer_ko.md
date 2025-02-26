@@ -7,7 +7,6 @@ tags:
   - LLM
   - NLP
   - NeurIPS
-comments: true
 ---
 
 요약: 이 논문은 **Toolformer**라는 모델을 소개하며, **자기 지도 학습 방식(self-supervised approach)**을 통해 외부 도구를 활용하여 작업 성능을 향상하는 방법을 배운다. Toolformer는 **제로샷 성능(zero-shot performance)**을 크게 개선하며, 다양한 API를 활용하여 더 큰 모델과 경쟁할 수 있는 능력을 보여준다.

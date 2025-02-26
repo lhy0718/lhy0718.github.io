@@ -25,6 +25,11 @@ github_username: lhy0718
 minimal_mistakes_skin: dark # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
 
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "lhy0718-github-io"
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
