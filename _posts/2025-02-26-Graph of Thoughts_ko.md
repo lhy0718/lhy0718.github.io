@@ -18,6 +18,10 @@ tags:
 
 대형 언어 모델(LLMs)은 AI 분야에서 중요한 역할을 차지하고 있다. 최근 몇 년간 GPT, PaLM, LLaMA 등 디코더 전용 트랜스포머 모델들이 빠르게 발전하였다. 프롬프트 엔지니어링은 LLM 작업을 해결하는 효율적인 방법으로, 작업 설명을 LLM에 입력하는 방식이다. 올바르게 작성된 설명은 LLM이 자가 회귀 토큰 기반 메커니즘으로 텍스트를 생성하여 문제를 해결하게 한다. 이러한 프롬프트는 예제 작업과 솔루션을 포함할 수도 있으며(퓨샷 프롬프팅), 전혀 포함하지 않을 수도 있다(제로샷 프롬프팅).
 
+<img alt="image" src="https://github.com/user-attachments/assets/4e691799-31fd-4081-bc80-8b1bac7443ac" />
+
+<img alt="image" src="https://github.com/user-attachments/assets/f94122f3-8939-4f45-9e7a-38a7ba8dd616" />
+
 Chain-of-Thought (CoT) 접근 방식은 문제를 해결하는 과정에서 중간 단계의 사고 과정을 포함하여 성능을 향상시킨다. CoT의 발전된 형태인 Self-Consistency with CoT (CoT-SC)는 여러 CoT를 생성하고 최상의 결과를 선택하는 방법이다. 최근에는 CoT 및 CoT-SC를 확장한 Tree of Thoughts (ToT) 접근이 제안되어 다양한 사고 경로를 모델링할 수 있게 되었다. 하지만 ToT는 사고 과정을 단단한 트리 구조에 제한하여 근본적으로 사고 능력을 제한한다.
 
 이 연구에서는 LLM의 사고 과정을 임의의 그래프 구조로 구성하여 더 강력한 프롬팅이 가능하다고 주장한다. 인간의 사고 방식은 단순한 사고의 연쇄를 넘어서 복잡한 네트워크 형성의 예를 보여준다. 우리는 Graph of Thoughts (GoT)를 제안하여, LLM의 사고를 정점으로, 사고 간의 의존성을 엣지로 모델링한다. GoT는 CoT와 ToT를 통합하여 더 복잡한 사고 패턴을 지원하며, 여러 가지 설계 과제를 해결해야 한다.
@@ -29,6 +33,8 @@ GoT는 독립적인 사고에 대한 세밀한 제어를 가능하게 하며, �
 ---
 
 # 2 The GoT Framework
+
+<img alt="image" src="https://github.com/user-attachments/assets/106f0c18-548e-401c-8f19-adbfbaa33912" />
 
 GoT(Thought의 그래프)는 사용자 메시지(프롬프트)와 LLM의 응답(생각)으로 구성된 대화를 바탕으로 형성된다. GoT는 (G; T; E; R)라는 튜플로 모델링되며, 여기서 G는 LLM의 추론 과정, T는 잠재적 사고 변환, E는 사고의 점수를 얻기 위한 평가 함수, R은 관련 있는 사고를 선택하는 랭킹 함수다.
 
@@ -63,6 +69,8 @@ GoO는 작업 실행 계획을 규정하는 정적 구조로, GRS는 LLM의 추�
 ---
 
 # 4 Example Use Cases
+
+<img alt="image" src="https://github.com/user-attachments/assets/ff3711d3-3196-485a-89f9-31c93cc52b74" />
 
 이 섹션에서는 두 가지 예제 사용 사례를 다룹니다: 정렬과 집합 교집합.
 
