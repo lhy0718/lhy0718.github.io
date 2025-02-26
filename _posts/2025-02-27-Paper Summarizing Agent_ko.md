@@ -231,6 +231,8 @@ from IPython.display import Image, display
 display(Image(graph.get_graph(xray=True).draw_mermaid_png()))
 ```
 
+![output](https://github.com/user-attachments/assets/17b38111-7202-49f0-a26b-86202eadfefb)
+
 실행은 다음과 같이 한다. 맨 처음의 노드가 async 함수이므로 `ainvoke`를 사용해야 한다.
 
 ```python
