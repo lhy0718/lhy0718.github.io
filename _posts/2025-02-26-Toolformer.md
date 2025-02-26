@@ -1,5 +1,5 @@
 ---
-title: "[논문리뷰] Toolformer: Language models can teach themselves to use tools (NeurIPS 2023)"
+title: "[Paper Review] Toolformer: Language models can teach themselves to use tools (NeurIPS 2023)"
 date: 2025-02-26 00:00:00 +0900
 categories:
   - Paper Review
