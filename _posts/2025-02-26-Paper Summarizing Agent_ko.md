@@ -203,7 +203,9 @@ def gatherer(state: OverallState):
     for section in state["summary"]:
         section = section.strip()
         if section.startswith("```markdown"):
-            section = section.split("```")[1]
+            section = section.split("```markdown")[1]
+        if section.startswith("```md"):
+            section = section.split("```md")[1]
         if section.startswith("```"):
             section = section.split("```")[1]
         if section.endswith("```"):
@@ -362,7 +364,9 @@ def gatherer(state: OverallState):
     for section in state["summary"]:
         section = section.strip()
         if section.startswith("```markdown"):
-            section = section.split("```")[1]
+            section = section.split("```markdown")[1]
+        if section.startswith("```md"):
+            section = section.split("```md")[1]
         if section.startswith("```"):
             section = section.split("```")[1]
         if section.endswith("```"):
