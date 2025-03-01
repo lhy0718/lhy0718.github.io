@@ -155,7 +155,12 @@ async def section_spliter(
 
     sections = []
     for i, title in enumerate(titles[:-1]):
-        section = content.split(title)[1].split(titles[i + 1])[0]
+        try:  # when title goes wrong
+            section = content.split(title)[1].split(titles[i + 1])[0]
+        except:
+            while len(content.split(title)) != 2 or title.split() == "":
+                title = input(f"Please provide correct title (current: {title}):")
+
         sections.append(section)
 
     return Command(
@@ -385,7 +390,12 @@ async def section_spliter(
 
     sections = []
     for i, title in enumerate(titles[:-1]):
-        section = content.split(title)[1].split(titles[i + 1])[0]
+        try:  # when title goes wrong
+            section = content.split(title)[1].split(titles[i + 1])[0]
+        except:
+            while len(content.split(title)) != 2 or title.split() == "":
+                title = input(f"Please provide correct title (current: {title}):")
+
         sections.append(section)
 
     return Command(
