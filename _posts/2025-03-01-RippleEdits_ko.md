@@ -63,7 +63,7 @@ tags:
     - (e, r, ∅) → (e, r, $$o^*$$)
 
   - 일대다 관계 (예: 형제, 직업)에서는 객체 집합을 확장:
-    - (e, r, {o1, .., on}) → (e, r, {o1, .., on, $$o^*$$})
+    - (e, r, {o1, .., $$o_n$$}) → (e, r, {o1, .., on, $$o^*$$})
 
 - 편집이 수정인지 주입인지 여부는 편집 전 모델에 정보가 캡처되었는지에 따라 달라짐.
 - 특정 사실이 모델에 인코딩되었는지 평가하는 것은 다양한 입력 쿼리에 대해 객체 예측 테스트를 통해 수행됨.
@@ -71,6 +71,8 @@ tags:
 ---
 
 # 3 Ripple Effects of Factual Edits
+
+<img alt="image" src="https://github.com/user-attachments/assets/85f3e8a9-fb8a-47f4-8120-9db2baf2b05d" />
 
 - **편집의 영향 평가**:
 
@@ -116,6 +118,8 @@ tags:
 
 # 4 The RIPPLE EDITS Benchmark
 
+<img alt="image" src="https://github.com/user-attachments/assets/64bf8bcf-4060-4df6-944f-2c5a4bbf6059" />
+
 - **데이터 생성 파이프라인 (§4.1)**
 
   - 사실적 편집 요청 및 평가를 위한 질의 생성 과정 설명
@@ -157,6 +161,8 @@ tags:
   - 편집된 사실에 조건을 둔 단순한 인-컨텍스트 편집 기준선이 더 나은 결과를 얻음
 
 ## 5.1 평가 설정
+
+<img alt="image" src="https://github.com/user-attachments/assets/28b48801-0434-443d-9987-7acf948117ef" />
 
 - **데이터**
 
