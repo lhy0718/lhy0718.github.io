@@ -16,6 +16,8 @@ tags:
 
 # 1 Introduction
 
+<img alt="image" src="https://github.com/user-attachments/assets/34f7d1c2-6cce-488a-a8ca-1b7e19f25584" />
+
 - 사회 공학 공격은 기밀 정보를 유출하기 위해 피해자의 심리적 취약점을 악용
   - 공격 유형: 피싱, 스팸, 사전 설정, 미끼, 밀착 접근 등
 - 피싱은 이메일 및 SMS와 같은 텍스트를 통해 피해자를 공격
@@ -71,6 +73,8 @@ tags:
 
 # 3 BitAbuse
 
+<img width="816" alt="image" src="https://github.com/user-attachments/assets/8d9949a4-74ef-4279-a94f-ab6b332a5f2d" />
+
 - 피싱 공격에 사용된 VP 텍스트를 수집하기 위해 bitcoinabuse[.]com에서 이메일 데이터를 수집함.
 - Bitcoin Abuse 웹사이트는 비트코인 사기와 관련된 콘텐츠를 전 세계 사용자가 공유하는 플랫폼임.
 - 사용자들이 개인정보를 마스킹한 이메일을 직접 업로드하므로 안전하게 데이터를 수집할 수 있음.
@@ -122,17 +126,31 @@ tags:
 
 # 5 Experimental Results
 
+<img alt="image" src="https://github.com/user-attachments/assets/cb0b2514-d833-409c-b8c2-76e8a83c486e" />
+
 - **탐색적 데이터 분석**: VP 단어, VP 문자 및 비율에 대한 분석을 수행하여 피싱 공격 방어 방법론 개발에 도움을 주었다.
-  
+
+<img alt="image" src="https://github.com/user-attachments/assets/8e2d852e-0728-4298-94c1-8aa87823a4b2" />
+
 - **VP 문장 히스토그램**: BitCore, BitViper, BitAbuse 데이터셋에서 문장 길이에 따른 VP 문자의 발생 비율을 보여주는 히스토그램 제공.
+
+<img alt="image" src="https://github.com/user-attachments/assets/1199157e-05b0-4210-8cec-071e34a24ddb" />
 
 - **VP 문자-단어 연관 그래프**: Yifan Hu 알고리즘을 사용하여 VP 문자와 단어의 연관성 클러스터링을 시각화, 주요 클러스터의 중심에 모음이 위치.
 
+<img alt="image" src="https://github.com/user-attachments/assets/23027d72-a124-4acd-a040-deaae9ad2d4e" />
+
 - **복원 성능 비교**: SimChar DB, OCR, Spell Checker, Character BERT, GPT-4o mini 기반 방법들의 복원 성능을 평가한 결과, Character BERT 기반 방법이 다른 방법들보다 우수함.
+
+<img alt="image" src="https://github.com/user-attachments/assets/1482461b-4a70-4c3b-8b22-17c1a7dfd505" />
 
 - **VP 단어 복원 오류**: Character BERT 기반 방법이 연속된 VP 문자가 있을 경우 복원에 실패하는 경우 증가.
 
+<img alt="image" src="https://github.com/user-attachments/assets/88878fbb-adc6-4711-8558-eabec717272b" />
+
 - **단어 수준 정확도 평가**: VP 문자의 비율에 따른 세 가지 데이터셋에서 Character BERT 기반 방법의 성능 평가, BitCore 데이터셋에서 가장 강력한 성능을 보임.
+
+<img alt="image" src="https://github.com/user-attachments/assets/2f59752b-b8b9-4cac-88bb-6cccc9f8bc61" />
 
 - **훈련량에 따른 성능 변화**: 1% 또는 5%의 낮은 훈련 VP 문장 비율에서 BitViper 및 BitAbuse 데이터셋에 대한 성능 저하가 관찰됨.
 
@@ -177,18 +195,6 @@ tags:
 - LMs의 방대한 데이터 소비 문제를 해결하기 위해 LMs 내에서 데이터를 내부화할 수 있음.
 - 키워드에도 특정한 경향을 두고, 실제 피싱 공격에서 활용할 수 있는 경량 yet 정확한 LMs 개발 가능성 있음.
 - BitAbuse 모델의 제로샷 성능 검증도 필요함.
-
-## Limitations
-- VP 텍스트 복원 실험에서 추가 복원 방법을 포함하지 않아 연구의 범위를 넘지 않도록 함.
-- Character BERT와 다른 LM 기반 복원 방법 간 성능 비교 미실시로 효율성과 우월성 평가 어려움.
-- BitAbuse 데이터셋이 Bitcoin 사기 관련 데이터에만 국한되어 피싱 공격 시나리오의 다양성을 충분히 반영하지 못함.
-- 다양한 피싱 공격 시나리오를 포함하는 확장된 데이터셋 구축 필요.
-- 연구 목적으로 생성된 데이터셋이 악용될 위험이 있으며, 비전문가가 이를 통해 공격 방법을 학습할 수 있음.
-- 데이터셋과 모델은 연구 목적 외 사용 금지.
-
-## Ethics Statement
-- 대응책 없음으로 데이터셋의 악용 우려 존재.
-- 아직 규제가 부족해 연구 사용 이외의 목적에 사용하면 법적 책임이 어려움.
 
 ---
 
