@@ -1,12 +1,12 @@
 ---
-title: "[논문리뷰] BitAbuse: A Dataset of Visually Perturbed Texts for Defending Phishing Attacks (NAACL 2025 findings)"
+title: "[논문리뷰] BitAbuse: A Dataset of Visually Perturbed Texts for Defending Phishing Attacks (NAACL 2025 Findings)"
 date: 2025-03-04 00:00:00 +0900
 categories:
   - Paper Review
 tags:
   - NLP
   - Security
-  - NAACL 2025 findings
+  - NAACL 2025 Findings
   - Dataset
 ---
 
