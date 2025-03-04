@@ -73,7 +73,7 @@ tags:
 
 # 3 BitAbuse
 
-<img width="816" alt="image" src="https://github.com/user-attachments/assets/8d9949a4-74ef-4279-a94f-ab6b332a5f2d" />
+<img alt="image" src="https://github.com/user-attachments/assets/8d9949a4-74ef-4279-a94f-ab6b332a5f2d" />
 
 - 피싱 공격에 사용된 VP 텍스트를 수집하기 위해 bitcoinabuse[.]com에서 이메일 데이터를 수집함.
 - Bitcoin Abuse 웹사이트는 비트코인 사기와 관련된 콘텐츠를 전 세계 사용자가 공유하는 플랫폼임.
