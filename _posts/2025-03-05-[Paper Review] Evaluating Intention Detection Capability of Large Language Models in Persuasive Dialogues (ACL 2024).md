@@ -373,3 +373,10 @@ Abstract: The study explores intention detection in persuasive multi-turn dialog
   - Ability to disseminate misinformation, especially on social media, could result in widespread public confusion.
 - This research involves models like ChatGPT and GPT-4, which inherently possess biases and aggressive knowledge that may influence results.
 - Careful monitoring is necessary as the technology develops and integrates into dialogue systems.
+
+---
+
+# Reader Feedback
+
+- The study involves a significant psychological component, which makes the **mathematical analysis seem somewhat lacking**.  
+- It would be beneficial to incorporate **mathematical analysis using Explainable AI (XAI) methodologies**.
