@@ -88,11 +88,12 @@ Abstract: 본 연구는 대화의 맥락을 고려하여 설득적 다중 턴 �
     - positive 또는 negative face 지향 여부 (pos/neg)
     - face가 보호되거나 공격되는지 (+/-)
 
+- **설득 상황 예시**:
+
 <img alt="image" src="https://github.com/user-attachments/assets/3c703e22-1f3d-4afa-84ad-cfc28bac9784" />
 
 <img alt="image" src="https://github.com/user-attachments/assets/45f24366-85fd-4112-8327-f0d929ed95ef" />
 
-- **설득 상황 예시**:
   - 주장 변경을 요구하는 사람을 "persuader(ER)", 요구를 받는 사람을 "persuadee(EE)"로 표현.
   - 예: ER이 EE에게 무언가 요청할 때, 발화는 "hneg-"로 분류됨 (청자의 자유를 빼앗는 것).
   - ER이 자신의 주장 유효성을 보여줄 때, 발화는 "spos+"로 분류됨 (화자의 positive face를 방어하는 것).
@@ -261,18 +262,20 @@ Abstract: 본 연구는 대화의 맥락을 고려하여 설득적 다중 턴 �
     - 의도 관련 문제 (intention-related problems)
     - 비의도 관련 문제 (non-intention-related problems)
 
+## 4.1.1 의도 관련 문제
+
 <img alt="image" src="https://github.com/user-attachments/assets/2e46658a-7318-4f3c-9f77-5ee5b723ed2d" />
 
-## 4.1.1 의도 관련 문제
 - 작은 모델들은 논리적으로 완벽한 추론을 수행하지만 독특한 사고 과정을 거침.
 - GPT-4는 합리적인 한도 내에서 의도를 추측하지만, 작은 모델들은 가끔 과도하게 해석함.
   - 예시: 
     - GPT-4는 EE가 단순히 기부 습관을 언급한다고 해석.
     - ChatGPT와 Llama 2-Chat-70B는 EE가 이미 교회에 기부했으므로 STC에 기부할 의도가 없다고 과도하게 해석함.
 
+## 4.1.2 비의도 관련 문제
+
 <img alt="image" src="https://github.com/user-attachments/assets/7aaa42a1-8388-4dd6-a9e9-db04e4325c43" />
 
-## 4.1.2 비의도 관련 문제
 - Llama 2-Chat-70B는 의도 과해석 외에도 생성 루프 및 목표와 다른 발화의 의도를 예측하는 문제 발생.
 - 작은 모델들은 복잡하고 긴 프롬프트를 이해하는 데 어려움을 겪어 지침을 제대로 이해하지 못함.
 - 논리적 일관성 부재 문제:
@@ -289,9 +292,11 @@ Abstract: 본 연구는 대화의 맥락을 고려하여 설득적 다중 턴 �
   - hpos 발화는 ER이 EE의 기부에 대한 주저함을 비난하거나, EE가 ER의 신뢰성에 의구심을 표명함.
   - GPT-4는 EE의 발화 의도를 추론하는 데 오류를 범함.
   
-<img alt="image" src="https://github.com/user-attachments/assets/44277449-8507-45e7-8373-02b7e25e9f5e" />
 
 ## 4.2.1 데이터셋의 패턴
+
+<img alt="image" src="https://github.com/user-attachments/assets/44277449-8507-45e7-8373-02b7e25e9f5e" />
+
 - ER이 EE를 비판하는 두 가지 주요 패턴:
   1. **소비 습관 질문**:
      - ER이 EE의 소비 습관을 물으며 불필요한 소비를 줄이고 기부를 권장함.
@@ -304,9 +309,11 @@ Abstract: 본 연구는 대화의 맥락을 고려하여 설득적 다중 턴 �
   - 대부분의 발화는 비판이 아닌 기부를 유도하는 것으로 판단됨.
   - 인간은 85개의 발화를 'ER이 EE를 기부하도록 동기부여'로 분류, 4개는 'ER이 EE를 비판'으로 분류.
   
-<img width="397" alt="image" src="https://github.com/user-attachments/assets/4a2a6817-11b5-4959-b585-69fb7928c182" />
 
 - GPT-4와 인간의 발화 해석 차이:
+
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/4a2a6817-11b5-4959-b585-69fb7928c182" />
+
   - 인간이 비판적으로 판단한 발화는 명백하고 냉소적임.
   - 감정적 호소의 전술은 기부 동기를 높이는 수사 전략으로 인식됨.
   - 아이러니한 발언은 인간이 보다 섬세하게 의도를 파악하도록 만듦.
