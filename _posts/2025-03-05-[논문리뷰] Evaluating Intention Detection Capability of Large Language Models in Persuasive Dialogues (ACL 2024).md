@@ -90,9 +90,9 @@ Abstract: 본 연구는 대화의 맥락을 고려하여 설득적 다중 턴 �
 
 - **설득 상황 예시**:
 
-<img alt="image" src="https://github.com/user-attachments/assets/3c703e22-1f3d-4afa-84ad-cfc28bac9784" />
-
-<img alt="image" src="https://github.com/user-attachments/assets/45f24366-85fd-4112-8327-f0d929ed95ef" />
+  <img alt="image" src="https://github.com/user-attachments/assets/3c703e22-1f3d-4afa-84ad-cfc28bac9784" />
+  
+  <img alt="image" src="https://github.com/user-attachments/assets/45f24366-85fd-4112-8327-f0d929ed95ef" />
 
   - 주장 변경을 요구하는 사람을 "persuader(ER)", 요구를 받는 사람을 "persuadee(EE)"로 표현.
   - 예: ER이 EE에게 무언가 요청할 때, 발화는 "hneg-"로 분류됨 (청자의 자유를 빼앗는 것).
@@ -238,9 +238,10 @@ Abstract: 본 연구는 대화의 맥락을 고려하여 설득적 다중 턴 �
   - 대화 전체를 읽고 최종 발화의 의도를 4개 옵션 중에서 선택.
   - 3명의 작업자 선택에 따른 다수결로 최종 답안 결정.
 
-<img alt="image" src="https://github.com/user-attachments/assets/314d5e61-56b7-4e9c-96cc-8a0cec5930d3" />
-
 - **모델 성능 결과**
+
+  <img alt="image" src="https://github.com/user-attachments/assets/314d5e61-56b7-4e9c-96cc-8a0cec5930d3" />
+  
   - 정확도는 모델 크기가 커질수록 향상됨.
   - 가장 작은 모델은 50% 이상의 정확도 달성, GPT-4는 90% 이상.
   - 모델들은 hpos- 카테고리에 속하는 의도 탐지에서 어려움을 겪음.
@@ -295,9 +296,10 @@ Abstract: 본 연구는 대화의 맥락을 고려하여 설득적 다중 턴 �
 
 ## 4.2.1 데이터셋의 패턴
 
-<img alt="image" src="https://github.com/user-attachments/assets/44277449-8507-45e7-8373-02b7e25e9f5e" />
-
 - ER이 EE를 비판하는 두 가지 주요 패턴:
+
+  <img alt="image" src="https://github.com/user-attachments/assets/44277449-8507-45e7-8373-02b7e25e9f5e" />
+  
   1. **소비 습관 질문**:
      - ER이 EE의 소비 습관을 물으며 불필요한 소비를 줄이고 기부를 권장함.
   2. **가난한 사람 언급**:
@@ -312,7 +314,7 @@ Abstract: 본 연구는 대화의 맥락을 고려하여 설득적 다중 턴 �
 
 - GPT-4와 인간의 발화 해석 차이:
 
-<img width="397" alt="image" src="https://github.com/user-attachments/assets/4a2a6817-11b5-4959-b585-69fb7928c182" />
+  <img width="397" alt="image" src="https://github.com/user-attachments/assets/4a2a6817-11b5-4959-b585-69fb7928c182" />
 
   - 인간이 비판적으로 판단한 발화는 명백하고 냉소적임.
   - 감정적 호소의 전술은 기부 동기를 높이는 수사 전략으로 인식됨.
