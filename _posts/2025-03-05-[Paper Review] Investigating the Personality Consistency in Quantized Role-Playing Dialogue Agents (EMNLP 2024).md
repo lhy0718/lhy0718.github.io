@@ -208,4 +208,13 @@ tags:
 
 - **Future Research Directions:**  
   - Expanding research **toward generalization and broader applicability**.  
-  - Improving **user experience and ensuring responsible AI development**.  
+  - Improving **user experience and ensuring responsible AI development**.
+ 
+---
+
+# **Reader Feedback**  
+
+- The study is **highly limited** as it only considers **five personality models**. Additionally, since the **OCEAN score is evaluated by the model itself**, there are **reliability concerns**.  
+- The study improves consistency **by simply inserting personality information into the prompt for every interaction**. However, this approach **may introduce computational overhead**.  
+- Demonstrating the **correlation between OCEAN scores and linguistic features** enhances the **credibility of the study**.  
+- Future research should explore **methods to prevent performance degradation due to quantization**.
