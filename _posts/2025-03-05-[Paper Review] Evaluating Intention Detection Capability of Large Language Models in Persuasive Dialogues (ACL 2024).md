@@ -7,7 +7,6 @@ tags:
   - NLP
   - ACL 2024
   - Persona-based Dialogue
-
 ---
 
 Abstract: The study explores intention detection in persuasive multi-turn dialogues using large language models, highlighting the importance of conversational history and incorporating face acts to analyze intentions effectively.
