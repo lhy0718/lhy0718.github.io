@@ -63,6 +63,8 @@ Abstract: 이 연구는 양자화된 대형 언어 모델에서의 성격 특성
 
 # 3 Methodology
 
+<img width="813" alt="image" src="https://github.com/user-attachments/assets/93206209-d904-4c1d-bfdf-77ef888bda64" />
+
 - 모델 양자화가 QRPDA 배치에 미치는 영향을 탐색하기 위해 일련의 실험 설계
 - 양자화된 모델과 16비트 부동소수점(FP16) 모델 간의 성격 특성 일관성 평가
 - 양자화된 모델의 성격 유지 및 변화 관찰
@@ -78,6 +80,9 @@ Abstract: 이 연구는 양자화된 대형 언어 모델에서의 성격 특성
 - Q8_0/Q4_0로 메모리 요구량을 1/2 및 1/4로 감소
 
 ## 3.2 RPDA 구축
+
+<img width="322" alt="image" src="https://github.com/user-attachments/assets/a693b641-5c0f-4986-8afa-97e7aaebc29b" />
+
 - 시스템 프롬프트를 통해 LLM에 성격 특성 할당
 - Big Five 성격 모델(OCEAN)의 다섯 가지 성격 차원 활용
 - 32개의 이진 성격 조합으로 실험 확장
@@ -85,6 +90,11 @@ Abstract: 이 연구는 양자화된 대형 언어 모델에서의 성격 특성
 - 각 성격 쌍 비교를 통해 성격 변화 관찰
 
 ## 3.3 다중 턴 상호작용
+
+<img width="319" alt="image" src="https://github.com/user-attachments/assets/ac1fcacc-463a-47e6-a1c1-e3d0a5ad4391" />
+
+<img width="319" alt="image" src="https://github.com/user-attachments/assets/5ee55015-74de-4cc2-8656-61fd14700aee" />
+
 - RPDA 쌍이 반복적인 대화를 통해 자연스러운 다중 턴 상호작용을 시뮬레이션
 - 각 턴에서 개인 스토리를 교환하여 정보 접근 및 연속성 유지
 - 매 턴마다 BFI 자가 평가를 통해 성격 특성 변화 및 일관성 추적
@@ -116,18 +126,27 @@ Abstract: 이 연구는 양자화된 대형 언어 모델에서의 성격 특성
   - 각 쌍에 대해 20턴의 상호작용 수행, 15회 반복 실험
 
 ## 4.1 OCEAN 점수 시각화
+
+<img width="653" alt="image" src="https://github.com/user-attachments/assets/c478ca76-bef3-4141-981b-77029814f801" />
+
 - 레이더 플롯 생성하여 OCEAN 점수 분석
 - 초기 및 20턴 상호작용 후 OCEAN 점수 비교
   - 기본 방법 사용 시 성격 점수가 수렴하는 경향
   - Think2 방법은 안정적인 성격 특성 유지, 효과성 입증
 
 ## 4.2 언어적 특징에 대한 회귀 분석
+
+<img width="653" alt="image" src="https://github.com/user-attachments/assets/22375109-8d1e-4a1e-aea7-ca7dbdfc1b61" />
+
 - Gemma2 9B Instruct 모델의 비교 분석 결과 제공
 - LIWC 및 EMBD 특징 사용
 - 기본 방법에서 교차 검증 정확도가 감소
 - Think2 방법이 교차 검증 정확도를 유지하며 성격 일관성 보장
 
 ## 4.3 상관 관계 분석
+
+<img width="653" alt="image" src="https://github.com/user-attachments/assets/9f3c08c0-b8e6-4082-8624-0a84633b102d" />
+
 - Pearson 상관 분석 결과 제시
 - OCEAN 점수와 EMBD 언어적 특징 간 상관 관계를 계산
 - 기본 방법 사용 시 상관 관계의 감소 관찰
