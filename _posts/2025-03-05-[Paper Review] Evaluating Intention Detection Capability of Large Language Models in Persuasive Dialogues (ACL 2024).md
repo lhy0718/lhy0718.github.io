@@ -84,6 +84,10 @@ Abstract: The study explores intention detection in persuasive multi-turn dialog
     - Type: Positive or negative face (pos/neg).
     - Action: Saved or attacked face (+/-).
 
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/047dc76e-41cc-4503-8092-a27293678165" />
+
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/ef0fc77a-9d5c-444a-b7bf-cb87db6d5bd0" />
+
 - **Example of Persuasive Situation**: 
   - **Persuader (ER)**: Person attempting to change the mind of the other.
   - **Persuadee (EE)**: Person whose mind is being changed.
@@ -240,6 +244,8 @@ Abstract: The study explores intention detection in persuasive multi-turn dialog
 
 ---
 
+<img width="753" alt="image" src="https://github.com/user-attachments/assets/f480365c-26ab-46c7-b3b7-44418e958ed8" />
+
 # 4.1 Behavior of Smaller LLMs
 
 - **Comparison with GPT-4:**
@@ -247,10 +253,15 @@ Abstract: The study explores intention detection in persuasive multi-turn dialog
   - Smaller models, including ChatGPT and Llama 2-Chat-70B, faced difficulties in inference.
 
 - **Problem Types:**
+
+<img width="814" alt="image" src="https://github.com/user-attachments/assets/1accf2da-7b3a-416f-ab9f-6108c4882553" />
+
   - **Intention-related Problems:**
     - Flawed interpretation of intention leads to incorrect answers.
     - Smaller models occasionally overinterpret intentions:
       - Example: GPT-4 accurately inferred intentions regarding donations, while smaller models incorrectly concluded that the speaker had no intention to donate based on overextensions of the conversation.
+
+<img width="814" alt="image" src="https://github.com/user-attachments/assets/f8a39d97-1ed8-44ee-b058-d47e86b733ad" />
 
   - **Non-intention-related Problems:**
     - Issues like generation loops and misinterpreting utterances unrelated to the main task.
@@ -274,11 +285,16 @@ Abstract: The study explores intention detection in persuasive multi-turn dialog
   - Focus of examination is on how GPT-4 interprets ER's criticisms of EE.
 
 ## 4.2.1 Patterns in Our Dataset
+
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/2fd2726d-f738-4d01-b722-6a2aaf9d9973" />
+
 - **Two Primary Patterns of Criticism by ER**:
   1. ER questions EE’s spending habits, promoting a redirection of funds to charity (Save the Children).
      - Example: ER asks about wasteful spending on junk food.
   2. ER brings up financially struggling individuals to elicit guilt in EE for inaction.
      - Example: ER highlights children suffering due to lack of donations.
+
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/40ff17c3-37af-4de8-a6ee-a1bea695c59a" />
 
 - **GPT-4's Recognition**:
   - GPT-4 incorrectly identified many of these utterances as non-critical or having different intentions, as detailed in subsequent tables.
