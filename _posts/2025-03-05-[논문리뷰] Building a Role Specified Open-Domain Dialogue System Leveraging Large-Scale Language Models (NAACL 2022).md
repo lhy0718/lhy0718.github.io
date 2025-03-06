@@ -171,7 +171,7 @@ Abstract: 최근 오픈 도메인 대화 모델의 발전에도 불구하고, �
 
   - **Out-of-Bounds Detection**: 분류기 정확도 및 F1 스코어 평가
  
-  <img width="686" alt="image" src="https://github.com/user-attachments/assets/1b20bcb6-546d-4b8c-8bde-c6a3d6448a7c" />
+    <img width="686" alt="image" src="https://github.com/user-attachments/assets/1b20bcb6-546d-4b8c-8bde-c6a3d6448a7c" />
   
   - in-context 학습 사용 시 오류율 저하 확인, 그러나 최상의 응답 선택 및 생성 모델보다 상대적으로 높은 오류율
   - **응답 선택**: 응답 선택 모델을 긍정적 예제에 대해 미세 조정 및 평가, 훈련된 데이터에 따라 성능 개선
