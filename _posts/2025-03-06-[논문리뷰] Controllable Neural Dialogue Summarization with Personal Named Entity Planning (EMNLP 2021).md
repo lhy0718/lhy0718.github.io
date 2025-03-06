@@ -15,6 +15,8 @@ Abstract: 본 논문에서는 개인 이름 항목 계획을 통해 대화 요�
 
 # 1 Introduction
 
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/2d366e4f-e176-4681-bf43-4706bb4213df" />
+
 - 자동 요약은 긴 텍스트를 압축하여 정보를 보존하면서 간결한 버전으로 만드는 작업임.
 - 요약 접근 방식:
   - **추출적 접근법**: 중요한 단어, 구문, 문장을 선택하여 요약 생성 (Lin and Bilmes, 2011).
@@ -70,6 +72,8 @@ Abstract: 본 논문에서는 개인 이름 항목 계획을 통해 대화 요�
 
 # 3 Controllable Generation with Personal Named Entity Planning
 
+<img width="813" alt="image" src="https://github.com/user-attachments/assets/c26d482e-6657-4b35-8781-5acafc3c324a" />
+
 - **개요**:
   - 개인 명칭 엔터티 계획을 통한 대화 요약 생성 방법론 소개.
   - 목표: 다양한 선호와 요구에 맞는 요약 생성.
@@ -113,6 +117,9 @@ Abstract: 본 논문에서는 개인 이름 항목 계획을 통해 대화 요�
   - 이로 인해 생성된 요약의 유용성과 신뢰성에 대한 우려가 제기됨.
   
 ## 4.1 Factual Inconsistency Detection
+
+<img width="398" alt="image" src="https://github.com/user-attachments/assets/e602bdd7-bfd2-41ab-a9ec-33bada7b5355" />
+
 - 요약 품질을 사실적 정확성 측면에서 평가하고 최적화하기 위해 모델 구축.
   - 부정 샘플은 텍스트 조작을 통해 생성됨.
 - 사람 이름과 관련된 불일치를 감지하는 것을 목표로 함.
@@ -157,8 +164,16 @@ Abstract: 본 논문에서는 개인 이름 항목 계획을 통해 대화 요�
   - 데이터 증강: 요약에 두 개 이상의 개인 명명된 개체가 포함된 샘플 제외
 
 - **정량적 평가**
+
+  <img width="812" alt="image" src="https://github.com/user-attachments/assets/c5a5e501-9fa5-4b2d-bd2d-fde1fb1c98e1" />
+
+  <img width="812" alt="image" src="https://github.com/user-attachments/assets/d0f6f324-61d3-4341-bf33-a76d3d83ce55" />
+
   - ROUGE 지표를 사용하여 자동화된 요약 평가
   - 훈련 및 테스트 조건이 일치하는 경우:
+  
+    <img width="399" alt="image" src="https://github.com/user-attachments/assets/b47df35b-3469-4cac-b1fa-35c58b61ac34" />
+
     - 조건부 훈련이 효과적임을 보여줌
     - BART-Large가 BART-Base보다 성능이 높음
   - 훈련 및 테스트 조건 불일치:
