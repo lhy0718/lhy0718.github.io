@@ -9,7 +9,7 @@ tags:
   - Persona-based Dialogue
 ---
 
-**Abstract** This study explores the personality trait consistency of quantized large language models (LLMs) and evaluates the stability of assigned personalities across multiple interactions in role-playing scenarios. A non-parametric method called **Think2** is proposed to address personality inconsistencies, demonstrating its effectiveness in maintaining the consistency of **Quantized Role-Playing Dialogue Agents (QRPDA).**  
+**Summary** This study explores the personality trait consistency of quantized large language models (LLMs) and evaluates the stability of assigned personalities across multiple interactions in role-playing scenarios. A non-parametric method called **Think2** is proposed to address personality inconsistencies, demonstrating its effectiveness in maintaining the consistency of **Quantized Role-Playing Dialogue Agents (QRPDA).**  
 
 ---
 
