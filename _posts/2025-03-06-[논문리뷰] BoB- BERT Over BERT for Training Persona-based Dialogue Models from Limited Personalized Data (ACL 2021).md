@@ -15,6 +15,8 @@ Abstract: 대화 에이전트를 위한 일관된 페르소나 유지는 중요�
 
 # 1 Introduction
 
+<img width="396" alt="image" src="https://github.com/user-attachments/assets/6634e754-bc0b-4fe5-91ce-2530916483fc" />
+
 - 다양한 접근법들은 대화 모델에서 명시적인 페르소나 도입을 탐구해 왔다.
 - 페르소나는 프로파일과 배경 개인 정보 등의 정체성 요소의 조합으로 정의될 수 있다.
 - 페르소나 기반 대화에서는 대화 맥락뿐 아니라 사전에 정의된 페르소나에 따라 반응이 생성되어 일관성 있는 성격을 나타낼 수 있다.
@@ -76,6 +78,8 @@ Abstract: 대화 에이전트를 위한 일관된 페르소나 유지는 중요�
 ---
 
 # 3 Model
+
+<img width="811" alt="image" src="https://github.com/user-attachments/assets/75802edb-b4dd-4afb-98fc-527c5bd1b52e" />
 
 - **목표**
   - 제한된 개인화 데이터를 사용하여 인격 기반 대화 모델 학습 목표.
@@ -141,6 +145,10 @@ Abstract: 대화 에이전트를 위한 일관된 페르소나 유지는 중요�
   - 자동 평가 지표: Perplexity, Distinct 1/2, Consistency Score (C.Score), Delta Perplexity (∆P)
   - 사용된 인간 평가 기준: 유창성(Flue.), 정보성(Info.), 관련성(Relv.), 인물 일관성(Per.C.)
 
+<img width="811" alt="image" src="https://github.com/user-attachments/assets/a625a34a-1272-4f62-9a88-d2cdc82e4f9f" />
+
+<img width="811" alt="image" src="https://github.com/user-attachments/assets/7cf6783b-a635-4db1-9dae-eb726019296c" />
+
 - ## 4.4 인물 밀집 시나리오 결과
   - **전체 PersonaChat 데이터셋 결과**: 제안된 모델이 모든 자동 및 인간 평가 메트릭에서 우수한 성능을 보임
   - **제한된 데이터 환경**: 제안된 모델이 기존의 최적 성능을 1/8의 훈련 데이터만으로도 초과
@@ -151,6 +159,11 @@ Abstract: 대화 에이전트를 위한 일관된 페르소나 유지는 중요�
   - 랜덤 테스트셋에는 다른 모델들과 큰 차이가 없으나, 편향 테스트셋에서 제안된 모델이 대부분의 메트릭에서 우수한 성능
 
 - ## 4.6 분석 및 소거 연구
+
+  <img width="397" alt="image" src="https://github.com/user-attachments/assets/89e860a4-2353-4793-86c2-b1479c05a324" />
+
+  <img width="397" alt="image" src="https://github.com/user-attachments/assets/ec139c19-3a7d-4166-9195-94974bcf7bbd" />
+
   - **주요 질문**:
     1. BoB 모델의 이해 능력의 핵심은 무엇인가?
     2. 사전 훈련된 모델이 개인화된 대화를 통해 일관성을 이해할 수 있는가?
