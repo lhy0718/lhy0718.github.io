@@ -15,6 +15,8 @@ tags:
 
 # 1 Introduction
 
+<img width="351" alt="image" src="https://github.com/user-attachments/assets/4a4a75fd-93b6-4058-951c-496c4d95431a" />
+
 - 역할 수행 게임(RPG)에서 플레이어와 비플레이어 캐릭터(NPC) 간의 상호작용은 
   - 배경 이야기 전개 및
   - 흥미로운 퀘스트 이야기 진행을 위한 중요한 요소인 것으로 언급됨.
@@ -43,6 +45,8 @@ tags:
 ---
 
 # 2 Task Definition
+
+<img width="351" alt="image" src="https://github.com/user-attachments/assets/16cba056-4994-468e-a7d5-9fb891801eff" />
 
 - AI 기반의 작문 도구 개발 필요
   - Ubisoft의 GhostWriter와 같은 도구 필요성 대두
@@ -81,6 +85,9 @@ tags:
   - NPC의 특징을 반영하여 대화 내용을 구성
 
 - 데이터셋 통계 및 구조 설명
+
+  <img width="351" alt="image" src="https://github.com/user-attachments/assets/f7607e94-8d75-4f99-91e5-49a1eb7e6539" />
+
   - 대화 트리와 주석의 통계 제공
   - KNUDGE 데이터셋은 전통적인 RPG 대화생성 작업에서 필요한 복잡성 및 세부 사양 제공
   
@@ -94,6 +101,8 @@ tags:
 ---
 
 # 3 KNUDGE Dataset
+
+<img width="351" alt="image" src="https://github.com/user-attachments/assets/f74ac654-473c-4cd8-8b3b-f05dd3f290ff" />
 
 - **목적**: KNUDGE는 NPC 대화 생성을 위한 데이터셋으로, 복잡한 게임의 지식을 바탕으로 한 대화를 생성하는 것을 목표로 함.
 - **대화 구조**: 데이터셋은 45개의 사이드 퀘스트에서 추출된 대화 트리로 구성되어 있으며, 각 트리는 방향 그래프로 나타내어짐.
@@ -111,6 +120,9 @@ tags:
   3. NPC 캐릭터는 자신의 생물학적 배경에 충실한 발화해야 함.
   4. NPC는 세계 구축을 돕기 위해 다른 존재에 대한 정보를 전달해야 하지만 모순이 없어야 함.
 - **데이터 세트 구성**: KNUDGE에는 퀘스트에 대한 정보, 전기적 진술, 대화 구조가 포함되어 있으며, 총 65,000개의 발화 토큰과 210,000개의 사실 토큰이 포함되어 있음.
+
+  <img width="719" alt="image" src="https://github.com/user-attachments/assets/6b69b326-a830-42b8-ab31-c329cce8bca8" />
+
 - **기존 데이터셋과의 비교**: KNUDGE는 실제 RPG 데이터를 기반으로 한 최초의 데이터셋으로, 실질적으로 복잡한 대화 구조를 포함하고 있음.
 
 ---
@@ -141,6 +153,9 @@ tags:
   - 훈련 퀘스트에서 예시를 사용하여 few-shot 프롬프트 생성.
 
 - **End-to-End DialogueWriters**
+
+  <img width="308" alt="image" src="https://github.com/user-attachments/assets/ecce0a36-456e-4a1a-adc8-912f85098c58" />
+
   - 특정 위치가 아닌 전체 대화를 생성하는 방법.
   - 전체 노드와 엣지를 동시에 생성하고 정제하는 시리즈 프롬프트 사용.
   
@@ -185,11 +200,19 @@ tags:
 - BERTScore-F1 및 GPT-4 기준으로 B 및 Q 사용량 평가
 
 ### NUP 결과
+
+<img width="718" alt="image" src="https://github.com/user-attachments/assets/25786df2-607d-4754-b2b2-6d86b18d990d" />
+
 - NUP 결과는 인간 및 자동 메트릭에서 상이하게 나타남
 - KS 변형을 포함한 ICL 모델이 B 및 Q와의 겹침에서 비 KS 모델보다 높은 점수
 - KS가 ICL 작성자가 지식 구문을 반영하는 데 효과적이며 약간 높은 위반 확률과의 무역을 형성
 
 ## 사례 연구
+
+<img width="352" alt="image" src="https://github.com/user-attachments/assets/d3971bb8-c960-4f5c-a211-cdb5937ba6ce" />
+
+<img width="352" alt="image" src="https://github.com/user-attachments/assets/c1523513-c340-4813-909b-3997e9856507" />
+
 - DialogueWriters의 두 가지 사용 사례 평가
   1. Node DialogueWriters가 인간에 의해 확장할 대화 스켈레톤 제안
   2. End-to-End DialogueWriters가 전체 대화 제안
@@ -207,6 +230,8 @@ tags:
 ---
 
 # 6 Qualitative Results
+
+<img width="717" alt="image" src="https://github.com/user-attachments/assets/22ab2640-9214-46b9-a9fe-fc5fd619eacb" />
 
 - Figure 6에서는 NUP 예시에서 모델의 결과를 보여줌.
 - KNUDGE의 목표는 상호작용을 통해 퀘스트와 전투에 대한 정보를 자연스럽게 전달하는 것임.
