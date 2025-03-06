@@ -15,6 +15,8 @@ Abstract: 최근 오픈 도메인 대화 모델의 발전에도 불구하고, �
 
 # 1 Introduction
 
+<img width="403" alt="image" src="https://github.com/user-attachments/assets/cc0c82ed-2fa4-439a-bfdc-dab7dff80db0" />
+
 - 최근 대규모 언어 모델(LM)은 오픈 도메인 대화 시스템에서 많은 혁신을 가져옴.
 - 이러한 시스템은 인간과 유사한 응답을 생성하고, 퍼소나, 스타일 및 안전성을 조절하는 기술들이 발전함.
 - 그러나 이러한 기능을 결합한 챗봇 시스템 구축은 여전히 어려움.
@@ -24,6 +26,9 @@ Abstract: 최근 오픈 도메인 대화 모델의 발전에도 불구하고, �
 - RSODD 시스템의 목표는 주어진 역할 조건을 유지하면서 자연스럽게 대화하는 것임.
 - 인물, 스타일, 안전 및 시스템 정책의 특정 조건을 충족해야 함.
 - **데이터 세트를 구축하기 위한 인간-AI 협업 방식 제안.**
+
+<img width="336" alt="image" src="https://github.com/user-attachments/assets/75885068-c5f0-493f-8183-c3bad4ebddf8" />
+
 - 대규모 LM을 활용하여 전체 대화 세션을 생성한 후 인간의 상호작용 교정을 포함.
 - 이 방법은 **수작업으로 금 대화(Gold Dialogue)를 제작하는 것보다 데이터 세트 구축 비용을 크게 줄일 수 있음.**
 - 다양한 아키텍처를 비교하여 역할 지정 챗봇의 능력을 분석함.
@@ -67,6 +72,8 @@ Abstract: 최근 오픈 도메인 대화 모델의 발전에도 불구하고, �
 
 # 3 Data Construction
 
+<img width="684" alt="image" src="https://github.com/user-attachments/assets/acdf52a4-0282-43a8-835f-bd3315e92614" />
+
 - 감독 데이터를 수집하여 RSODD 시스템을 구축하는 프레임워크 설명
 - 입력: 챗봇 개발자가 정의한 역할 사양
   - 대화 상호작용의 조건 정의
@@ -75,6 +82,9 @@ Abstract: 최근 오픈 도메인 대화 모델의 발전에도 불구하고, �
 - 해결책: 소수의 인간 작성 대화 샘플을 사용한 대규모 언어 모델(LLM)의 인라인 몇 샷 학습으로 데이터셋 구성
 
 ## 3.1 One-shot Dialogue Generation
+
+<img width="330" alt="image" src="https://github.com/user-attachments/assets/146aceb6-9e89-4ea5-823b-88af5bad02ae" />
+
 - 대규모 LLM이 특정 성격의 대화를 생성할 수 있음
 - 방법: 역할 사양을 만족하는 몇 가지 대화 예제를 작성하고, 이를 시스템 설명 끝에 첨부
 - 예시로 제공된 텍스트를 기반으로 LLM이 전체 대화 세션을 생성
@@ -127,6 +137,9 @@ Abstract: 최근 오픈 도메인 대화 모델의 발전에도 불구하고, �
   - 두 가지 종류의 학습을 동시에 수행하여 최종 손실 함수는 MLE 손실과 UL 손실의 혼합으로 구성됨.
 
 - **4.5 리트리브-실패-생성**
+
+  <img width="325" alt="image" src="https://github.com/user-attachments/assets/1f1d8bef-3f31-4a4f-a900-a1b596e71eb1" />
+
   - 응답 선택 모델과 생성 모델을 포함하는 파이프라인 접근법.
   - 먼저 응답 선택 모델이 적절한 응답을 선택하고, 비응답 가능한 상황으로 판단되면 응답 생성 모델로 대체.
   - 응답 선택 모델은 대다수의 응답을 처리하며, 생성 모델은 선택 실패 시에만 사용됨.
@@ -146,17 +159,30 @@ Abstract: 최근 오픈 도메인 대화 모델의 발전에도 불구하고, �
   - HyperCLOVA(39B)를 생성 모델로 활용하여 1-shot 생성
 
 - **5.2 생성된 대화 평가**
+
+  <img width="686" alt="image" src="https://github.com/user-attachments/assets/0d264706-0c85-4d50-b723-7e45e4ae7c17" />
+
   - 생성된 대화의 질 평가
   - HyperCLOVA의 네 가지 서로 다른 크기를 사용하여 100개 대화 세션 생성
   - 크라우드 워커에게 여러 조건 만족도 평가를 요청
   - 모델 크기가 클수록 조건 충족률 증가, 텍스트 다양성(Distinct-1/2 증가)
 
 - **5.3 모델 비교**
+
   - **Out-of-Bounds Detection**: 분류기 정확도 및 F1 스코어 평가
+ 
+  <img width="686" alt="image" src="https://github.com/user-attachments/assets/1b20bcb6-546d-4b8c-8bde-c6a3d6448a7c" />
+  
   - in-context 학습 사용 시 오류율 저하 확인, 그러나 최상의 응답 선택 및 생성 모델보다 상대적으로 높은 오류율
   - **응답 선택**: 응답 선택 모델을 긍정적 예제에 대해 미세 조정 및 평가, 훈련된 데이터에 따라 성능 개선
+  
+    <img width="333" alt="image" src="https://github.com/user-attachments/assets/7ed30867-e763-4243-bfe6-568d90c7cfe4" />
+
   - **응답 생성**: IC, MLE, UL 세 가지 훈련 방법 비교, unlikelihood training이 오류율을 추가로 감소시킴
   - **Retrieve-fail-Generate**: 응답 선택 및 생성 모델의 조합 사용 시 최대 성과 및 낮은 오류율 기록
+  
+    <img width="682" alt="image" src="https://github.com/user-attachments/assets/50ad0b0c-3a0c-4f81-9bc8-bf381d7a8219" />
+
   - **피드백 파이프라인**: 모델 평가 과정에서 수집된 대화로 추가 훈련하여 오류율 감소
 
 - **5.4 응답 품질**
