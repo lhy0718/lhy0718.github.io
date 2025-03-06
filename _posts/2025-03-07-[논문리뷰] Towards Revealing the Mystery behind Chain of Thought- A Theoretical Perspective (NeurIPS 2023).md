@@ -6,7 +6,8 @@ categories:
 tags:
   - NLP
   - NeurIPS 2023
-  - Persona-based Dialogue
+  - Chain-of-Thought
+  - Language Model
 ---
 
 요약: 생각의 체인(Chain-of-Thought, CoT) 프롬프트가 대규모 언어 모델(LLM)의 수학 및 추론 과제 성능을 크게 향상시키는 방법과 이론적 기초를 탐구한 연구로, CoT를 사용하여 결정 문제와 기초 수학 문제 해결 능력을 분석하였다.
