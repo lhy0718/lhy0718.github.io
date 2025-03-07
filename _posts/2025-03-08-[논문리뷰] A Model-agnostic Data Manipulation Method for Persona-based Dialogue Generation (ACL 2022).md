@@ -15,6 +15,8 @@ tags:
 
 # 1 Introduction
 
+<img width="415" alt="image" src="https://github.com/user-attachments/assets/37b94ba9-526a-44bf-9cc2-0e6f72fb2fd5" />
+
 - 대화 에이전트를 구축하려면 일관성 있는 페르소나로 응답을 생성하는 능력이 중요함.
 - 최근 몇 년 동안 대화 생성 모델에 명시적인 페르소나를 도입하는 것에 대한 관심이 증가함 (Song et al., 2019; Wolf et al., 2019).
 - 페르소나는 일반적으로 프로필과 개인 배경 사실로 구성된 텍스트.
@@ -69,6 +71,10 @@ tags:
 
 # 3 Our Data Manipulation Method
 
+<img width="844" alt="image" src="https://github.com/user-attachments/assets/a9361242-513f-4b1e-a0b7-c597d3086596" />
+
+<img width="409" alt="image" src="https://github.com/user-attachments/assets/90b34b7c-4bd1-41d2-b287-a87b702f48f3" />
+
 - **훈련 샘플 정의**
   - 페르소나 설명 문장 L (P), 대화 기록 H (M), 정답 R으로 구성
   - 훈련 데이터셋 D = {(P, H, R)}로 표기
@@ -120,6 +126,9 @@ tags:
   - **엔트로피 필터(Filter)**: 일반적인 응답을 제거.
 
 ## 4.2 결과
+
+<img width="838" alt="image" src="https://github.com/user-attachments/assets/f156d17e-ac48-4517-bb8e-e6ab97e50015" />
+
 - 두 기본 모델에 대한 다양한 데이터 조작 방법에 대한 결과를 테이블로 보고.
 - D3 방법이 인간 평가에서 다른 방법들에 비해 유의미하게 더 우수한 성능을 발휘.
 
