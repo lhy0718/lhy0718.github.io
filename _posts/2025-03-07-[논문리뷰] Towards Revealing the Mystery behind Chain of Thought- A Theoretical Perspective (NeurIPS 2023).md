@@ -53,6 +53,9 @@ tags:
 # 2 Preliminary
 
 - **Transformer 설명**
+
+  <img width="615" alt="image" src="https://github.com/user-attachments/assets/8a0d45a6-6edb-46f4-91f4-5ed37034ef7d" />
+
   - 오토회귀(autoregressive) Transformer는 순차적 입력 토큰을 처리하고 후속 위치의 토큰을 생성하기 위해 설계된 신경망 아키텍처.
   - 입력 시퀀스 `s`의 길이 `n`에 대해 Transformer는 다음과 같은 방식으로 작동.
   
@@ -91,6 +94,9 @@ tags:
 - **LLM의 수학 능력**: Transformer 기반의 큰 언어 모델(LLM)은 여러 수학적 작업에서 놀라운 능력을 보여주고 있음.
   
 - **문제 정의**:
+
+  <img width="322" alt="image" src="https://github.com/user-attachments/assets/262b0f35-a329-4099-ae8a-159750722ee6" />
+
   - **산술 표현**: 입력으로 주어진 산술 표현을 평가하고 결과를 생성. CoT를 사용한 자연스러운 해결 방법이 존재.
   - **선형 방정식**: 선형 방정식의 집합에서 변수의 값을 출력. Gaussian 소거법을 통해 각 단계에서 특정 변수를 제거하는 방식으로 해결 가능.
 
@@ -127,9 +133,19 @@ tags:
 ### DP 알고리즘의 구성 요소
 1. **상태 공간 I**: 각 하위 문제를 나타내는 지표.
 2. **변환 함수 T**: 하위 문제의 연관성을 정의하고 어떻게 해결되는지를 나타냄.
-3. **집계 함수 A**: 모든 결과를 결합하여 최종 답을 얻는 함수.
+
+   <img width="612" alt="image" src="https://github.com/user-attachments/assets/f646e0d2-6e03-4559-a940-d8a4fea18023" />
+
+   <img width="612" alt="image" src="https://github.com/user-attachments/assets/2df1df85-6556-4918-8b16-ade5f0771877" />
+
+4. **집계 함수 A**: 모든 결과를 결합하여 최종 답을 얻는 함수.
+
+   <img width="612" alt="image" src="https://github.com/user-attachments/assets/b220d596-8618-4778-b6b2-2d51a538ac03" />
 
 ### DP의 예시 문제
+
+<img width="614" alt="image" src="https://github.com/user-attachments/assets/3846b769-6ec6-42be-942e-d17e6bd21db7" />
+
 - 가장 긴 증가 부분 수열(LIS)과 편집 거리(ED)는 DP 문제로 유명.
 - 각 문제에 대해 상태 공간, 변환 함수, 집계 함수 설명.
 
@@ -183,6 +199,9 @@ tags:
 
 ## 5.2 실험 결과
 - **주요 결과**:
+
+  <img width="612" alt="image" src="https://github.com/user-attachments/assets/7943f78a-32e5-4436-a817-13000b7e735a" />
+
   - CoT로 훈련된 3층 Transformers는 모든 작업에서 거의 완벽한 성능을 발휘.
   - 직접 데이터셋으로 훈련된 모델은 성능 저조, 특히 방정식 작업에서.
   - 깊이를 증가시키면 직접 예측 성능이 개선되지만 입력 길이가 증가할수록 성능이 급격히 떨어짐.
