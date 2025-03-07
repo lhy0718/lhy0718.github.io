@@ -79,6 +79,8 @@ tags:
 
 # 3 Methodology
 
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/b39cb206-fdbd-4638-b324-30f972d2f423" />
+
 - TopicGPT는 두 가지 주요 단계로 구성됨:
   - 주제 생성 (§3.1)
   - 주제 할당 (§3.2)
@@ -319,6 +321,14 @@ tags:
 ---
 
 # 5.1 TopicGPT is strongly aligned to ground truth labels
+
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/9f26c2d4-30d1-450e-a67e-a1542576f7e5" />
+
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/78d7db56-5a85-427c-955d-43deaf9e8592" />
+
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/b986a9cf-43a0-4862-92dd-2c9bef9c2b16" />
+
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/f81fbd95-3d84-4819-8390-17e5ba5d2c86" />
 
 - **강력한 주제 일치**: TopicGPT는 사람의 주석으로 부터 주제와의 일치도가 매우 높음.
 - **기초 모델과 비교**: LDA, SeededLDA, BERTopic와 같은 세 가지 기초 모델과 비교했을 때 TopicGPT의 성능이 상회함.
