@@ -324,12 +324,6 @@ tags:
 
 <img width="724" alt="image" src="https://github.com/user-attachments/assets/9f26c2d4-30d1-450e-a67e-a1542576f7e5" />
 
-<img width="724" alt="image" src="https://github.com/user-attachments/assets/78d7db56-5a85-427c-955d-43deaf9e8592" />
-
-<img width="724" alt="image" src="https://github.com/user-attachments/assets/b986a9cf-43a0-4862-92dd-2c9bef9c2b16" />
-
-<img width="724" alt="image" src="https://github.com/user-attachments/assets/f81fbd95-3d84-4819-8390-17e5ba5d2c86" />
-
 - **강력한 주제 일치**: TopicGPT는 사람의 주석으로 부터 주제와의 일치도가 매우 높음.
 - **기초 모델과 비교**: LDA, SeededLDA, BERTopic와 같은 세 가지 기초 모델과 비교했을 때 TopicGPT의 성능이 상회함.
   - 예를 들어, TopicGPT는 Wiki와 Bills 데이터셋에서 각각 0.74 및 0.57의 조화 순도(P1) 점수를 기록하였고, 이와 비교해 LDA는 0.64 및 0.52를 기록함.
@@ -344,6 +338,8 @@ tags:
 ---
 
 # 5.2 TopicGPT is stable
+
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/78d7db56-5a85-427c-955d-43deaf9e8592" />
 
 - **TopicGPT 성능:**
   - Bills 데이터 세트에서 TopicGPT는 모든 수정된 실험 설정에서 Ground truth와 유사한 주제 정렬을 생성.
@@ -374,6 +370,10 @@ tags:
   - 그러나 Bills 데이터 세트에서 정제 과정을 통해 누락된 주제가 1개 증가; 이는 드물게 나타나는 “문화”와 관련된 주제임.
 
 ---
+
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/b986a9cf-43a0-4862-92dd-2c9bef9c2b16" />
+
+<img width="724" alt="image" src="https://github.com/user-attachments/assets/f81fbd95-3d84-4819-8390-17e5ba5d2c86" />
 
 # 5.3 TopicGPT topics are semantically close to ground truth
 
