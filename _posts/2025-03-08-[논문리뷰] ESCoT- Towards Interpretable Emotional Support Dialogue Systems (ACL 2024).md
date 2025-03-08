@@ -6,8 +6,8 @@ categories:
 tags:
   - NLP
   - ACL 2024
-  - Persona-based Dialogue
   - Empathetic Dialogue Systems
+  - Dataset Construction
 ---
 
 요약: 이 논문은 감정 지원 대화 시스템의 해석 가능성을 강화하기 위해 Emotion-Focused and Strategy-Driven Chain-of-Thought(ESCoT)라는 새로운 응답 생성 방안을 제안하고, 이를 통해 감정 식별 및 조절 과정을 모방하여 대화 데이터셋을 구축하고 검증하는 연구 내용을 다룬다.
