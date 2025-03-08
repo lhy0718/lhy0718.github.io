@@ -1,6 +1,6 @@
 ---
 title: "[논문리뷰] DialogBench: Evaluating LLMs as Human-like Dialogue Systems (NAACL 2024)"
-date: 2025-03-08 00:00:00 +0900
+date: 2025-03-08 20:00:00 +0900
 categories:
   - Paper Review
 tags:
@@ -67,27 +67,11 @@ tags:
 
 # 3 DialogBench
 
-- 이 섹션의 목표는 GPT-4를 사용하여 평가 인스턴스를 생성하는 것.
-  
-## 3.1 대화 작업 선택
-- 다양한 대화 작업을 선정하여 평가 인스턴스 생성에 활용.
-
-## 3.2 평가 인스턴스 유형 결정
-- 생성 질문 또는 다중 선택 질문과 같은 평가 인스턴스 유형을 결정하여 LLM의 품질을 효과적으로 반영. 
-
-## 3.3 기본 프롬프트 설계
-- GPT-4에 입력할 기본 프롬프트 설계.
-
-## 3.4 프롬프트 편향 및 해결책
-- 기본 프롬프트의 편향을 기술하고, 이에 대한 해결책 소개.
-- 고품질 데이터를 선별하기 위한 필터링 메커니즘 구축.
-
-- DialogBench의 전체 구조는 그림 1에 설명되어 있음. 
-- 12개의 대화 작업을 통해 고품질 평가 인스턴스를 생성하는 방식 제시.
-
----
+<img width="897" alt="image" src="https://github.com/user-attachments/assets/dea526cf-c08f-47d0-90a5-ec4b9900a1f5" />
 
 # 3.1 Task Selection
+
+<img width="390" alt="image" src="https://github.com/user-attachments/assets/70e87c9a-5bc5-476d-9057-855bb5e5ea3e" />
 
 - LLM(대형 언어 모델)의 인간 유사성을 평가하기 위한 주요 차원:
   - 일관성 (coherence)
@@ -109,6 +93,8 @@ tags:
 
 # 3.2 Question Setting
 
+<img width="463" alt="image" src="https://github.com/user-attachments/assets/c7064a93-c9fe-4a21-bd4a-388d376d8561" />
+
 - 선택된 과제는 이해 과제와 생성 과제를 포함.
 - 각 과제에 따른 평가 지표가 다름.
 - 평가를 통합하기 위해 기존 벤치마크를 따름 (Li et al., 2023a; Hendrycks et al., 2021; Huang et al., 2023).
@@ -119,6 +105,8 @@ tags:
 ---
 
 # 3.3 Prompt Formatting
+
+<img width="941" alt="image" src="https://github.com/user-attachments/assets/7814beae-b3c7-42d0-9b4b-f904645b2398" />
 
 - 잘 설계된 프롬프트는 높은 품질의 평가 인스턴스를 생성하는 데 도움을 줌.
 - Zhao et al. (2023a)의 프롬프트 디자인에 따라 프롬프트를 생성함.
@@ -203,6 +191,10 @@ tags:
 
 # 5 Main Results
 
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/46562f5e-15a6-43ef-9694-78cd23d71431" />
+
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/3f98789e-a977-4dc8-8676-bfa9601f49a1" />
+
 - **총 점수 및 작업별 점수**  
   - 영어 DialogBench에서의 모든 LLM의 전체 점수가 중국 DialogBench보다 약간 높은 것으로 나타남.
   - 각 작업에 대한 LLM의 성능은 영어와 중국 DialogBench에서 동일한 경향을 보임.
@@ -242,17 +234,23 @@ tags:
 
 # 6 Further Discussion
 
-- **LLMs의 성능 분석 및 조정**  
+- **LLMs의 성능 분석 및 조정**
+
+  <img width="460" alt="image" src="https://github.com/user-attachments/assets/327cc4c7-0f9a-4bc6-b6eb-dabef79dacaa" />
+
   - 다양한 도메인에서 LLM의 성능을 검토하고, 대화 스타일 조정 및 필터링 메커니즘 도입의 효과를 검증함.
 
-- **다른 도메인에서의 성능**  
+- **다른 도메인에서의 성능**
   - 각 도메인에서의 모든 감독된 지시 조정 LLM의 평균 정확도를 계산하여 결론 도출.
   - 일상 생활에서의 평균 성능은 전문 지식에 비해 낮음 (예: 52.14% 대 56.07%).
   - 이는 LLM의 현재 역할이 보조 AI로 설정되어 있어, 다양한 전문 지식을 잘 숙지해야 함.
   - 인간의 일상적인 정보가 LLM의 미세 조정 시 과소평가되고 있을 가능성 제기.
   - LLM의 인간과 같은 대화 시스템 개선을 위해 더 많은 일상 대화를 도입해야 함.
 
-- **Ablation Study**  
+- **Ablation Study**
+
+  <img width="947" alt="image" src="https://github.com/user-attachments/assets/f4595041-5748-4270-aac2-9529a1effe2a" />
+
   - 구성 요소의 효과를 검증하기 위한 실험 시행:
     1. 프롬프트에서 스타일 편향 완화 설명 삭제 (-Styles).
     2. 필터 메커니즘 삭제 (-Filter).
