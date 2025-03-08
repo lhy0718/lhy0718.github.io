@@ -16,6 +16,8 @@ tags:
 
 # 1 Introduction
 
+<img width="493" alt="image" src="https://github.com/user-attachments/assets/2ae0a0a2-de16-4f34-8558-591ed6a2b283" />
+
 - **정서적 지원의 개념**: 
   - 상황에 따라 감정, 관심, 애정 등을 표현.
   - 스트레스를 받거나 불안한 사람에게 특히 중요 (Burleson, 2003; Albrecht and Adelman, 1987; Cutrona and Russell, 1987).
@@ -84,6 +86,8 @@ tags:
 
 # 3 ESD-CoT Dataset Construction
 
+<img width="493" alt="image" src="https://github.com/user-attachments/assets/c7053d19-3adc-445d-82a6-823fdd129f7d" />
+
 - 감정 지원 대화 데이터셋의 수작업 구축은 높은 전문 지식 요구로 인해 매우 비용이 많이 듦.
 - 인간의 위로 방식 모방: 감정 중심 및 전략 중심의 사슬 사고(ESCoT) 방안 제안.
 - 첫 번째 감정 지원 대화와 CoT 데이터셋(ESD-CoT) 구축.
@@ -110,11 +114,21 @@ tags:
 
 ### 3.1.3 대화 생성
 
+<img width="561" alt="image" src="https://github.com/user-attachments/assets/88faca9c-09d8-4cd5-9d08-4892167c2ef0" />
+
 - 상황과 강화된 전략을 기반으로 정서 지원 대화 생성.
 - ChatGPT에 적합한 대화 포맷 소개 후, 생성된 상황을 활용하여 대화 생성.
 - 생선된 대화의 질과 다양성을 보장하기 위해 필터링 및 후처리를 통해 고품질 데이터를 확보.
 
 ### 3.1.4 ESD 통계
+
+<img width="705" alt="image" src="https://github.com/user-attachments/assets/784f8a39-11e1-4d21-bd90-05107b79d6ce" />
+
+<img width="556" alt="image" src="https://github.com/user-attachments/assets/97c192ba-feb4-4f81-9510-77cf1b68416a" />
+
+<img width="978" alt="image" src="https://github.com/user-attachments/assets/764c18b2-a4f8-4618-9777-1d014747e850" />
+
+<img width="568" alt="image" src="https://github.com/user-attachments/assets/4ada5af6-dfc7-4f93-938a-7efc9ef611a7" />
 
 - ESD 데이터셋의 통계 정보 제공: ESConv와 비교하여 대화 수, 평균 턴 수, 길이 등의 다양한 지표에서 ESD가 더 큼.
 
@@ -135,6 +149,12 @@ tags:
 
 ### 3.2.3 ESD-CoT 통계
 
+<img width="357" alt="image" src="https://github.com/user-attachments/assets/1ffceaf4-cf8d-4c43-b5fc-50cf96606bd5" />
+
+<img width="394" alt="image" src="https://github.com/user-attachments/assets/a28cb6d5-effe-45a4-a1db-d69b9d228963" />
+
+<img width="787" alt="image" src="https://github.com/user-attachments/assets/10bf78b1-dd00-4784-a9b2-524b6ca9e6c2" />
+
 - ESD-CoT의 통계 제공: 대화 턴 수 및 길이가 길며, 정서 표현과 개인 평가에서 자세한 정보 제공.
 - 전략의 배분에 대한 통계 및 각 전략이 최소 100개 샘플을 보유하도록 보장.
 
@@ -145,6 +165,8 @@ tags:
 ---
 
 # 4 Experiments
+
+<img width="404" alt="image" src="https://github.com/user-attachments/assets/bb9c419a-5bd0-46c2-b77b-349667ea99ae" />
 
 - 데이터셋을 7:1:2 비율로 훈련, 검증 및 테스트 세트로 분할
 - 다양한 사전 훈련된 언어 모델을 대화 응답의 백본 모델로 평가
@@ -158,6 +180,9 @@ tags:
   - 이는 더 큰 매개변수, 데이터, 인간 피드백으로 훈련된 모델 덕분
   - 감정 지원을 위한 해석 가능성에 중요한 역할
 - 여러 차원에서 모델 생성을 비교하기 위한 아블레이션 연구 실시
+
+  <img width="819" alt="image" src="https://github.com/user-attachments/assets/4d0cbf2f-5f4b-46fe-8b5d-ca53ba70bada" />
+  
   - 전체 체인을 통합한 경우 D-1, D-2에서 최상의 성능 달성
   - 감정 이해 및 감정 식별 요소 제거 시 전략 일관성 감소
 - 인간 평가 결과, 전체 체인이 가장 높은 점수를 기록하며 해석 가능성과 응답의 일관성, 정보성, 공감성을 향상시킴
