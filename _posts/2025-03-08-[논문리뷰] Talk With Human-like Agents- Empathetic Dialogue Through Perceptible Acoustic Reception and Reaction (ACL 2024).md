@@ -6,7 +6,9 @@ categories:
 tags:
   - NLP
   - ACL 2024
-  - Persona-based Dialogue
+  - Speech
+  - Multimodal
+  - Empathetic Dialogue Systems
 ---
 
 요약: 이 논문은 음성 인식을 통합하여 인간 의사소통의 뉘앙스를 이해하는 다중 모달 대화 시스템 'PerceptiveAgent'를 제안하며, 이를 통해 화자의 진정한 의도를 더 잘 파악하고 공감적인 반응을 생성하는 방법을 다룹니다.
@@ -14,6 +16,8 @@ tags:
 ---
 
 # 1 Introduction
+
+<img width="531" alt="image" src="https://github.com/user-attachments/assets/a06cd86c-5b82-4e11-8d42-669a74713a68" />
 
 - 인공지능(AI) 에이전트는 인간과 유사한 지능과 기능을 복제하기 위해 설계된 엔티티로, AI 시스템의 필수 구성 요소임.
 - 이상적인 에이전트는 환경을 감지하고, 정보에 기반한 결정을 내리며, 사용자나 상황에 대응하여 행동해야 함.
@@ -67,6 +71,8 @@ tags:
 
 # 3 Methods
 
+<img width="822" alt="image" src="https://github.com/user-attachments/assets/8a2cb9ad-0624-449b-8800-8444e0241889" />
+
 - **PerceptiveAgent**: 다중 모달 대화 시스템으로, 오디오 모달리티 인식 및 공감적인 음성 생성을 수행.
   - 자연어에서 표현된 운율 정보를 통합하여 기능을 구현.
 
@@ -116,7 +122,11 @@ tags:
     - T2U 모델: Transformer 구조, 4개의 인코더, 디코더 레이어, 4개의 주의 헤드  
     - 모든 실험은 NVIDIA GeForce RTX 4090 GPU 4대에서 수행  
 
-- **평가**  
+- **평가**
+
+  <img width="405" alt="image" src="https://github.com/user-attachments/assets/e3fd5057-a6e4-4265-8643-4cc4bfe0f0d9" />
+
+
   - **Speech-GPT3.5**: 대화 시스템의 기초 모델로, 오직 언어 정보에 중점을 두어 GPT-3.5-Turbo로 대화 맥락 이해  
   - **지표**  
     - 인지적 공감 및 정서적 공감을 평가: 
@@ -129,12 +139,24 @@ tags:
 
 - **결과 분석**  
   - **PerceptiveAgent**: 전체 성능이 인지적 및 정서적 공감에서 Speech-GPT3.5보다 우수  
-    - 생성된 답변이 화자의 의도를 더 정확히 포착하는 경향  
-  - **Speech Captioner**: 성별, 감정, 음조 인식에서 높은 F1-score  
-    - 성별에 따른 성능 차이 관찰됨, 남성과 여성의 예측 정확성 차이  
-  - **MSMA-Synthesizer**: 감정과 프라소디 보존에서 높은 정확도를 기록  
+    - 생성된 답변이 화자의 의도를 더 정확히 포착하는 경향
+      
+    <img width="829" alt="image" src="https://github.com/user-attachments/assets/0fa66075-547a-4ab2-994d-65e0496b4134" />
+  
+  - **Speech Captioner**: 성별, 감정, 음조 인식에서 높은 F1-score
+ 
+    <img width="829" alt="image" src="https://github.com/user-attachments/assets/290f3f11-6943-4790-8f95-5296e842a871" />
+    
+    - 성별에 따른 성능 차이 관찰됨, 남성과 여성의 예측 정확성 차이
+  - **MSMA-Synthesizer**: 감정과 프라소디 보존에서 높은 정확도를 기록
+
+    <img width="402" alt="image" src="https://github.com/user-attachments/assets/cf3ae3ca-9283-47c4-bbb6-60388118da33" />
+
     - 여러 속성 통합이 감정적으로 표현력 있는 오디오 생성에 효과적  
-  - **ABI Study (Ablation Study)**:  
+  - **ABI Study (Ablation Study)**:
+ 
+    <img width="402" alt="image" src="https://github.com/user-attachments/assets/63c0a8a3-5470-4e8d-8fe2-94b3a87ad491" />
+
     - 자막의 효과성: 자막이 없는 시스템보다 성능 향상  
     - 스타일 요소의 효과성: 기본 스타일 갖춘 모델이 가장 높은 성능 기록
 
