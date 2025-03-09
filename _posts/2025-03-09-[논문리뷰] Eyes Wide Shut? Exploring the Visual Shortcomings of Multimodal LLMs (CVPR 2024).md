@@ -15,6 +15,8 @@ tags:
 
 # 1. Introduction
 
+<img width="885" alt="image" src="https://github.com/user-attachments/assets/271db980-8a40-41bf-9303-69c5140fbb67" />
+
 - 최근 다중 모드 대형 언어 모델(MLLM; Multimodal Large Language Models)이 급속히 발전하고 있음.
 - MLLM은 이미지와 대형 언어 모델(LLM; Large Language Models)을 통합하여 이미지 이해, 시각 질문 응답, 지시 따르기와 같은 과제에서 뛰어난 능력을 발휘함.
 - 특히, 최근 발표된 GPT-4V(ision)가 이전보다 높은 성능을 기록함.
@@ -55,6 +57,8 @@ tags:
 
 # 2.1. Finding CLIP-blind Pairs
 
+<img width="885" alt="image" src="https://github.com/user-attachments/assets/a08aa445-3a8d-4027-8d4b-9a712154cc54" />
+
 - CLIP 비전 인코더가 "적절히" 인코딩하지 못하는 인스턴스(이미지)를 직접 찾는 것은 어려움.
 - 이 문제를 해결하기 위해, Tong et al.의 아이디어를 확장하여 비전 모델에서 블라인드 쌍을 자동으로 찾아내는 방법 제안.
 - 기본 원리는:
@@ -75,6 +79,8 @@ tags:
 
 # 2.2. Designing Benchmark from CLIP-blind Pairs
 
+<img width="851" alt="image" src="https://github.com/user-attachments/assets/8283fd7b-4af2-4dec-bfde-b98fdb094604" />
+
 - MMVP(다중모달 시각 패턴) 벤치마크 및 VQA(시각 질문 응답) 벤치마크를 소개
 - 수집된 CLIP-블라인드 쌍을 활용하여 150 쌍의 이미지와 300개의 질문을 신중하게 설계
 - 각 CLIP-블라인드 쌍의 이미지에서 CLIP 비전 인코더가 간과하는 시각적 세부사항을 수동으로 파악
@@ -90,6 +96,9 @@ tags:
   - 각 질문은 독립적으로 쿼리하여 채팅 기록의 편향 제거
 
 - 사용자를 대상으로 한 연구 평가
+
+  <img width="415" alt="image" src="https://github.com/user-attachments/assets/ea3d438e-d719-44da-8603-d44dbf138e7c" />
+
   - 300개의 질문을 랜덤 순서로 제시
   - 이미지 쌍에 대해 두 질문이 정확히 응답된 경우를 올바른 것으로 간주
   - 인간 참여자들은 평균 95.7%의 질문을 정확히 답변
@@ -162,6 +171,10 @@ tags:
 
 # 3.2. The MMVP-VLM Benchmark
 
+<img width="847" alt="image" src="https://github.com/user-attachments/assets/6d869af4-0714-4459-9e3b-e2119a4be6f7" />
+
+<img width="847" alt="image" src="https://github.com/user-attachments/assets/a61bc581-351b-4b28-bf3d-c5d592da2f67" />
+
 - CLIP 기반 모델은 첫 번째 논문 발표 이후 빠르게 발전함.
 - 최근 CLIP 모델들이 여전히 시각적 패턴에 어려움을 겪는지 테스트하기 위해 MMVP-VLM이라는 새로운 벤치마크를 도입.
 - MMVP 벤치마크에서 질문의 하위 집합을 더 간단한 언어 설명으로 정제하고, 이를 시각적 패턴으로 분류.
@@ -178,6 +191,8 @@ tags:
 
 # 3.3. How CLIP’s Errors Affect MLLMs
 
+<img width="421" alt="image" src="https://github.com/user-attachments/assets/e2388f52-a97c-4ec9-b769-20177673033d" />
+
 - CLIP 모델이 어려움을 겪는 시각적 패턴을 분석한 후, CLIP와 멀티모달 언어 모델(MLLM) 간의 성능 상관관계에 대한 질문 제기.
 - MLLM의 성능을 시각적 패턴에 따라 분류하여 평가함.
 - CLIP이 특정 시각적 패턴(예: ‘방향’)에서 낮은 성능을 보일 경우, MLLM도 유사한 성능 저하를 보임.
@@ -188,6 +203,8 @@ tags:
 ---
 
 # 4. Mixture-of-Features (MoF) for MLLM
+
+<img width="853" alt="image" src="https://github.com/user-attachments/assets/6fdabe2e-2f49-417a-b1e9-4477ef0194e9" />
 
 - **배경**: 이전 섹션에서 논의한 내용을 바탕으로, 오픈소스 MLLM의 시각적 한계가 CLIP 비전 인코더에서 비롯된다면, 더 유능한 비전 인코더를 어떻게 구축할 수 있을지에 대한 질문이 생김.
   
@@ -212,6 +229,8 @@ tags:
 ---
 
 # 4.2. Additive MoF
+
+<img width="417" alt="image" src="https://github.com/user-attachments/assets/8a7ba795-01fd-4572-9efb-778714dc6863" />
 
 - MLLM에 사전 훈련된 DINOv2 인코더를 추가하고 CLIP 인코더와 혼합.
 - 조정 계수 α를 사용하여 CLIP 특징의 비율을 제어하고, 1 - α를 통해 DINOv2 특징의 양을 제어.
@@ -239,6 +258,8 @@ tags:
 ---
 
 # 4.3. Interleaved MoF
+
+<img width="417" alt="image" src="https://github.com/user-attachments/assets/282fbf8c-f68e-494b-bceb-55b086009023" />
 
 - **제안 배경**:
   - Interleaved MoF는 CLIP과 DINOv2 임베딩의 장점을 활용하여 이미지 표현을 향상시키기 위해 제안됨.
