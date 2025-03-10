@@ -47,6 +47,8 @@ tags:
 
 # 3 Model Architecture
 
+<img width="411" alt="image" src="https://github.com/user-attachments/assets/5ef8238f-fce3-4c11-ac2a-d1d1f04595cd" />
+
 - 대부분의 경쟁적인 신경 시퀀스 변환 모델은 인코더-디코더 구조를 가지고 있음.
 - 인코더는 입력 시퀀스의 기호 표현 $$(x_1,...,x_n)$$을 연속 표현 $$z = (z_1,...,z_n)$$으로 매핑함.
 - z를 기반으로 디코더는 출력 시퀀스 $$(y_1,...,y_m)$$의 기호를 하나씩 생성함.
@@ -97,6 +99,8 @@ tags:
 ---
 
 # 3.2.1 Scaled Dot-Product Attention
+
+<img width="714" alt="image" src="https://github.com/user-attachments/assets/bca2f0e5-2216-4a6a-8636-731b26677e4f" />
 
 - **정의**: "Scaled Dot-Product Attention"이라고 불리는 주의 메커니즘.
   
@@ -227,6 +231,8 @@ tags:
 
 # 4 Why Self-Attention
 
+<img width="714" alt="image" src="https://github.com/user-attachments/assets/9b9a220e-2a84-47dc-a147-caae4e86628e" />
+
 - **비교의 배경**
   - Self-attention, recurrent, 및 convolutional layer의 다양한 측면을 비교.
   - 한 변량 길이 시퀀스를 다른 같은 길이 시퀀스로 매핑하는 작업을 다룸.
@@ -335,6 +341,8 @@ tags:
 
 # 6 Results
 
+<img width="714" alt="image" src="https://github.com/user-attachments/assets/4019a143-14b2-4fc9-b019-289b8bce85b4" />
+
 - 실험 결과:
   - 다양한 조건 하에서 다양한 결과를 도출함.
   - 각 메트릭에 대한 성능이 정량화됨.
@@ -358,6 +366,8 @@ tags:
 ---
 
 # 6.1 Machine Translation
+
+<img width="714" alt="image" src="https://github.com/user-attachments/assets/aac2470d-385d-41fb-8aa6-95311fa35b43" />
 
 - WMT 2014 영어-독일어 번역 작업:
   - 큰 변환기 모델(Transformer (big))이 이전의 최고 모델보다 2.0 BLEU 포인트 이상 능가
@@ -410,6 +420,8 @@ tags:
 ---
 
 # 6.3 English Constituency Parsing
+
+<img width="714" alt="image" src="https://github.com/user-attachments/assets/c3a876fb-5a29-4c53-bcc0-d5336ce6d596" />
 
 - **목적**: Transformer 모델이 다른 작업에 일반화 가능한지 평가하기 위해 영어 구성 구문 분석 실험 수행
 - **과제의 도전 과제**:
