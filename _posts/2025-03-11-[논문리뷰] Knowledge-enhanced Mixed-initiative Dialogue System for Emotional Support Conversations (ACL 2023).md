@@ -82,19 +82,19 @@ tags:
     - 반영 (System Non-Initiative)
   - 각 발화는 튜플 형태로 주석 처리되어 분석됨: 
     $$ (r_i, t_i, v_i, e_i) $$
-    - $r_i$: 발화자 역할 (User(U), System(S))
-    - $t_i$: 주도성 유형 (Initiative(I), Non-Initiative(N))
-    - $v_i$: 원-핫 어휘 임베딩
-    - $e_i$: 감정 강도 수준 (1~5)
+    - $$r_i$$: 발화자 역할 (User(U), System(S))
+    - $$t_i$$: 주도성 유형 (Initiative(I), Non-Initiative(N))
+    - $$v_i$$: 원-핫 어휘 임베딩
+    - $$e_i$$: 감정 강도 수준 (1~5)
   - 감정 지원 메트릭스:
     - **Proactivity**: 시스템의 주도성 비율.
-      $$ Pro = \frac{\sum_{i=1}^{n} I(r_i = S)}{\sum_{i=1}^{n} I(r_i = S, t_i = I)} $$
+      $$ Pro = \frac{\sum_{i=1}^{n} \mathcal{I}(r_i = S, t_i = I)}{\sum_{i=1}^{n} \mathcal{I}(r_i = S)} $$
     - **Information**: 시스템이 대화에 제공하는 정보량.
-      $$ Inf = \frac{\sum_{i=1}^{n} \sum_{k=1}^{ \vert V \vert } I(r_i = S, v_{ik} = 1, \sum_{j=1}^{i-1} v_{jk} = 0)}{\sum_{i=1}^{n} I(r_i = S)} $$
+      $$ Inf = \frac{\sum_{i=1}^{n} \sum_{k=1}^{ \vert V \vert } \mathcal{I}(r_i = S, v_{ik} = 1, \sum_{j=1}^{i-1} v_{jk} = 0)}{\sum_{i=1}^{n} \mathcal{I}(r_i = S)} $$
     - **Repetition**: 사용자가 제시한 주제에 대한 시스템의 반복 정도.
-      $$ Rep = \frac{\sum_{i=1}^{n} \sum_{k=1}^{ \vert V \vert } I(r_i = S, v_{ik} = 1, \sum_{j=1}^{i-1} v_{jk}[r_j = U] > 0)}{\sum_{i=1}^{n} I(r_i = S)} $$
+      $$ Rep = \frac{\sum_{i=1}^{n} \sum_{k=1}^{ \vert V \vert } \mathcal{I}(r_i = S, v_{ik} = 1, \sum_{j=1}^{i-1} v_{jk}[r_j = U] > 0)}{\sum_{i=1}^{n} \mathcal{I}(r_i = S)} $$
     - **Relaxation**: 사용자의 감정 강도의 변화.
-      $$ Rel = \frac{1}{\sum_{i=1}^{n} I(r_i = S)} \sum_{i=1}^{n} Rel[r_i = S] $$
+      $$ Rel = \frac{1}{\sum_{i=1}^{n} \mathcal{I}(r_i = S)} \sum_{i=1}^{n} Rel[r_i = S] $$
     
 - **ESC에서 혼합 주도의 필요성 분석**
   - EMPATHETIC DIALOGUES(ED)와 EMOTIONAL SUPPORT CONVERSATIONS(ESC) 간의 상호작용 패턴 분석.
@@ -108,7 +108,7 @@ tags:
     3. 시스템이 혼합 주도 상호작용을 촉진하는 방법
     
 - **문제 정의**
-  - ESC 문제 정의: 대화 맥락 $$C = \{u_1, u_2, ..., u_t\}$$와 사용자의 문제 상황 $s$가 주어질 때, 목표는 타겟 응답 $r$을 생성하는 함수 $$p(r \vert C, s)$$를 추정하는 것.
+  - ESC 문제 정의: 대화 맥락 $$C = \{u_1, u_2, ..., u_t\}$$와 사용자의 문제 상황 $s$가 주어질 때, 목표는 타겟 응답 $$r$$을 생성하는 함수 $$p(r \vert C, s)$$를 추정하는 것.
   - 혼합 주도 감정 지원 대화 문제에 대한 세 가지 하위 작업 정의:
     1. 전략 예측
     2. 지식 선택
@@ -253,3 +253,10 @@ tags:
 - 방법은 저명한 정신 건강 지식 그래프에서 지식을 검색하며, 유해한 정보가 필터링될 수 있습니다.
 - 지식 강화 접근법은 응답 생성 과정에서의 임의성을 줄이고 긍정적인 응답으로의 안내를 제공합니다.
 - 안전하지 않은 사례의 발생을 방지하기 위해 감정 강도 예측 분석이 실제 심리학자로의 인계를 요청하는 경고 기제로 작동할 수 있습니다.
+
+---
+
+# 독자 의견
+
+- 본 논문은 인간과 챗봇이 함께 대화를 주도하는 혼합 주도 대화 시스템을 중요하게 생각함.
+- 
