@@ -5,6 +5,7 @@ categories:
   - Paper Review
 tags:
   - ACL 2023
+  - Empathetic Dialogue Systems
 ---
 
 요약: 본 연구는 감정 지원 대화에서 사용자와 시스템이 모두 주도권을 가지는 혼합 주도형 시스템에 대한 분석을 수행하고, 이를 위한 지식 강화 혼합 주도형 프레임워크(KEMI)를 제안하여 효과성을 입증한다.
