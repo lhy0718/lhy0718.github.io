@@ -14,6 +14,8 @@ tags:
 
 # 1 Introduction
 
+<img width="395" alt="image" src="https://github.com/user-attachments/assets/140c83e8-a716-4a4e-b22c-18fd07f9857d" />
+
 - 공감(empathy)은 인간의 감정 인식을 개선하고 인간화된 대화 시스템을 이루는 데 도움을 주는 바람직한 특성임.
 - 공감 대화 생성(empathy dialogue generation, EmpDG)은 대화에서 감정 표현을 인식하여 적절한 공감이 풍부한 응답을 생성하는 것을 목표로 함.
 - EmpDG는 여러 분야에서 사용자 경험과 만족도를 향상시키는 능력으로 인해 많은 관심을 받고 있음.
@@ -109,6 +111,8 @@ tags:
 ---
 
 # 3 Proposed Approach
+
+<img width="811" alt="image" src="https://github.com/user-attachments/assets/180c2b5d-4005-4e69-a375-aae42c19a086" />
 
 - 대화 맥락 $$U = [u_1, u_2, \ldots, u_m]$$의 m개의 발화가 주어짐.
 - 공감적 대화 생성은 다음의 공감적 응답 $$y$$를 감정 일관성과 정보적 표현으로 생성하는 것을 목표로 함.
@@ -368,6 +372,9 @@ tags:
   - 감정 상관 학습이 보다 관련성이 높은 감정 지침을 제공하여 인간적이고 공감이 가득한 응답을 생성하는 데 기여.
 
 - **하위 데이터셋 결과**
+
+  <img width="811" alt="image" src="https://github.com/user-attachments/assets/785ff7df-835f-4f2e-9fc9-a6da64e3d1f5" />
+
   - 단일 레이블 지도로 EmpDG를 사용할 때도 E-CORE가 공존 감정 학습에서 효과적임을 입증.
   - 다중 감정 주석 하위 데이터셋에서 다중 감정 학습 능력을 추가로 검증, Recall@k 지표 사용.
   - Tab.3에서 보여주는 결과는 E-CORE의 다중 감정 학습이 큰 우수성을 나타냄 (R@3에서 44.1% 향상, R@5에서 31.3% 향상).
@@ -396,6 +403,8 @@ tags:
 ---
 
 # 5.3 Case Study
+
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/1f8218fc-7ab2-4833-b02b-c227d58573c1" />
 
 - Fig. 1에서는 E-CORE의 능력이 서로 다른 공존 감정(두려움과 감사)을 함께 안내하는 모습을 보여줌
 - Tab. 5는 유사한 공존 감정에 대한 종합적인 질적 분석을 위한 사례를 제시
