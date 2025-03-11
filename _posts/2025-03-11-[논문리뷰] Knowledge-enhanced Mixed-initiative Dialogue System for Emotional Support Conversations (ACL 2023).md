@@ -13,6 +13,8 @@ tags:
 
 # 1 Introduction
 
+<img width="388" alt="image" src="https://github.com/user-attachments/assets/562aebd9-1687-4e13-9410-cabfcd875009" />
+
 - **배경**
   - Covid-19 회복 노력 중 감정적 지원이 중요함.
   - 팬데믹으로 인한 감정적 고통과 정신 건강 문제의 증가.
@@ -117,6 +119,8 @@ tags:
 ---
 
 # 4 Method
+
+<img width="795" alt="image" src="https://github.com/user-attachments/assets/ca00a384-e825-4646-883a-fa38dde7a049" />
 
 - KEMI 프레임워크는 외부 지식을 활용하여 혼합 주도 응답을 생성하는 것을 목표로 함
   - 구성 요소: 
