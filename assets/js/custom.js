@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   $(".taxonomy__section").hide()
   selected_id = window.location.href.split("#")[1]
+  document.getElementById(selected_id).scrollIntoView();
   $(".taxonomy__section").each(function () {
     if ($(this).attr("id") === selected_id) {
       $(this).show()
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.onhashchange = function () {
     selected_id = window.location.href.split("#")[1]
+    document.getElementById(selected_id).scrollIntoView();
     $(".taxonomy__section").hide()
     $(".taxonomy__section").each(function () {
         if ($(this).attr("id") === selected_id) {
