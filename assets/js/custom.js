@@ -14,13 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
   url = window.location.href
   if (url.includes("posts") || url.includes("categories") || url.includes("tags")) {
     $(".taxonomy__section").hide()
+    selected = $(this).find("a").attr("href").split("#")[1]
+    $(".taxonomy__section").each(function () {
+        if ($(this).attr("id") === selected) {
+          $(this).show()
+        }
+      }
+    )
   }
   for (i = 0; i < $(".taxonomy__index li").length; i++) {
      $(".taxonomy__index li")[i].onclick = function () {
-      year = $(this).find("a").attr("href").split("#")[1]
+      selected = $(this).find("a").attr("href").split("#")[1]
       $(".taxonomy__section").hide()
       $(".taxonomy__section").each(function () {
-        if ($(this).attr("id") === year) {
+        if ($(this).attr("id") === selected) {
           $(this).show()
         }
       })
