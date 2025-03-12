@@ -14,6 +14,8 @@ tags:
 
 # 1 Introduction
 
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/78c56a29-7d19-4323-bc79-e3508264b110" />
+
 - 거의 모든 인간은 정서적 고통을 경험하며, 이는 정신 장애가 없는 경우에도 발생할 수 있음.
 - 많은 사람들이 사회적 상호작용을 통해 감정적 지지(Emotional Support, ES)를 찾음 (Langford et al., 1997; Greene, 2003).
 - 그러나 가족과 친구로부터의 ES는 항상 제공되지 않음 (Webber and Mascari, 2018).
@@ -101,6 +103,8 @@ tags:
 
 # 4 Methodology
 
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/d567e502-d1af-4f01-bfde-69b19604c790" />
+
 - 제안된 시스템 Multi-ESC는 네 개의 모듈로 구성됨.
   - 대화 인코더: 대화 이력을 $$H_t$$로 변환하여 임베딩 $$H_t$$ 생성.
   - 사용자 상태 모델링 모듈: 사용자 상태 정보를 추출하여 임베딩 $$U_t$$ 생성.
@@ -113,6 +117,9 @@ tags:
 - 생성된 대화 이력 임베딩은 $$H_t \in \mathbb{R}^{N \times d_{emb}}$$.
 
 ## 4.2 사용자 상태 모델링
+
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/96b6cc93-0b93-40e7-bdaa-026b456fbc2a" />
+
 - 대화의 i번째 라운드에서 사용자의 상태 식별:
   - 감정 원인 $$c_i$$를 감정 원인 탐지기로 추출.
   - 대화 내용 $$x_i, y_i$$와 감정 원인 $$c_i$$를 특수 구분자 토큰과 함께 연결.
@@ -120,6 +127,9 @@ tags:
 - 감정 임베딩은 여러 감정 벡터로 구성, VAD 공간을 여러 하위 공간으로 나누어 생성.
 
 ## 4.3 전략 계획
+
+<img width="827" alt="image" src="https://github.com/user-attachments/assets/a84c864d-4356-4135-9a24-7eebf7a945fc" />
+
 - 전략 점수 함수는 대화 이력과 잠재적 사용자 피드백을 고려하여 특정 전략을 채택하도록 평가.
 - 작용; $$\hat{s}_t = \arg\max_{s_t \in S} F(s_t)$$
   - $$F(\cdot)$$는 전략 점수 함수.
@@ -162,6 +172,9 @@ tags:
   - 다양한 비율에 따른 MultiESC 변형 분석, 빔 크기를 증가시킬수록 전략 계획 성능이 향상됨.
 
 - **사례 연구**
+
+  <img width="394" alt="image" src="https://github.com/user-attachments/assets/672e12f7-7965-4977-8289-bd85ec159f8b" />
+
   - MultiESC의 응답은 배경과 더 일관되며, 두 기준 모델보다 공감적임.
   - "w/o strategy" 모델은 일반적이고 덜 매력적임. 
   - MultiESC는 대화 초반부터 사용자의 상황을 적극적으로 탐색하여 감정 지원을 제공하는 방안을 잘 따름.
