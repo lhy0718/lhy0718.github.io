@@ -11,17 +11,25 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   })
 
-  url = window.location.href
-  if (url.includes("posts") || url.includes("categories") || url.includes("tags")) {
+  $(".taxonomy__section").hide()
+  selected_id = window.location.href.split("#")[1]
+  $(".taxonomy__section").each(function () {
+    if ($(this).attr("id") === selected_id) {
+      $(this).show()
+    }
+  })
+
+  window.onhashchange = function () {
+    selected_id = window.location.href.split("#")[1]
     $(".taxonomy__section").hide()
-    selected = $(this).find("a").attr("href").split("#")[1]
     $(".taxonomy__section").each(function () {
-        if ($(this).attr("id") === selected) {
+        if ($(this).attr("id") === selected_id) {
           $(this).show()
         }
       }
     )
   }
+
   for (i = 0; i < $(".taxonomy__index li").length; i++) {
      $(".taxonomy__index li")[i].onclick = function () {
       selected = $(this).find("a").attr("href").split("#")[1]
