@@ -1,6 +1,6 @@
 ---
 title: "[논문리뷰] ESC-Eval- Evaluating Emotion Support Conversations in Large Language Models (EMNLP 2024)"
-date: 2025-03-12 00:00:00 +0900
+date: 2025-03-12 15:00:00 +0900
 categories:
   - Paper Review
 tags:
