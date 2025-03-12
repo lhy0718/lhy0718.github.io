@@ -48,6 +48,10 @@ tags:
 
 # 2 ESC-Eval
 
+<img width="801" alt="image" src="https://github.com/user-attachments/assets/2531bd00-1d4c-4541-993c-8319c6691439" />
+
+<img width="801" alt="image" src="https://github.com/user-attachments/assets/41c4d85c-5744-4b18-8403-b3948b9b7b34" />
+
 - ESC-Eval은 다양한 평가기준을 사용하여 언어 모델의 성능을 측정하는 방법론이다.
 - 여러 평가 지표들은 모델의 질과 사용자의 요구를 반영하기 위해 설계되었다.
 - 평가의 주요 항목들:
