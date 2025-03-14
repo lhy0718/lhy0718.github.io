@@ -1,4 +1,4 @@
----
+<img width="811" alt="image" src="https://github.com/user-attachments/assets/9a690b26-f562-4f50-b420-c49ca1574f9e" />---
 title: "[논문리뷰] Facilitating Multi-turn Emotional Support Conversation with Positive Emotion Elicitation- A Reinforcement Learning Approach (ACL 2023)"
 date: 2025-03-14 15:00:00 +0900
 categories:
@@ -13,6 +13,8 @@ tags:
 ---
 
 # 1 Introduction
+
+<img width="399" alt="image" src="https://github.com/user-attachments/assets/a374f1c7-6345-42ef-886e-88fa6013362f" />
 
 - 감정 지원(ES)은 정서적 고통에서 회복하고 정신 상태를 개선하기 위한 목적임 (Burleson, 2003).
 - 이는 사회적 상호작용에서 감정 지능의 한 형태로 나타남 (Heaney and Israel, 2008; Atoum and Al-Shoboul, 2018).
@@ -84,6 +86,8 @@ tags:
 ---
 
 # 4 Methodology
+
+<img width="811" alt="image" src="https://github.com/user-attachments/assets/788bb05d-5dac-4aaa-a50b-ca6b0fbf0db1" />
 
 - **모델 개요**
   - ourSUPPORTER는 대화 맥락을 입력으로 받아 상태 시퀀스를 구성.
@@ -158,6 +162,9 @@ tags:
     - MoEL, MIME, BlenderBot-Joint, MISC, GLHG, Bart-Joint, SUPPORTER 등 다양한 모델 사용.
   
 - **자동 평가**:
+
+  <img width="811" alt="image" src="https://github.com/user-attachments/assets/7a2f98e0-b34e-4da8-9463-a2988f0a9919" />
+
   - 사용된 척도: Perplexity (PPL), Bleu (B-n), Distinct (D-n).
   - 효과 측정:
     - ES 점수: 대화 수준(cES), 턴 수준(tES) 측정.
@@ -170,6 +177,9 @@ tags:
   - Warm Start와 Joint Training을 각각 실시한 결과, 두 방식의 효과를 분석.
 
 - **상호작용 인간 평가**:
+
+  <img width="811" alt="image" src="https://github.com/user-attachments/assets/f1765434-0b7b-41a4-8a84-d5995b429107" />
+
   - 100개의 부정적인 상황을 대상으로 3명의 작업자들이 모델들과 다회 대화 시뮬레이션.
   - 평가 항목: 유창성, 정보성, 일관성, 지지성, 전반적 선호도.
 
