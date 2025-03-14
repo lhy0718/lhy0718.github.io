@@ -1,4 +1,4 @@
-<img width="811" alt="image" src="https://github.com/user-attachments/assets/9a690b26-f562-4f50-b420-c49ca1574f9e" />---
+---
 title: "[논문리뷰] Facilitating Multi-turn Emotional Support Conversation with Positive Emotion Elicitation- A Reinforcement Learning Approach (ACL 2023)"
 date: 2025-03-14 15:00:00 +0900
 categories:
