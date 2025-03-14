@@ -16,6 +16,8 @@ tags:
 
 # 1 Introduction
 
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/8d89505c-07a2-4032-8f29-a5c59379796b" />
+
 - 감정 지원(ES)은 개인의 감정적 고통을 줄이고, 그들이 직면한 도전에 대해 이해하고 극복할 수 있도록 돕는 것을 목표로 함.
 - ES는 사용자와 상호작용하는 대화 시스템에 중요한 기능으로 훈련될 필요가 있음.
   - 사회적 상호작용, 정신 건강 지원, 고객 서비스 등 다양한 환경에서 활용됨.
@@ -33,6 +35,8 @@ tags:
 ---
 
 # 2 Related Work
+
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/a92f7581-6817-4931-88f5-f5df1daeaecc" />
 
 - **비전 기반 강화 학습 (Vision-based Reinforcement Learning)** 
   - 다양한 종류의 비전 기반 RL 알고리즘이 존재.
@@ -163,6 +167,8 @@ tags:
 ---
 
 # 3.2 ESC Framework
+
+<img width="817" alt="image" src="https://github.com/user-attachments/assets/db118214-c120-40cc-a1a1-291348d6afef" />
 
 - ESC 프레임워크는 감정적 지원 절차를 세 가지 단계로 구분하며, 각 단계에는 제안된 지원 전략이 포함됨.
 - 프레임워크는 Hill의 도움 기술 이론(2009)을 기반으로 하며, 대화 시스템 환경에 더 적합하도록 조정됨.
