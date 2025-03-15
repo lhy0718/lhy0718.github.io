@@ -1,6 +1,6 @@
 ---
 title: "[논문리뷰] SoulChat: Improving LLMs’ Empathy, Listening, and Comfort Abilities through Fine-tuning with Multi-turn Empathy Conversations (EMNLP 2023 Findings)"
-date: 2025-03-15 00:00:00 +0900
+date: 2025-03-15 16:20:00 +0900
 categories:
   - Paper Review
 tags:

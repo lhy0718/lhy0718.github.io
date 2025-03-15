@@ -1,6 +1,6 @@
 ---
 title: "[논문리뷰] Sentiment Analysis in the Era of Large Language Models- A Reality Check (NAACL 24 Findings)"
-date: 2025-03-15 00:00:00 +0900
+date: 2025-03-15 16:00:00 +0900
 categories:
   - Paper Review
 tags:
