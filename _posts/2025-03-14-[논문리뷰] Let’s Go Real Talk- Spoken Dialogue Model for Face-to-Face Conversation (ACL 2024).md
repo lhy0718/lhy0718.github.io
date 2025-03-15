@@ -67,6 +67,8 @@ tags:
 
 # 2.1 Spoken Dialogue Dataset
 
+<img width="691" alt="image" src="https://github.com/user-attachments/assets/21f362b2-ff06-469d-ace9-0fdbbbf9513e" />
+
 - 최근 몇 년간 음성 대화 데이터셋 개발이 인간 행동 이해 및 실제 대화를 모방하는 음성 대화 시스템 구축에 중요한 역할을 함.
 - 초기 음성 데이터셋은 감정 및 의도 분석에 중점을 두어 음성 대화 시스템의 기초를 마련함.
 - IEMOCAP (Busso et al., 2008) 및 MELD (Poria et al., 2018)은 대화의 감정적 동력을 연구하기 위해 오디오 및 비디오 녹음을 포함함.
@@ -170,6 +172,8 @@ tags:
 
 # 3.3 Post-Processing
 
+<img width="691" alt="image" src="https://github.com/user-attachments/assets/f93dd146-23a6-49e5-b3e6-bb9fb1e797ba" />
+
 - 데이터 정제를 위해 주석자를 통해 오디오-비쥬얼 기록에서 오디오와 비쥬얼 스트림 간의 불일치를 확인
 - 주석자가 시작 시간을 조정하여 불일치를 수동으로 수정
 - 오디오 또는 비쥬얼 스트림이 누락된 기록은 필터링
@@ -240,6 +244,8 @@ tags:
 
 # 4.2 Audio-Visual Spoken Dialogue Language Modeling
 
+<img width="817" alt="image" src="https://github.com/user-attachments/assets/07587d47-5d70-45a7-bcfc-45e76e6ecaf8" />
+
 - 오디오 및 시각 모달리티 통합:
   - 대화 시스템의 음성 내용 이해 개선
   - 시각적 단서(입술 움직임)가 소리 신호를 보완, 특히 소음 환경에서 성능 향상 (Afouras et al., 2018)
@@ -251,6 +257,8 @@ tags:
 - AV-HuBERT:
   - 오디오-비주얼 이해를 위한 최첨단 자가 지도 학습 프레임워크
   - 원시 오디오-비주얼 얼굴 비디오에서 이산 클러스터를 예측하여 훈련 (Hassid et al., 2023)
+
+<img width="402" alt="image" src="https://github.com/user-attachments/assets/4cbfb561-0b11-440f-9ee6-d2d55463f472" />
 
 - AV 음성 토큰:
   - 언어적 및 음소적 정보 추출, 가짜 텍스트로 간주하여 Audio-Visual Spoken Dialogue LM 훈련에 사용
@@ -454,6 +462,8 @@ tags:
 ---
 
 # 6.3 Audio and Visual Evaluation
+
+![Uploading image.png…]()
 
 - 오디오 및 비주얼 생성을 평가함.
 - 발표자 음성 유사성(SIM) 측면에서 제안된 방법이 캐스케이드 시스템 및 구어 대화 시스템보다 우수함.
