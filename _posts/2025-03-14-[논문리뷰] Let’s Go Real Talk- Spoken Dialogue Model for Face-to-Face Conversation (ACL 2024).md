@@ -6,6 +6,9 @@ categories:
 tags:
   - ACL 2024
   - Empathetic Dialogue Systems
+  - Multimodal
+  - Speech
+  - Dataset Construction
 ---
 
 요약: 이 논문에서는 음성 및 시각 정보를 처리하여 오디오-비주얼 대화를 생성하는 새로운 Face-to-Face 대화 모델과 340시간 분량의 대화 데이터로 구성된 MultiDialog 코퍼스를 소개합니다. 이를 통해 중간 텍스트 없이 아바타 챗봇 시스템의 개발에 대한 기초 작업을 제시합니다.
