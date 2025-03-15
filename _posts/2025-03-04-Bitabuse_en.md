@@ -7,7 +7,7 @@ tags:
   - NLP
   - Security
   - NAACL 2025 Findings
-  - Dataset
+  - Dataset Construction
 ---
 
 **Summary:** This study proposes the **BitAbuse** dataset, which comprises real phishing cases containing visually perturbed (VP) texts. The dataset aims to enhance the performance of language models and support adversarial attack defense research.
