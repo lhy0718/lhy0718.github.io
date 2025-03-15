@@ -5,7 +5,7 @@ categories:
   - Paper Review
 tags:
   - NAACL 2024 Findings
-  - Empathetic Dialogue Systems
+  - Sentiment Analysis
   - Benchmark
 ---
 
@@ -375,3 +375,10 @@ tags:
 - 다양한 감정 측면이나 형식에 초점을 맞춘 더 많은 작업을 포함하면 LLM의 강점과 한계를 더 잘 보여줄 수 있음.
 - 모든 데이터셋은 영어로 제공되며, 감정 현상은 표현되는 언어 및 문화적 배경과 밀접한 관련이 있음.
 - 다른 언어 또는 다국어 환경으로 연구를 확장하면 다양한 언어 및 문화적 맥락에서 LLM의 성능에 대한 포괄적인 이해를 얻을 수 있음.
+
+---
+
+# 독자 의견
+
+- 본 연구는 LLM의 감정 분석 능력을 평가하기 위한 SENTI EVAL 벤치마크를 제안함.
+- 본 연구로서 더 다양한 감정에 대한 분석이 가능해질 것임.
