@@ -7,7 +7,7 @@ tags:
   - NLP
   - Security
   - NAACL 2025 Findings
-  - Dataset
+  - Dataset Construction
 ---
 
 요약: 본 연구에서는 시각적으로 변형된 텍스트를 포함한 실제 피싱 사례로 구성된 BitAbuse 데이터셋을 제안하며, 이를 통해 언어 모델의 성능을 향상시키고 적대적 공격 방어 연구를 지원하고자 한다.
