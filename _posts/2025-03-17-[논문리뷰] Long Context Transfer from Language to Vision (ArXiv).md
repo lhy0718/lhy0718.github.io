@@ -5,6 +5,7 @@ categories:
   - Paper Review
 tags:
   - ArXiv
+  - Large Multimodal Models
 ---
 
 요약: 이 논문은 언어 모델의 컨텍스트 길이를 확장하여 기존의 대형 멀티모달 모델이 긴 비디오를 이해할 수 있도록 하는 방법을 제안하며, 이를 통해 LongVA라는 새로운 비디오 어시스턴트를 개발하여 2000프레임 이상의 비주얼 토큰을 처리할 수 있음을 보여줍니다.
