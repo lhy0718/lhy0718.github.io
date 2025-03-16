@@ -30,7 +30,7 @@ tags:
 - UniRes라는 통합 인코딩 방식 제안하여, 비디오를 확장된 이미지로 표현하고 이미지와 비디오 간의 역량 융합을 강화함.
   
 - V-NIAH라는 합성 비주얼 벤치마크를 생성하여, 긴 맥락에서 시각적 정보를 찾고 검색하는 LMMs의 능력을 평가함.
-- Long Video Assistant(롱V A)는 2000 프레임 또는 200K 이상의 시각적 토큰에서 시각적 정보를 정확하게 검색할 수 있는 능력을 보임.
+- Long Video Assistant는 2000 프레임 또는 200K 이상의 시각적 토큰에서 시각적 정보를 정확하게 검색할 수 있는 능력을 보임.
 - 실험 결과 추가적인 프레임이 긴 비디오 질문-응답 벤치마크의 성능을 향상시키는 데 기여함.
 - LongVA는 Video-MME 및 MLVU 데이터 세트에서 7B 모델 중에서 최첨단 성능을 달성함.
 
@@ -67,6 +67,8 @@ tags:
 
 # 3 Long Video Assistant
 
+<img width="715" alt="image" src="https://github.com/user-attachments/assets/dfb9a215-1e42-4395-b0c0-5d614df39301" />
+
 - **논문 가설**: 비전과 언어의 모달리티가 진정으로 정렬되면, 긴 컨텍스트를 처리하는 능력이 텍스트에서 비전으로 전이될 수 있다.
 - **방법론 개요**: 
   - 언어 모델을 기반으로 긴 컨텍스트 훈련 후, 짧은 이미지 데이터로 비주얼 능력 강화.
@@ -88,7 +90,10 @@ tags:
   - NIAH 테스트에서 훈련 컨텍스트 길이(224K) 내에서 완벽한 결과 달성.
   
 ## 3.2 짧은 비주얼 데이터로 긴 언어 모델 조정
-- **인스파이 아이디어**: LLaVA-NeXT의 AnyRes 인코딩 방식 영감.
+
+<img width="715" alt="image" src="https://github.com/user-attachments/assets/3d84821b-9fcd-4e70-98e7-6b8486b3555c" />
+
+- **기반 아이디어**: LLaVA-NeXT의 AnyRes 인코딩 방식 영감.
 - **UniRes 설계**:
   - 이미지와 비디오에 대해 통합 인코딩 방식 제공.
   - 고해상도 이미지를 작은 그리드로 나누고, 각 그리드는 336 × 336 픽셀로 설정.
@@ -107,6 +112,8 @@ tags:
 ---
 
 # 4 V-NIAH
+
+<img width="715" alt="image" src="https://github.com/user-attachments/assets/a02842ff-302f-4faa-9088-24f74fa0e97c" />
 
 - **컨텍스트 길이 측정**: 기존의 언어 모델 컨텍스트 길이 측정 방법인 언어 모델의 혼란도(perplexity) 점수를 긴 문서에 대해 계산.
 - **NIAH 테스트**: 최근 LLM의 긴 컨텍스트 정보를 정확히 검색하는 능력을 평가하기 위해 Needle-in-a-Haystack(NIAH) 테스트 사용.
@@ -129,6 +136,8 @@ tags:
 ---
 
 # 5 Experiments
+
+<img width="715" alt="image" src="https://github.com/user-attachments/assets/48e7282d-89ed-424f-b6fd-fbb0ee38a22e" />
 
 - LongVA의 장기 비주얼 능력을 두 가지 벤치마크인 V-NIAH와 Video-MME에서 평가
   - V-NIAH: 정보 검색 능력을 테스트하지만 다른 실제 비디오 보조 기능은 포함하지 않음
@@ -174,6 +183,8 @@ tags:
 ---
 
 # 6 Conclusion
+
+<img width="608" alt="image" src="https://github.com/user-attachments/assets/48cadc20-3ee3-4261-b6f0-0557c8180d36" />
 
 - 본 연구는 대형 다중모달 모델에서 긴 비디오 이해의 어려움을 해결함.
 - 텍스트에서 언어 모델을 확장한 후 이를 시각 입력과 정렬하여 긴 비디오를 처리하는 능력을 크게 향상시킴.
