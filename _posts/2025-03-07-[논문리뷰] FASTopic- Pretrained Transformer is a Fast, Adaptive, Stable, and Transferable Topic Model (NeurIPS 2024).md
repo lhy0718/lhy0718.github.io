@@ -15,6 +15,10 @@ tags:
 
 # 1 Introduction
 
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/d9e4a1ef-a139-4c85-a63d-08ad66467fe6" />
+
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/34ca4699-9378-41bb-818f-3810ab980c98" />
+
 - 주제 모델은 해석 가능성과 비지도 학습 방식으로 다양한 응용 프로그램에서 활용됨.
   - 콘텐츠 추천, 생성, 트렌드 분석 등.
 - 초기 전통적인 주제 모델은 확률적 그래픽 모델 또는 비음수 행렬 분해 방식으로 개발됨.
@@ -118,6 +122,8 @@ tags:
 ---
 
 # 3.3 Embedding Transport Plan
+
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/427c48d8-595c-4f3f-b7a4-5902d1f710ce" />
 
 - **주제 모델링을 위한 의미적 관계 모델링 분석**
   - 의미적 관계를 모델링하는 것은 간단한 문제가 아님.
@@ -253,6 +259,10 @@ tags:
 
 # 4.2 Effectiveness: Topic Quality and Doc-Topic Distribution Quality
 
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/5dd8cf31-523f-4028-9ad3-1281ea9395ad" />
+
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/c8cca582-e802-4f82-91a7-84f421b9be5c" />
+
 - FASTopic의 우수한 효과성을 입증
 - **표 1**: 
   - 주제 품질 결과: 주제 일관성(CV) 및 주제 다양성(TD)
@@ -298,6 +308,9 @@ tags:
 ---
 
 # 4.5 Transferability
+
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/83512c26-f664-4ba7-b367-6bb6b155759c" />
+
 - FASTopic의 높은 전이 가능성을 검증함.
 - Wikitext-103에서 주제 모델을 학습하고 다른 데이터셋(20NG, NYT, WoS)의 문서와 주제 분포 추론에 사용.
 - 이러한 문서-주제 분포를 SVM 분류기를 위한 특징으로 사용하여 텍스트 분류를 수행.
@@ -308,6 +321,8 @@ tags:
 ---
 
 # 4.6 Adaptivity and Stability
+
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/fa5c5756-9ecb-4d83-aee5-8b1a16f0eef5" />
 
 - FASTopic의 적응성과 안정성을 WoS 데이터셋을 사용하여 다양한 시나리오에서 입증.
 - **주제 수에 따른 성능**:
@@ -341,6 +356,8 @@ tags:
 ---
 
 # 5 Model Usage
+
+<img width="575" alt="image" src="https://github.com/user-attachments/assets/d001f414-c782-4b34-976c-1fae422a15ba" />
 
 - FASTopic는 PyPI에서 Python 패키지로 출시됨
 - 사용자들은 pip를 통해 쉽게 설치 가능
