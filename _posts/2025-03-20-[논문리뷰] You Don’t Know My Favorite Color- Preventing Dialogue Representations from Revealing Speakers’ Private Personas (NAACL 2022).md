@@ -1,11 +1,12 @@
 ---
-title: "[논문리뷰] You Don’t Know My Favorite Color- Preventing Dialogue Representations from Revealing Speakers’ Private Personas (NAACL 2022)"
+title: "[논문리뷰] You Don’t Know My Favorite Color: Preventing Dialogue Representations from Revealing Speakers’ Private Personas (NAACL 2022)"
 date: 2025-03-20 00:00:00 +0900
 categories:
   - Paper Review
 tags:
   - NAACL 2022
-  - Empathetic Dialogue Systems
+  - Privacy
+  - Dialogue Systems
 ---
 
 요약: 대규모 사전 학습 언어 모델을 사용하는 소셜 챗봇에서 사용자 정보 유출 문제가 발생하며, 이를 해결하기 위해 챗봇의 숨겨진 상태로부터 사용자 인격 유출을 방지할 수 있는 효과적인 방어 목표를 제안하고, 실험을 통해 공격 정확도를 크게 감소시킬 수 있음을 입증하였다.
