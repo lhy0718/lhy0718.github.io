@@ -14,6 +14,8 @@ tags:
 
 # 1 Introduction
 
+<img width="437" alt="image" src="https://github.com/user-attachments/assets/edc30ef0-6fe0-4734-9d6b-ef32921204aa" />
+
 - 개인화된 대화 시스템(personalized dialogue systems)은 다양한 페르소나(persona)에 맞는 응답을 생성하는 기술로 주목받고 있음.
 - 기존 접근법들은 사전 정의된 프로필(pre-defined profiles)에 의존하여 페르소나 정보를 제공하지만, 이는:
   - 시간과 비용이 많이 듦.
@@ -75,6 +77,8 @@ tags:
 ---
 
 # 3 Method
+
+<img width="887" alt="image" src="https://github.com/user-attachments/assets/62c594e3-4ea5-48c3-ac68-9867555d2643" />
 
 ## 3.1 문제 정의 (Problem Formalization)
 - **목표**: 사용자의 대화 기록 $$D_u$$ 를 기반으로 개인화된 응답을 생성하는 것.
@@ -182,14 +186,23 @@ tags:
 
 ## 4.4 Main Results
 ### **4.4.1 자동 평가(Automatic Evaluation)**
+
+<img width="887" alt="image" src="https://github.com/user-attachments/assets/4bc09f66-9b96-4e3a-89ac-7d143404afa9" />
+
 - **ConvAI2 데이터셋 결과**:
   - IDL을 적용한 LLaMA-2 모델이 기존 방법보다 **모든 평가 지표에서 성능이 우수**함.
   - IDL이 **대화 내에서 페르소나 정보를 효과적으로 학습**할 수 있음을 증명.
   - 프로필 없이도 프로필 기반 모델(LLaMA-2 Gold)과 유사한 성능을 달성.
 
+<img width="887" alt="image" src="https://github.com/user-attachments/assets/ec82f87f-356b-4e51-bda9-574e2f65ffb4" />
+
 - **Movie 및 LIGHT 데이터셋 결과**:
   - **ICL보다 IDL이 훨씬 우수한 성능을 보임**.
   - ICL은 단순한 텍스트 구조를 학습하는 데 집중하지만, IDL은 **대화 내에서 페르소나 정보를 활용하는 데 효과적**임.
+
+<img width="449" alt="image" src="https://github.com/user-attachments/assets/ce37dace-c769-4e1d-b19d-bba379e07124" />
+
+<img width="449" alt="image" src="https://github.com/user-attachments/assets/faba5aee-b208-49ab-9848-feb2f8e61862" />
 
 ## 4.5 Ablation Study (세부 분석)
 - **기준 샘플(Criterion Sample)이 중요한 역할**을 함.
