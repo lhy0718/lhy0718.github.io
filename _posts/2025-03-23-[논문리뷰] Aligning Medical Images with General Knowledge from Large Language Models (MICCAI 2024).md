@@ -37,6 +37,8 @@ tags:
 
 # 2.1 Overall Pipeline
 
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/6c3c2c50-2daa-4924-9277-a9b98f4777a5" />
+
 - 입력 이미지 $$x$$와 질병 레이블 집합 $$C = \{c1, c2, ..., cn\}$$을 고려하며, 질병 카테고리의 총 수 $$N$$은 $$n$$입니다.
 - 프로세스는 이중 프롬프트 네트워크의 사전 학습된 비전 인코더를 통해 $$x$$를 통과시켜 특징 벡터 $$f$$를 계산하는 것으로 시작됩니다.
 - 동시에, 각 질병 카테고리에 대해 시각적 증상 생성기(VSG)가 몇 가지 시각적 증상을 생성합니다.
@@ -50,6 +52,8 @@ tags:
 ---
 
 # 2.2 Visual Symptom Generator (VSG)
+
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/5c5d64c3-5e08-43f5-8b0c-f6f1f343f4fe" />
 
 - VSG는 각 질병 카테고리마다 특정한 시각적 증상의 포괄적인 세트를 생성하는 것을 목표로 합니다.
 - LLMs의 폭넓은 지식과 자연어로 쉽게 질의할 수 있는 특성을 활용하여, GPT-4와 같은 대형 언어 모델을 이용해 두 단계의 과정으로 시각적 증상 세트를 구축합니다.
@@ -128,6 +132,8 @@ tags:
 
 # 3.2 Comparisons with State-of-the-art Methods
 
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/b75c7fb2-caee-48f3-9122-a6cd90c164ee" />
+
 - 설명 가능한 시각 증상의 효과:
   - 질병 진단을 위한 시각 증상의 효과를 평가하기 위해 제로샷 실험을 수행.
   - 우리의 접근 방식은 이미지를 시각적 설명 특징의 평균 임베딩과 비교하여 결정.
@@ -144,6 +150,9 @@ tags:
   - 평균 함수를 통해 질병의 시각적 특징을 대표하는 데 한계.
 
 - 관련 방법과의 비교:
+
+  <img width="620" alt="image" src="https://github.com/user-attachments/assets/7983abac-1209-4799-af45-ddb04c6440a3" />
+
   - ViP을 여러 최첨단 프롬프트 기반 모델과 비교하여 일반화 능력을 평가.
   - Table 1에서 ViP이 최고 정확도 86.69%, 81.11% 및 F1-score 84.94%, 77.3%로 Pneumonia 및 Derm7pt에서 두드러지는 성과를 보임.
   - 완전한 지도 학습 모드와 비교해 볼 때 Pneumonia에서는 경쟁력 있는 결과를 보이며, Derm7pt에서는 더 적은 훈련 데이터 상황에서 큰 격차로 우수한 성과를 나타냄.
@@ -153,6 +162,8 @@ tags:
 
 
 # 3.3 Ablation Study
+
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/5f050a09-c63e-420a-8aae-c5911296bb91" />
 
 - 각 구성 요소의 효과를 평가하기 위해 ViP(Vision Prompt)에서의 구성 요소들의 효과를 탐구하기 위해 어블레이션 연구를 수행합니다. 이는 Table 2에 나타나 있습니다.
 - 제로샷 베이스라인과 비교했을 때, CoP(Context of the Prompt)와 MeP(Message of the Prompt)의 통합은 상당한 개선을 보여주며, 이는 의료 작업 맥락 학습과 시각적 증상의 효과적인 집계의 중요성을 입증합니다.
