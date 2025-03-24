@@ -13,6 +13,8 @@ tags:
 
 # 1 Introduction
 
+<img width="717" alt="image" src="https://github.com/user-attachments/assets/ef05b8a3-1c56-42a7-a7a7-d25f5ac0bb50" />
+
 - 언어의 이해와 의미가 감각적 토대를 필요로 하는지에 대한 철학적 논쟁이 오랫동안 지속되어 왔습니다.
 - 아리스토텔레스는 감각 경험과 경험적 관찰을 통한 지식 획득의 중요성을 강조했으며, 이는 그의 Peripatetic 학파에 중심적이었고 오늘날까지도 영향을 미치고 있습니다.
 - 아퀴나스는 13세기에 "감각에 먼저 존재하지 않는 것은 지성에도 존재하지 않는다"라는 Peripatetic 공리를 통해 이러한 아이디어를 공식화했습니다.
@@ -51,6 +53,8 @@ tags:
 
 # 2 Evaluating Visual Representations through MLLMs
 
+<img width="717" alt="image" src="https://github.com/user-attachments/assets/c197048a-db59-45b2-8afa-5d9da8f01982" />
+
 - **CLIP 기반 MLLM**
   - 대부분의 MLLM은 시각 인코더로 CLIP [109]를 사용
   - 언어와 사전 정렬이 되어 있고, 언어 모델(LLM) 토큰 공간에 적응하기 쉬움
@@ -62,6 +66,8 @@ tags:
   - Linear probing, end-to-end fine-tuning를 대체할 수 있는 방법 제안
 
 ## 2.1 Analyzing the Benchmarks
+
+<img width="717" alt="image" src="https://github.com/user-attachments/assets/dd2ef94b-8194-441c-b451-3c6563d6b4cc" />
 
 - **벤치마크 선택**
   - 멀티모달 기능을 정확하게 평가할 벤치마크 선택 필요
@@ -92,6 +98,8 @@ tags:
 
 ## 2.3 Instruction Tuning Recipes
 
+<img width="717" alt="image" src="https://github.com/user-attachments/assets/a9d13989-633e-45b4-92d6-99d5ad4c6696" />
+
 - **MLLM 학습 과정**
   - 두 단계의 프리트레인 및 미세 조정 과정
   - 프리트레인: 어댑터 데이터를 통해 연결자 학습
@@ -102,6 +110,10 @@ tags:
   - 다양한 시각 인코더 선택의 영향과 튜닝 전략 비교
 
 ## 2.4 MLLMs as a Visual Representation Evaluator
+
+<img width="717" alt="image" src="https://github.com/user-attachments/assets/f6073f2d-5bfe-4d6c-995d-ba98cb062f8d" />
+
+<img width="717" alt="image" src="https://github.com/user-attachments/assets/08295eda-ada2-4a1f-b5a9-02ce2bb227be" />
 
 - **다양한 평가 방법**
   - 전통적인 ImageNet-1k linear probing를 넘어선 새로운 시각 모델 평가 인터페이스 제공
@@ -129,6 +141,8 @@ tags:
 ---
 
 # 3 Spatial Vision Aggregator (SV A): A New Connector Design
+
+<img width="717" alt="image" src="https://github.com/user-attachments/assets/8d1b41a8-b31f-42df-a5a6-b69fa7fef538" />
 
 - SV A는 다중 비전 인코더로부터 정보를 효과적으로 집계하고 보간에 의해 발생할 수 있는 정보 손실을 방지하기 위해 학습 가능한 잠재 쿼리 세트를 사용합니다.
 - 두 가지 새로운 비전 중심의 설계 원칙을 도입합니다:
@@ -163,6 +177,9 @@ $$
 # 4 Instruction Tuning Data for Training MLLMs
 
 - **데이터 수집**
+
+  <img width="717" alt="image" src="https://github.com/user-attachments/assets/9713db2f-de95-4202-90ef-512aed9e5c98" />
+
   - 언어 데이터에 비해 다중모달(시각적) 인스트럭션 튜닝 데이터는 매우 드물고 수집이 어려움.
   - Visual Question Answering (VQA), OCR 데이터와 같은 시각적 상호 작용 데이터를 포함하는 여러 기존 벤치마크 및 데이터셋을 활용하여 데이터 수집.
   - 대화 능력을 유지하기 위해 고품질의 언어 전용 인스트럭션-팔로잉 데이터를 소량 수집.
@@ -173,6 +190,9 @@ $$
   - **Cambrian-10M**: 약 9,784,000개의 데이터 포인트를 포함하는 대규모 인스트럭션 튜닝 데이터 풀 생성.
 
 - **데이터 큐레이션**
+
+  <img width="717" alt="image" src="https://github.com/user-attachments/assets/8769b794-fe39-439b-89c8-709c3070157e" />
+
   - Cambrian-10M은 다양한 출처로부터 수집한 대규모 인스트럭션 튜닝 데이터 풀.
   - 데이터 카테고리 간의 비율 불균형을 해결하기 위한 첫 단계로 데이터 큐레이션 진행.
   - **데이터 균형 조정**
