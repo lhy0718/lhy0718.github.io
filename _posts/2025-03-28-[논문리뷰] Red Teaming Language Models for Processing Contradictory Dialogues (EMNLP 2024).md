@@ -15,6 +15,8 @@ tags:
 
 # 1 Introduction
 
+<img width="824" alt="image" src="https://github.com/user-attachments/assets/deb37b91-fd6b-447c-a3c6-61a2f16849d9" />
+
 - 대화 시스템은 언어 모델링과 학습 기술의 빠른 발전으로 최근 몇 년간 큰 진전을 이루었다.
 - 인간과 기계 간의 대화를 이해하고 분석하는 데 중점을 두며, 지능형 상호작용 시스템 개발의 중요한 구성 요소로 자리 잡고 있다.
 - ChatGPT와 같은 대형 언어 모델(LLMs)의 등장은 대화 관련 연구에 중요한 역할을 했다.
@@ -99,6 +101,8 @@ tags:
 
 # 2.2 Dataset
 
+<img width="824" alt="image" src="https://github.com/user-attachments/assets/83879be1-99ff-4454-9ebe-7a28fb4627cb" />
+
 - **데이터 수집**:
   - 인간 논리에 반하는 모순을 효과적으로 작성하기 어려움.
   - 영화, 음식, 관광, 스포츠 등 일상 대화 주제에 대한 Wikipedia에서 키워드 추출.
@@ -133,6 +137,8 @@ S(e, e_g) = S_1(e, e_g) + \eta S_2(e, e_g)
 $$
 
 - $$S(e, e_g)$$에서 $$\eta$$는 스케일 팩터, $$(0 < \eta < 1)$$.
+
+<img width="401" alt="image" src="https://github.com/user-attachments/assets/bdb7a6f7-55c2-42cf-94d2-da9ebca31e77" />
 
 ---
 
@@ -264,6 +270,8 @@ $$
 
 # 4.1 Experiment Details
 
+<img width="401" alt="image" src="https://github.com/user-attachments/assets/2a128401-3980-46b3-932b-9171bf75c4fa" />
+
 - **실험 개요**: 대화에서 모순을 탐지하는 여러 베이스라인과 오픈 소스 LLM의 정확도, 리콜, F1 점수를 비교.
 - **모델**:
   - BERT (Devlin et al., 2019)
@@ -306,6 +314,11 @@ $$
   - **LLaMA2-7B-chat$$*$$**: 정확도 95.2, F1 95.3, 재현율 90.9
 
 - **평가 기준**:
+
+  <img width="407" alt="image" src="https://github.com/user-attachments/assets/2fa39319-64ae-40e8-8b8a-d728ad4c1dd5" />
+
+  <img width="404" alt="image" src="https://github.com/user-attachments/assets/1c694896-eaf4-486a-bc29-75d474576a4b" />
+
   - **레이블 일관성**: 2 (일치), 1 (일부 관련), 0 (무관)
   - **유창성**: 2 (읽기 쉬움), 1 (문법적으로 형성됨), 0 (읽기 어려움)
   - **완전성**: 2 (완전한 설명), 1 (불완전), 0 (실질적 설명 없음)
@@ -315,8 +328,14 @@ $$
   - $$P_{\alpha}$$: 설명의 비율 $$S>\alpha$$.
 
 - **인간 평가**:
+
+  <img width="410" alt="image" src="https://github.com/user-attachments/assets/00c576cb-1254-4921-9044-b749b522b45c" />
+
   - **기준**: 레이블 일관성, 유창성, 완전성 기준으로 각 모델의 설명 평가.
   - **결과**:
+  
+    <img width="825" alt="image" src="https://github.com/user-attachments/assets/7a000e22-238e-4e90-8e27-964713b23add" />
+
     - **LLaMA2-chat**: 모든 평가 지표에서 뛰어난 성능.
     - **LLaMA3-Instruct**: 유창성에서 낮은 성능, 하지만 레이블 일관성 양호.
 
@@ -347,6 +366,9 @@ $$
   - 자동 평가: 수정 전후 모순 대화의 비율 변화를 비교.
   
 - **결과**:
+
+  <img width="410" alt="image" src="https://github.com/user-attachments/assets/7604cc60-8682-4a60-ba30-4c0f414006b8" />
+
   - 모든 rLMs는 주어진 모순 대화를 수정하는 능력 일부를 보여줌.
   - 설명이 포함된 프롬프트는 그렇지 않은 경우보다 더 나은 수정 범위를 보여줌.
   - 이는 모순 설명의 품질과 대화 내 효과적인 로컬라이제이션을 반영.
