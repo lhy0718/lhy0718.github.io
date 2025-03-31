@@ -14,6 +14,8 @@ tags:
 
 # 1 Introduction
 
+<img width="458" alt="image" src="https://github.com/user-attachments/assets/8d343598-03c1-4542-9906-71d413444b3f" />
+
 - DNN 기반 ABSA 모델은 훈련 데이터에서 학습한 표현을 활용하여 핸드크래프트 특징 기반 모델보다 뛰어난 성능을 보임.
 - 모델을 두 가지 범주로 나눌 수 있음:
   - **맥락 기반 방법**
@@ -175,6 +177,8 @@ tags:
 
 # 3.2 Overview of the KGAN Model
 
+<img width="929" alt="image" src="https://github.com/user-attachments/assets/9d4c294d-f926-4454-873d-ce7695bdc8e1" />
+
 - **외부 지식 통합**: 
   - WordNet 2의 지식 그래프를 외부 지식 기반으로 사용
   - 166,000개 이상의 단어 형태 및 의미 쌍 포함
@@ -293,6 +297,8 @@ tags:
 ---
 
 # 3.3.2 Syntax-based Representations
+
+<img width="370" alt="image" src="https://github.com/user-attachments/assets/d6fcb31d-d818-4ed8-b403-73fe9cc47ad9" />
 
 - **경쟁 모델 결과**:
   - KGAN 모델이 GloVe 설정에서 대부분 데이터셋에서 다른 최신 방법들을 초월함.
