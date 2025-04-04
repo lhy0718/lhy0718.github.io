@@ -12,6 +12,39 @@ tags:
 
 ---
 
+# 1. Introduction
+
+<img width="808" alt="image" src="https://github.com/user-attachments/assets/c6989997-4a25-453f-a8d0-90b4436ff526" />
+
+- **ABSA(Aspect-Based Sentiment Analysis)**는 문장에서 특정 측면(aspect)에 대한 감정 극성(sentiment polarity)을 분석하는 세분화된 감성 분석 과제이다.
+
+- ABSA는 세 가지 하위 과제로 구성됨:
+  - **ATE (Aspect Term Extraction)**: 문장에 명시된 측면 단어를 추출
+  - **ACD (Aspect Category Detection)**: 문장에서 언급된 측면 카테고리 감지
+  - **SC (Sentiment Classification)**: 특정 측면(또는 카테고리)에 대한 감정 극성 예측
+
+- **ACSA(Aspect Category Sentiment Analysis)**는 ACD와 SC를 결합하여 명시적 단어 없이도 카테고리 감정 예측 가능 (ex. “Bagels are ok, but be sure not to make any special requests!”)
+
+- **기존 방법의 문제점**:
+  - Cartesian Product 방식: 모든 카테고리-감정 쌍을 생성해 분류 ⇒ **데이터 과도 증가**
+  - Binary 확장 방식: 쌍 존재 여부를 감정 분류에 포함 ⇒ **복잡도 증가 및 불필요한 정보 발생**
+  - 계층적 분류(Hierarchical classification): 카테고리 감지 후 감정 예측하지만 **두 작업 간 관계를 반영하지 못함**
+
+- **본 논문의 핵심 제안**:
+  - **PBJM (Prompt-Based Joint Model)**: 프롬프트 학습과 PLM 기반 공동 학습으로 문제 해결
+    - 프롬프트를 활용해 **카테고리 감지를 간결하게 수행**
+    - 감정 분류는 **이진 분류**로 처리해 단순화
+    - 두 하위 과제를 **BERT 기반으로 공동 학습**, 상호 연관성 강화
+    - **어텐션 메커니즘**으로 중요한 단어에 집중
+    - **버벌라이저(verbalizer)**를 통해 라벨 단어와 라벨 공간 연결
+
+- **기여 및 성과**:
+  - 프롬프트 학습 기반 PBJM 모델을 처음으로 제안
+  - 감정 분류 다중 클래스 문제를 멀티 레이블 문제로 전환
+  - **4개 벤치마크 데이터셋에서 기존 모델들보다 높은 성능** 달성
+
+---
+
 # 2. Related works
 
 - ACSA 작업을 해결하는 가장 직관적인 방법은 파이프라인 접근 방식:
@@ -80,6 +113,8 @@ tags:
 ---
 
 # 3. Methods
+
+<img width="808" alt="image" src="https://github.com/user-attachments/assets/89a4488c-5441-46f4-b40b-f48632634764" />
 
 - 리뷰 문장이 n개의 단어로 구성되어 있음 (𝑊 = [𝑤1, 𝑤2, . . . ,𝑤𝑛])
 - 미리 정의된 측면 카테고리 집합 𝐶와 감정 극성을 포함하는 집합 𝑃 (긍정, 부정, 중립) 존재
@@ -173,6 +208,8 @@ tags:
 
 # 3.4. Category verbalizer module
 
+<img width="455" alt="image" src="https://github.com/user-attachments/assets/fb3a6c43-bb5a-41e3-af2e-c52011c043b1" />
+
 - **목적**: 첫 번째 토큰 [CLS]의 벡터 $$T_{CLS} \in \mathbb{R}^{d_{m}}$$을 이용하여 감정 극성을 위한 이진 레이블 예측
 - **구성 요소**:
   - Fully Connected (FC) 레이어
@@ -216,6 +253,8 @@ tags:
 ---
 
 # 4. Experiments
+
+<img width="749" alt="image" src="https://github.com/user-attachments/assets/be18d2a3-8153-4f43-98dc-23499b055efb" />
 
 - 실험에 사용된 데이터셋:
   - SemEval-2015 및 SemEval-2016에서 수집된 4개의 공개 데이터셋 
