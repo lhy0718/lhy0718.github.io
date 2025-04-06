@@ -5,6 +5,7 @@ categories:
   - Paper Review
 tags:
   - EMNLP 2024
+  - Multi-agent
 ---
 
 현대의 대형 언어 모델(LLM)은 일반적인 언어 작업에서는 우수한 성능을 보이지만 복잡한 추론 작업에서는 여전히 어려움을 겪고 있으며, 이를 해결하기 위한 연구로 자기 반영(self-reflection) 전략이 제안된다. 하지만 이 연구에서는 자기 반영 방식이 '사고의 퇴화(Degeneration-of-Thought, DoT)' 문제에 직면한다고 밝혀, 이를 해결하기 위해 다수의 에이전트가 논쟁하는 '다중 에이전트 논쟁(Multi-Agent Debate, MAD)' 프레임워크를 제안하고, 이 방법이 깊은 사고를 요구하는 작업에 효과적임을 실험을 통해 입증하였다.
