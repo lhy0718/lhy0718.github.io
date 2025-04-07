@@ -5,7 +5,7 @@ categories:
   - Paper Review
 tags:
   - NAACL 2022
-  - Persona-based Dialogue System
+  - Persona-based Dialogue
 ---
 
 이 연구에서는 캐릭터 설정에 기반한 일관된 응답을 제공하는 대화 시스템을 구축하며, 사전 훈련된 대형 언어 모델에 저비용의 프롬프트 튜닝 방식을 적용하여 자연스럽고 개인화된 응답을 생성할 수 있음을 보여준다.
