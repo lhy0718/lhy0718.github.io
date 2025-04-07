@@ -1,10 +1,11 @@
 ---
-title: "[논문리뷰] LLMArena- Assessing Capabilities of Large Language Models in Dynamic Multi-Agent Environments (ACL 2024)"
+title: "[논문리뷰] LLMArena: Assessing Capabilities of Large Language Models in Dynamic Multi-Agent Environments (ACL 2024)"
 date: 2025-04-07 11:00:00 +0900
 categories:
   - Paper Review
 tags:
   - ACL 2024
+  - Multi-agent
 ---
 
 대규모 언어 모델(LLM)의 새로운 벤치마크인 LLMArena를 소개하며, 이는 다중 에이전트 동적 환경에서 LLM의 다양한 능력을 평가할 수 있도록 설계되었다. 연구 결과, LLM은 완전한 자율 에이전트로 발전하는 데 있어 여전히 많은 개선이 필요하다고 강조한다.
