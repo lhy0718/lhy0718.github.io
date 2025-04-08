@@ -484,7 +484,10 @@ tags:
   - 모든 설정에서 OURS가 RP를 평균 1.06% 초과 달성 (PersonaExt).
   - FewRel 데이터셋에서도 대부분의 설정에서 OURS가 RP보다 성능이 우수함.
 
-- **결과 요약** (`n=5`, `n=10`, `n=15`):
+- **결과 요약**:
+
+  <img width="399" alt="image" src="https://github.com/user-attachments/assets/ebe61d23-fcf9-49a8-b622-0fa10e42f653" />
+
 
 - **소거 연구**(Ablation study):
   - HNS는 Meta-V AE 샘플러 & CSC를 의미함.
