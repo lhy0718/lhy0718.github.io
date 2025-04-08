@@ -239,7 +239,7 @@ tags:
   - 사전 훈련 작업과 하류 작업 간의 간극을 메꿈 (Mao et al., 2023)
 
 - **PAG(페르소나 속성 생성기)**:
-  - 훈련 데이터 $D_s$에서 훈련 후, 관계 $r_t$를 사용하여 합성 데이터 $D_{syn}$ 생성
+  - 훈련 데이터 $$D_s$$에서 훈련 후, 관계 $$r_t$$를 사용하여 합성 데이터 $$D_{syn}$$ 생성
   - Verma et al. (2018)의 연구 방법 따름
 
 - **테스트 단계**:
@@ -250,7 +250,7 @@ tags:
   - 인과 언어 모델링 목표에 따라 훈련
   - 다음 단어 예측: 
     $$p(x_i \vert x_{<i}; t_p) = PAG(x_{<i})$$
-    - 여기서 $x_i$는 입력 토큰 “RELATION : r, CONTEXT : u, SUBJECT : s, OBJECT : o”의 i번째 토큰
+    - 여기서 $$x_i$$는 입력 토큰 “RELATION : r, CONTEXT : u, SUBJECT : s, OBJECT : o”의 i번째 토큰
   - 손실 함수:
     $$L_g = \sum_{i=1}^{n} \log p(x_i \vert x_{<i}; t_p)$$
   - **온도(t_p)** 조절:
@@ -260,8 +260,8 @@ tags:
 
 # 4.3 Persona Attribute Extractor
 
-- PAE(퍼소나 속성 추출기)는 PLM(사전 훈련 언어 모델)을 기반으로 하여 훈련 데이터 $D_s$에서 파인튜닝을 수행함.
-- 이후, PAG에서 생성된 합성 샘플 $D_{syn}$에 대해 추출기를 추가로 조정함.
+- PAE(퍼소나 속성 추출기)는 PLM(사전 훈련 언어 모델)을 기반으로 하여 훈련 데이터 $$D_s$$에서 파인튜닝을 수행함.
+- 이후, PAG에서 생성된 합성 샘플 $$D_{syn}$$에 대해 추출기를 추가로 조정함.
 - PAE는 seq-to-seq 목표를 가지고 훈련됨 (Lewis et al., 2020).
 - 프롬프트 “CONTEXT : u”를 주면, 추출기는 구조화된 출력을 예측함:
   - “SUBJECT : s, OBJECT : o, RELATION : r”.
@@ -331,30 +331,30 @@ tags:
 - **목표 함수**
   - Meta-V AE의 경험적 목표:
     - $$ L_h(u; \theta, \phi, \tau) = -DKL(q_{\phi,\tau}(z|u) \| p_{\theta,\tau}(z)) + \frac{1}{L} \sum_{l} \log p_{\theta,\tau}(u|z^{(l)}) $$
-  - 관계 $r$에 대해:
-    - 선형 분포 $z^{(l)} = q_{\phi,\tau}(z|u) \sim N(\mu_\tau, \sigma_\tau^2 I)$.
-    - 생성 분포 $p_{\theta,\tau}(u|z)$ 조건부로 데이터 $u$ 생성.
+  - 관계 $$r$$에 대해:
+    - 선형 분포 $$z^{(l)} = q_{\phi,\tau}(z|u) \sim N(\mu_\tau, \sigma_\tau^2 I)$$.
+    - 생성 분포 $$p_{\theta,\tau}(u|z)$$ 조건부로 데이터 $$u$$ 생성.
   
 - **파라미터**
-  - $z^{(l)}$ 및 분포와 관련하여 파라미터 $\theta, \phi, \tau$는 학습 가능함.
-  - $L$은 샘플 개수를 나타냄.
+  - $$z^{(l)}$$ 및 분포와 관련하여 파라미터 $$\theta, \phi, \tau$$는 학습 가능함.
+  - $$L$$은 샘플 개수를 나타냄.
 
 ---
 
 # 4.4.2 Sampling Criteria
 
 - 잠재 변수 모델은 적은 수의 잠재 변수를 통해 변수 분포를 나타낼 수 있음 (Bishop, 1998).
-- 잠재 변수 $z_r$는 서로 다른 관계 $r$를 가진 발화의 분포를 포착.
+- 잠재 변수 $$z_r$$는 서로 다른 관계 $$r$$를 가진 발화의 분포를 포착.
   
 - KL 발산(Kullback and Leibler, 1951):
-  - $z_i$와 $z_j$의 분포 간 거리를 표현.
-  - 관계 클래스 $r_i$와 $r_j$에 대한 잠재 변수 $z_i$, $z_j$에 대해 가정:
-    - $z \sim N(z; \mu, \Sigma)$, 모든 구성 요소가 독립적: $\Sigma_{i,j} = 0$ (이때 $i \neq j$).
+  - $$z_i$$와 $$z_j$$의 분포 간 거리를 표현.
+  - 관계 클래스 $$r_i$$와 $$r_j$$에 대한 잠재 변수 $$z_i$$, $$z_j$$에 대해 가정:
+    - $$z \sim N(z; \mu, \Sigma)$$, 모든 구성 요소가 독립적: $$\Sigma_{i,j} = 0$$ (이때 $$i \neq j$$).
   
 - KL 발산 공식을 다음과 같이 정의:
   $$ D_{KL}(P_i || P_j) = E_{P_i} \left[ \log \frac{P_i}{P_j} \right] = \frac{1}{2} \left\{ \log \frac{|\Sigma_j|}{|\Sigma_i|} - n + \text{tr}(\Sigma_j^{-1} \Sigma_i) + (\mu_j - \mu_i)^T \Sigma_j^{-1} (\mu_j - \mu_i) \right\} $$
   
-- $\Sigma$를 대각 행렬로 가정 시, 수식 간소화:
+- $$\Sigma$$를 대각 행렬로 가정 시, 수식 간소화:
   $$ D_{KL}(P_i || P_j) = \frac{1}{2} \left\{ \text{tr}(\log \Sigma_j - \log \Sigma_i) - n + \text{tr} \left( \frac{\Sigma_i}{\Sigma_j} \right) + (\mu_j - \mu_i)^T \cdots \Sigma_j^{-1} (\mu_j - \mu_i) \right\} $$
 
 - 샘플링 전략:
