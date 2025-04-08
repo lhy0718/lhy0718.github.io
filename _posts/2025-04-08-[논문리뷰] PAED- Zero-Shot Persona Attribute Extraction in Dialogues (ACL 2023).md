@@ -485,18 +485,6 @@ tags:
   - FewRel 데이터셋에서도 대부분의 설정에서 OURS가 RP보다 성능이 우수함.
 
 - **결과 요약** (`n=5`, `n=10`, `n=15`):
-  - OURS: 
-    - $$39.91$$, $$32.47$$, $$23.10$$
-  - HNS를 제외한 경우 (w/o HNS): 
-    - $$38.21 \downarrow 1.70$$, $$31.86 \downarrow 0.61$$, $$22.09 \downarrow 1.01$$
-  - SpERT: 
-    - $$24.38 \downarrow 15.53$$, $$31.79 \downarrow 0.68$$, $$22.47 \downarrow 0.63$$
-  - RSAN: 
-    - $$37.41 \downarrow 2.50$$, $$30.65 \downarrow 1.82$$, $$21.67 \downarrow 1.43$$
-  - GenTaxo: 
-    - $$38.66 \downarrow 1.25$$, $$30.55 \downarrow 1.92$$, $$22.15 \downarrow 0.95$$
-  - Rand (무작위 선택된 부정 문장): 
-    - $$37.59 \downarrow 2.32$$, $$30.69 \downarrow 1.78$$, $$22.01 \downarrow 1.09$$
 
 - **소거 연구**(Ablation study):
   - HNS는 Meta-V AE 샘플러 & CSC를 의미함.
