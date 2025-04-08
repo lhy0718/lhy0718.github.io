@@ -1,5 +1,5 @@
 ---
-title: "[논문리뷰] PAED- Zero-Shot Persona Attribute Extraction in Dialogues (ACL 2023)"
+title: "[논문리뷰] PAED: Zero-Shot Persona Attribute Extraction in Dialogues (ACL 2023)"
 date: 2025-04-08 00:00:00 +0900
 categories:
   - Paper Review
