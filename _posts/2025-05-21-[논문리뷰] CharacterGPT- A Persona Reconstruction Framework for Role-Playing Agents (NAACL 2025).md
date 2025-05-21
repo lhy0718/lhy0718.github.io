@@ -94,8 +94,7 @@ CharacterGPT는 챕터별 소설 요약에서 인물 특성을 점진적으로 �
   - 수식  
     $$
     T_t^i = \begin{cases} 
-    h\big(g(D_i, P_g), P_h\big), & t \in \text{Type A} \
-$$6pt]
+    h\big(g(D_i, P_g), P_h\big), & t \in \text{Type A} \\
     g(D_i, P_g), & \text{otherwise}
     \end{cases}
     $$
