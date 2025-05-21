@@ -3,10 +3,10 @@ title: "[논문리뷰] KMI: A Dataset of Korean Motivational Interviewing Dialog
 date: 2025-05-21 21:21:04 +0900
 categories:
   - Paper Review
-  - Empathetic Dialogue Systems
-  - Dataset Construction
 tags:
   - NAACL 2025
+  - Empathetic Dialogue Systems
+  - Dataset Construction
 ---
 
 본 논문은 전문 치료사 지식을 반영한 동기면담(MI) 시뮬레이션 프레임워크를 통해 한국어 MI 대화 1,000건의 고품질 합성 데이터셋(KMI)을 생성하고, 이를 기반으로 한 대화 모델의 전문성과 실용성을 평가하였다.
