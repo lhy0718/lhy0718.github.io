@@ -62,6 +62,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-remote-include
 
 author:
   name: "Hanyong Lee"
