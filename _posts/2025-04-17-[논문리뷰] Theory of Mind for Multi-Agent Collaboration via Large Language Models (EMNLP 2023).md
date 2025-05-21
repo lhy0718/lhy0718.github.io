@@ -5,6 +5,7 @@ categories:
   - Paper Review
 tags:
   - EMNLP 2023
+  - Multi-agent
 ---
 
 본 연구는 대형언어모델(LLM) 기반 에이전트의 다중 에이전트 협력 및 마음 이론(ToM) 추론 능력을 평가하고, 명시적 신념 상태 표현이 성능과 ToM 정확성을 향상시킨다는 점을 밝혔다.

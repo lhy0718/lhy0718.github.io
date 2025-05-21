@@ -3,9 +3,9 @@ title: "[논문리뷰] MetaGPT- Meta Programming for A Multi-Agent Collaborative
 date: 2025-05-21 16:35:29 +0900
 categories:
   - Paper Review
-  - Multi-agent
 tags:
   - ICLR 2024
+  - Multi-agent
 ---
 
 MetaGPT는 인간의 표준 운영 절차(SOPs)를 활용해 역할별 에이전트 간 협업을 체계화하고, 구조화된 출력물 기반의 메타프로그래밍을 통해 소프트웨어 개발 자동화를 고도화하여, 코드 생성 품질과 작업 완료율에서 최첨단 성능을 보이는 LLM 기반 다중 에이전트 협업 프레임워크이다.
