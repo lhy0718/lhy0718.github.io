@@ -142,8 +142,8 @@ CharacterGPT는 챕터별 소설 요약에서 인물 특성을 점진적으로 �
   - 테스트 결과를 성격 하위 요소(facets) 값으로 변환.
   - 예) Agreeableness(호감성)의 하위 요소로 신뢰(Trust), 감정 기반 판단(Tendermindedness), 직설적이지 않음(Straightforwardness), 겸손(Modesty) 등 포함.
   - 모델과 인간 결과 간 차이(gap) 측정: 
-    - # Wins: 인간 예측과 가장 근접한 facet 개수 (클수록 우수).
-    - Σ\vert d \vert: 차이의 절댓값 합 (작을수록 인간과 근접).
+    - \# Wins: 인간 예측과 가장 근접한 facet 개수 (클수록 우수).
+    - $$\sum \vert d \vert$$: 차이의 절댓값 합 (작을수록 인간과 근접).
   - ChatGPT, GPT-4 모두에 대해 본 방법 적용 시 두 지표 모두 개선됨.
   - 예시: Megumin의 Neuroticism에서 GPT-4 단독은 우울증 가능성을 과대평가한 반면, 본 방법과 인간은 그렇지 않음.
 
