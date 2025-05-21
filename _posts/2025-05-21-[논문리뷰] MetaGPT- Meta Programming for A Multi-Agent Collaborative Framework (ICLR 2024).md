@@ -12,7 +12,7 @@ MetaGPT는 인간의 표준 운영 절차(SOPs)를 활용해 역할별 에이전
 
 ---
 
-# 1. Introduction 요약
+# 1. Introduction
 
 ## 🎯 문제 의식
 
@@ -57,7 +57,7 @@ MetaGPT는 인간의 표준 운영 절차(SOPs)를 활용해 역할별 에이전
 
 ---
 
-# 2. Related Work 요약
+# 2. Related Work
 
 ## 🔧 2.1 Automatic Programming
 
@@ -114,7 +114,7 @@ MetaGPT는 인간의 표준 운영 절차(SOPs)를 활용해 역할별 에이전
 
 ---
 
-# 3. MetaGPT: A Meta-Programming Framework 요약
+# 3. MetaGPT: A Meta-Programming Framework
 
 ## 🎯 개요
 
@@ -173,7 +173,7 @@ MetaGPT는 LLM 기반 멀티 에이전트 시스템을 위한 **메타 프로그
 
 ---
 
-# 4. Experiments 요약
+# 4. Experiments
 
 ## ⚙️ 4.1 Experimental Setting
 
@@ -259,7 +259,7 @@ MetaGPT는 LLM 기반 멀티 에이전트 시스템을 위한 **메타 프로그
 
 ---
 
-# 5. Conclusion 요약
+# 5. Conclusion
 
 ## 🧠 핵심 주장
 
