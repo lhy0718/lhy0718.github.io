@@ -206,3 +206,13 @@ CharacterGPT는 챕터별 소설 요약에서 인물 특성을 점진적으로 �
   - 대규모 언어 모델의 응답에서 환각 현상에 대한 연구가 진행되고 있으나, 페르소나 기반 과제의 환각 현상은 드물게 다뤄짐  
   - 이는 페르소나 지식이 현실 세계의 사실과 자주 달라 실제와 다른 내용(예: 마법사가 불꽃 마법을 사용하는 경우)을 포함하기 때문임  
   - 각 소설별 비용 효율적인 평가 기준 개발이 어렵고, 앞으로는 페르소나 관련 환각 현상을 다루는 효율적 방법론 개발에 집중해야 함
+
+---
+
+# 독자의견
+
+- CharacterGPT의 세계관적인 환각을 줄이기 위해 세계관과 상충되는 정보를 제거하는 방법이 필요함.
+  - 이를 해결하기 위해 현실 세계와 관련한 weight를 억제하고 판타지적 세계관과 관련한 weight를 강화하는 접근이 필요함.
+  - 이는 프롬프트를 사용하는 방법을 사용할 수도 있고, Arditi, et al. (2024)에서 제안한 Model interventions 방법을 사용할 수도 있음.
+    - ref: Arditi, Andy, et al. "Refusal in Language Models Is Mediated by a Single Direction." The Thirty-eighth Annual Conference on Neural Information Processing Systems.
+  - 좀 더 방대한 데이터셋을 구축할 필요가 있음.
