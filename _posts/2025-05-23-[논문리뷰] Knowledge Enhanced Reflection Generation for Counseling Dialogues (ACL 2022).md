@@ -134,7 +134,7 @@ tags:
 - 코사인 유사도 $$\mathrm{Sim}(F(c), F(s_j))$$ 최대인 $$s_j \in K$$ 선택:
 
   $$
-  k_c = \argmax_{s_j \in K} \mathrm{Sim}(F(c), F(s_j))
+  k_c = \text{argmax}_{s_j \in K} \mathrm{Sim}(F(c), F(s_j))
   $$
 
 - 세 가지 문장 검색 방법 실험:  
@@ -247,3 +247,10 @@ tags:
 - 소거 연구(ablation study)를 통해 의도적(intentional) 및 인과적(causal) 관계와 관련된 상식이 상담 도메인에서 필수적임을 확인함.
 - 주요 발견 수식 예시:  
   $$\vert \text{Intentional Relationships} \vert + \vert \text{Causal Relationships} \vert \to \text{Essential for Counseling Domain}$$
+
+---
+
+# 독자의견
+
+- 본 논문은 상담 대화에서 중요한 ‘reflection’ 응답을 생성하기 위해 도메인 지식과 상식(COMET)을 통합하는 모델을 제안함
+- 지식 주입 방식과 위치 인코딩 기법이 인상적임.
