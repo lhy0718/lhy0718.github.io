@@ -142,7 +142,7 @@ tags:
   - retrieval-average: 문장 임베딩 평균 $$\frac{\sum_i F(x_i)}{M}$$으로 지식 선택  
   - retrieval-diff (oracle): 출력 임베딩과의 차이를 이용한 문서 임베딩 활용  
 - ConceptNet 트리플릿을 텍스트 문장 형태로 변환해 검색 대상에 포함 (예: (knife,CapableOf,cut) → "Knife is capable of cut")  
-- 지식 문장은 특수 토큰 \texttt{</s>}로 구분하여 대화 컨텍스트 앞에 붙여 BART-large 모델에 입력  
+- 지식 문장은 특수 토큰 $$\texttt{</s>}$$로 구분하여 대화 컨텍스트 앞에 붙여 BART-large 모델에 입력  
 
 ## 3.4 Generated Knowledge Setup
 
@@ -254,3 +254,4 @@ tags:
 
 - 본 논문은 상담 대화에서 중요한 ‘reflection’ 응답을 생성하기 위해 도메인 지식과 상식(COMET)을 통합하는 모델을 제안함
 - 지식 주입 방식과 위치 인코딩 기법이 인상적임.
+- 
