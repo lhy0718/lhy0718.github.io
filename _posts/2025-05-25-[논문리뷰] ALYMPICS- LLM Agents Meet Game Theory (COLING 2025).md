@@ -246,14 +246,14 @@ tags:
 
 - **실험 설정 요약 (표 1)**
 
-  | Group ID | Resource Abundance | Persona |
-  |----------|--------------------|---------|
-  | 1        | Low (a)            | -       |
-  | 2        | Medium             | -       |
-  | 3        | High               | -       |
-  | 4        | Low (b)            | -       |
-  | 5        | Medium             | -       |
-  | 6        | High               | -       |
+  | Group | ID | Resource Abundance | Persona |
+  |-------|----|--------------------|---------|
+  | a     | 1  | Low                | x       |
+  | a     | 2  | Medium             | x       |
+  | a     | 3  | High               | x       |
+  | b     | 4  | Low                | v       |
+  | b     | 5  | Medium             | v       |
+  | b     | 6  | High               | v       |
 
 ---
 
