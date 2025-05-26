@@ -166,7 +166,7 @@ tags:
     $$
 - DailyDialog 데이터셋 기반: 감정 7종 (Ekman 6대 기본 감정 + 중립)
 - Mixed-emotion 모듈:
-  - 감정 코드북: 학습 가능한 파라미터 행렬 $$E \in \mathbb{R}^{|E| \times h}$$ ($$h$$: 임베딩 크기)
+  - 감정 코드북: 학습 가능한 파라미터 행렬 $$E \in \mathbb{R}^{\vert E \vert \times h}$$ ($$h$$: 임베딩 크기)
   - 각 감정 $$E_k$$는 하나의 임베딩 벡터
   - 감정 노드 $$v_i$$의 임베딩 $$g_i^e$$는 감정 분포에 따른 가중합:
     $$
