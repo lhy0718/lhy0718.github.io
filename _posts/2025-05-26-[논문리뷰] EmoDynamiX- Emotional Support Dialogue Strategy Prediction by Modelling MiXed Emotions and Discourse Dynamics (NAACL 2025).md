@@ -157,7 +157,7 @@ tags:
     $$
     <ucontext> = [SEP]_1, u_1, [SEP]_2, u_2, \ldots
     $$
-    
+
   - RoBERTa 인코더 후 마지막 은닉층의 각 [SEP] 토큰 임베딩 추출하여 각 발화 표현으로 사용
   - 감정 집합을 $$E$$라고 할 때, 각 발화 $$u_i$$에 대하여:
     $$
@@ -176,7 +176,7 @@ tags:
     $$
   - 감정 분포 $$\mathbf{p}_i$$ 계산:
     $$
-    p_i^j = \frac{\exp(z_i^j / \tau)}{\sum_{k=1}^{|E|} \exp(z_i^k / \tau)}
+    p_i^j = \frac{\exp(z_i^j / \tau)}{\sum_{k=1}^{\vert E \vert} \exp(z_i^k / \tau)}
     $$
   - 학습 가능한 온도 파라미터 $$\tau$$를 통해 분포의 샤프닝 조절
 
