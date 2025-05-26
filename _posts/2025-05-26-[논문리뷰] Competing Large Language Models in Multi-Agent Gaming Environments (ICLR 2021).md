@@ -12,7 +12,7 @@ tags:
 
 ------
 
-# 1 I NTRODUCTION
+# 1 INTRODUCTION
 
 - 최근 대형 언어 모델(LLMs)의 발전은 인공지능 분야에서 중요한 돌파구를 마련함.
 - 대표적인 LLM인 ChatGPT는 기계 번역, 문장 수정, 정보 검색, 프로그램 수리 등 다양한 자연어 처리 작업에서 뛰어난 성능을 보임.
@@ -62,14 +62,14 @@ tags:
 
 ------
 
-# 2 I NTRODUCTION TO GAMES
+# 2 INTRODUCTION TO GAMES
 
 - 총 8가지 게임을 게임 이론에서 선별하여 γ-Bench라는 프레임워크를 제안함  
   - 멀티플레이어, 다중 라운드, 다중 액션 설정 지원  
   - LLM(대형 언어 모델)과 인간의 동시 참여 가능  
   - LLM의 인간 또는 고정 전략과의 대전 성능 평가 가능  
 
-## 2.1 C OOPERATIVE GAMES
+## 2.1 COOPERATIVE GAMES
 
 1. **Guess 2/3 of the Average**  
    - Ledoux (1981) 제안  
@@ -116,7 +116,7 @@ tags:
    - SPSBA(Vickrey auction): 최고 입찰자 지불액은 2위 입찰액, 진실 가치 입찰이 NE  
    - 불완전 정보 게임에서 대리인 성능 평가  
 
-## 2.3 S EQUENTIAL GAMES
+## 2.3 SEQUENTIAL GAMES
 
 7. **Battle Royale**  
    - Kilgour (1975) 확장, 3명 이상의 총격 게임  
@@ -135,7 +135,7 @@ tags:
 
 ------
 
-# 3 GAMA-B ENCH SCORING SCHEME
+# 3 GAMA-BENCH SCORING SCHEME
 
 - 본 섹션은 GPT-3.5 (0125) 모델의 기본 설정을 활용한 실험을 설명하며, γ-Bench로 LLM을 벤치마크하는 방법론을 사례로 제시함.
 - 각 게임마다 GPT-3.5 기반 10명의 에이전트를 사용하고 온도 파라미터는 1로 설정됨.
@@ -261,7 +261,7 @@ tags:
 
 ------
 
-# 4 B EYOND DEFAULT SETTINGS
+# 4 BEYOND DEFAULT SETTINGS
 
 - 본 섹션에서는 다음의 연구 질문(Research Questions, RQs)을 탐구함.
   - **RQ1 Robustness**: 여러 실행에서 결과의 편차가 큰가? 온도(temperature)와 프롬프트 템플릿에 민감한가?
@@ -271,7 +271,7 @@ tags:
 
 ---
 
-## 4.1 RQ1: R OBUSTNESS
+## 4.1 RQ1: ROBUSTNESS
 
 - LLM 응답 안정성 평가: 
   1. 모델 샘플링 전략에 의한 무작위성
@@ -293,7 +293,7 @@ tags:
 
 ---
 
-## 4.2 RQ2: R EASONING STRATEGIES
+## 4.2 RQ2: REASONING STRATEGIES
 
 - 추론 성능 향상을 위한 프롬프트 전략 두 가지:
   - Chain-of-Thought (CoT) prompting (예: "Let's think step by step" 문장 추가)
@@ -312,7 +312,7 @@ tags:
 
 ---
 
-## 4.3 RQ3: G ENERALIZABILITY
+## 4.3 RQ3: GENERALIZABILITY
 
 - LLM 학습 데이터에 게임과 유사한 설정 포함 가능성 고려, 다양한 게임 설정으로 일반화능력 평가
 - 실험 세부 파라미터는 표 8, 결과는 그림 8에 시각화
@@ -330,7 +330,7 @@ tags:
 
 ---
 
-## 4.4 RQ4: L EADERBOARD
+## 4.4 RQ4: LEADERBOARD
 
 - γ-Bench에서 LLM별 의사결정 능력 성능 평가
 - **폐쇄형 모델 성능**
@@ -350,14 +350,14 @@ tags:
 
 ------
 
-# 5 R ELATED WORK
+# 5 RELATED WORK
 
 - 대규모 언어 모델(LLM)을 게임 이론 모델을 통해 평가하는 연구가 활발히 진행 중이며, 최근 연구 동향은 표 3에 요약되어 있음.
 - 주요 발견점:
   1. 많은 연구가 두 명의 플레이어, 단일 라운드 설정에서 순수 전략 내시 균형(PSNE)을 중심으로 죄수의 딜레마와 최후통첩 게임에 집중함.
   2. 다양한 온도(temperature) 설정이 사용되고 있으나, 이에 따른 LLM의 성능 영향에 대한 논의는 부족함.
 
-## 5.1 S PECIFIC GAMES
+## 5.1 SPECIFIC GAMES
 
 - 연구자들은 다양한 게임 시나리오를 탐구함.
 - Avalon 게임의 복잡하고 기만적인 환경을 시험 무대로 사용하여 최근 연구들은 다음에 집중:
@@ -372,7 +372,7 @@ tags:
 - Liang et al. (2023)는 단어 맞추기 게임 Who Is Spy?에서 LLM의 지능과 전략적 의사소통 능력을 평가.
 - Water Allocation Challenge 게임에서는 Mao et al. (2025)이 제한된 자원을 둘러싼 불평등 경쟁 시나리오를 구성.
 
-## 5.2 G AME BENCHMARKS
+## 5.2 GAME BENCHMARKS
 
 - 인공 일반 지능 수준 평가를 위해 다양한 게임을 모아 종합적인 벤치마크를 구축하는 연구도 활발히 진행 중.
 - Tsai et al. (2023)은 LLM이 텍스트 게임에서는 경쟁력 있지만, 세계 모델링(world modeling)과 목표 추론(goal inference)에 어려움을 겪음을 발견.
@@ -384,7 +384,7 @@ tags:
 
 ------
 
-# 6 C ONCLUSION
+# 6 CONCLUSION
 
 - 본 논문에서는 멀티 에이전트 환경에서 대형언어모델(LLM)의 게임 능력을 평가하기 위한 벤치마크인 γ-Bench를 제안함.
 - γ-Bench는 8개의 고전 게임 이론 시나리오를 포함하며, 다수의 플레이어가 여러 라운드와 액션에 걸쳐 상호작용하는 상황에 초점을 맞춤.
