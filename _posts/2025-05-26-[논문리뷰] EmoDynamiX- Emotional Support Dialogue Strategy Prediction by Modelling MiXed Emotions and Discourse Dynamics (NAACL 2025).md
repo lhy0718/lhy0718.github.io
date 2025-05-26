@@ -182,8 +182,8 @@ tags:
 
 ### 4.2.2 System Strategy Node Embedding
 
-- 시스템 턴 $$i \in I_{agent}$$ 에 대해 전략 정보는 원-핫 벡터 $$s_i \in \{0,1\}^{|S|}$$
-- 전략 임베딩 행렬 $$S \in \mathbb{R}^{|S| \times h}$$
+- 시스템 턴 $$i \in I_{agent}$$ 에 대해 전략 정보는 원-핫 벡터 $$s_i \in \{0,1\}^{\vert S \vert}$$
+- 전략 임베딩 행렬 $$S \in \mathbb{R}^{\vert S \vert \times h}$$
 - 시스템 전략 노드 임베딩:
   $$
   g_i^{st} = s_i \cdot S
