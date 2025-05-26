@@ -91,7 +91,7 @@ tags:
    - 입찰 총액 ≤ 1달러면 각자 입찰액 수령, 초과 시 전원 0  
    - NE: 각자 100/N 센트를 입찰하는 균형점  
 
-## 2.2 B ETRAYING GAMES
+## 2.2 BETRAYING GAMES
 
 4. **Public Goods Game**  
    - Samuelson (1954)부터 연구  
