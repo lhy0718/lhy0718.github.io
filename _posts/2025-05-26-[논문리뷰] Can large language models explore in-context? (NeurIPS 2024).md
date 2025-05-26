@@ -29,9 +29,9 @@ tags:
 - 본 연구는 LLM을 간단한 합성 강화학습 문제인 다중 무장 밴딧(MAB) 환경에 에이전트로 투입하여, 환경 설명과 상호작용 기록을 모두 프롬프트 내에 명시하는 방식으로 인컨텍스트 탐색 행동을 분석했다.
 - MAB 문제는 탐색과 착취의 균형 문제를 고립시켜 연구할 수 있으며, 일반 순차 의사 결정 학습의 기본 단위이다.
 - Gpt-3.5, Gpt-4, Llama2를 대상으로 다양한 프롬프트 설계에 대해 평가한 결과, 단 한 가지 구성(Gpt-4 + 향상된 프롬프트)이 만족할 만한 탐색 행동을 보였다.
-- 대부분 구성에서 탐색 실패가 발생했으며, 주된 실패 양상은 "접미사 실패(suffix failure)"로, 일정 시점 이후 최적 팔(arm)을 단 한 번도 선택하지 않는 현상이 나타났다. 예를 들어, Gpt-4와 기본 프롬프트 조합에서 >60%의 실험군에서 접미사 실패가 관측되었다.
-- 또 다른 실패 양상은 "균등 선택 행동"으로, 모든 팔을 거의 동일하게 선택하여 좋은 팔로 좁히지 못하는 경우였다.
-- 성공한 구성은 (a) 탐색을 유도하는 힌트 제공, (b) 상호작용 내역을 팔별 평균으로 외부 요약, (c) 제로샷 추론(zero-shot chain-of-thought reasoning)을 요구하는 프롬프트를 포함했고, 이는 Figure 1(b)에 시각화되어 있다.
+- 대부분 구성에서 탐색 실패가 발생했으며, 주된 실패 양상은 "접미사 실패(suffix failure)"로, 일정 시점 이후 최적 arm을 단 한 번도 선택하지 않는 현상이 나타났다. 예를 들어, Gpt-4와 기본 프롬프트 조합에서 >60%의 실험군에서 접미사 실패가 관측되었다.
+- 또 다른 실패 양상은 "균등 선택 행동"으로, 모든 arm을 거의 동일하게 선택하여 좋은 arm로 좁히지 못하는 경우였다.
+- 성공한 구성은 (a) 탐색을 유도하는 힌트 제공, (b) 상호작용 내역을 arm별 평균으로 외부 요약, (c) 제로샷 추론(zero-shot chain-of-thought reasoning)을 요구하는 프롬프트를 포함했고, 이는 Figure 1(b)에 시각화되어 있다.
 - 이 결과는 최신 LLM이 적절한 프롬프트 설계를 통해 견고한 탐색 능력을 가질 수 있음을 시사한다.
 - 그러나 외부 요약이 없는 동일 구성은 실패했는데, 이는 외부 요약이 어려운 복잡한 환경에서는 LLM이 탐색에 실패할 위험이 있음을 의미한다.
 - 결론적으로, 현재 세대 LLM은 단순 RL 환경에서 적절한 프롬프트 엔지니어링이 있으면 탐색이 가능하나, 보다 복잡한 환경에서는 Lee et al. (2023a), Raparthy et al. (2023)과 같은 훈련 개입이 필요할 수 있다.
@@ -141,28 +141,28 @@ tags:
 
 ## 3.1 개요
 
-- 대부분의 LLM 구성에서 탐색 실패가 발생하며, 최적 팔을 선택하지 못하고 수렴하지 않음.
+- 대부분의 LLM 구성에서 탐색 실패가 발생하며, 최적 arm을 선택하지 못하고 수렴하지 않음.
 - 실패 유형은 크게 두 가지:
-  - **Suffix failure**: 소수 초기 라운드 이후 최적 팔을 전혀 선택하지 않는 경우
-  - **Uniform-like failure**: 모든 팔을 균일하게 선택해 나쁜 팔을 제거하지 못하는 경우 (소수 구성에서 관찰)
+  - **Suffix failure**: 소수 초기 라운드 이후 최적 arm을 전혀 선택하지 않는 경우
+  - **Uniform-like failure**: 모든 arm을 균일하게 선택해 나쁜 arm을 제거하지 못하는 경우 (소수 구성에서 관찰)
 - **예외**는 Gpt-4의 BSS eC0 구성 (버튼 시나리오, 제안적 프레이밍, 요약된 히스토리, 강화된 CoT, 온도 0) 뿐임.
 - Figure 3: 각 LLM 구성을 두 가지 실패 지표 SuffFailFreq와 MinFrac 축으로 표현한 산점도
   - $$ \text{SuffFailFreq} $$ : suffix failure 정도
   - $$ K \cdot \text{MinFrac} $$ : uniform-like failure 정도
-- Figure 4: Gpt-4 구성별 요약 통계, BSS eC0만 성공적으로 탐색하여 최적 팔에 수렴함.
+- Figure 4: Gpt-4 구성별 요약 통계, BSS eC0만 성공적으로 탐색하여 최적 arm에 수렴함.
 
 ## 3.2 실패 사례 분석
 
 - Gpt-4 중심 분석 (Gpt-3.5와 Llama2는 대체로 성능 저조, 자세한 내용 Appendix B 참고)
 - **Suffix failure**:
-  - 대부분 구성에서 두 집단으로 나뉜 bimodal 행동 관찰: 일부 복제에서 최적 팔을 거의 안 뽑고, 나머지에서 빠르게 수렴.
+  - 대부분 구성에서 두 집단으로 나뉜 bimodal 행동 관찰: 일부 복제에서 최적 arm을 거의 안 뽑고, 나머지에서 빠르게 수렴.
   - Suffix failure 빈도 $$ \text{SuffFailFreq}(t) := \text{평균}(\text{best arm을 } [t, T] \text{에서 한 번도 선택하지 않은 경우}) $$
   - 산점도 X축으로 $$ \text{SuffFailFreq}(T/2) $$ 표기; 5개 구성 제외하고는 15% 이상 발생.
   - Figure 1(top), Figure 5 등에서 자세한 bimodal 및 suffix failure 시각화.
   - suffix failure는 장기적인 탐색 실패로 이어져 T가 큰 경우 보상 저하를 초래.
 - **Uniform-like failure**:
-  - 3개의 Gpt-4 구성은 suffix failure를 피하지만, 2개는 균일하게 팔을 선택하며 정보 활용 실패.
-  - 분포 $$ fa(t,R) $$: 복제 $$R$$에서 시간 $$[1,t]$$ 동안 팔 $$a$$가 선택된 비율
+  - 3개의 Gpt-4 구성은 suffix failure를 피하지만, 2개는 균일하게 arm을 선택하며 정보 활용 실패.
+  - 분포 $$ fa(t,R) $$: 복제 $$R$$에서 시간 $$[1,t]$$ 동안 arm $$a$$가 선택된 비율
   - $$ \text{MinFrac}(t,R) := \min_a fa(t,R), \quad \text{MinFrac}(t) := \text{평균}(\text{MinFrac}(t,R) \text{ across replicates}) $$
   - $$ K \cdot \text{MinFrac}(t) $$ 를 Y축으로 표현, 1에 가까울수록 균등 분포에 가까움.
   - Figure 6: BNRND, BNSND 구성에서 $$ K \cdot \text{MinFrac}(t) $$가 감소하지 않고 유지되어 uniform-like failure 확인.
@@ -179,14 +179,14 @@ tags:
 - T=200, N=40 복제 실험에서 BSS eC0는 suffix failure 없이 보상이 양호.
 - BSR eC0 구성 (raw 히스토리 사용)과 대조 시, BSR eC0는 suffix failure 빈도가 증가함.
 - Figure 7: BSR eC0 vs BSS eC0 요약 통계 비교
-- Figure 8: 각 구성별 시간 단계별 선택된 팔 시각화
-  - BNRN0: 특정 팔에 몰입하는 경향, Greedy와 유사
+- Figure 8: 각 구성별 시간 단계별 선택된 arm 시각화
+  - BNRN0: 특정 arm에 몰입하는 경향, Greedy와 유사
   - BSR eC0: 몰입은 덜하지만 여전히 지속됨
-  - BSS eC0: 팔 전환이 잦으며 Thompson Sampling과 유사한 행동
-- Figure 9: 최적 팔 선택 비율 곡선
+  - BSS eC0: arm 전환이 잦으며 Thompson Sampling과 유사한 행동
+- Figure 9: 최적 arm 선택 비율 곡선
   - BSR eC0는 UCB 유사, 일부는 suffix failures로 0에 수렴
   - BSS eC0는 TS와 유사하게 거의 모든 복제가 1에 서서히 수렴
-- 이로써 BSS eC0가 TS와 유사한 행동을 하며 충분히 긴 시간에서는 최적 팔로 수렴할 것임을 시사.
+- 이로써 BSS eC0가 TS와 유사한 행동을 하며 충분히 긴 시간에서는 최적 arm로 수렴할 것임을 시사.
 
 ## 3.4 실패 원인 탐색
 
@@ -198,7 +198,7 @@ tags:
 - Hard 인스턴스에서는 대부분 LLM이 Greedy도 아니고 uniform도 아닌 복잡한 행동을 보임.
 - 보조실험 (단일 라운드 t에서 arm 선택) 수행:
   - 데이터 출처(Data source): 균등 무작위(Unif), UCB, TS 기반 히스토리
-  - 통계: GreedyFrac (현재까지 가장 좋은 팔 선택 비율), LeastFrac (가장 적게 선택된 팔 선택 비율)
+  - 통계: GreedyFrac (현재까지 가장 좋은 arm 선택 비율), LeastFrac (가장 적게 선택된 arm 선택 비율)
 - Figure 10: Gpt-3.5 구성 및 베이스라인의 라운드별 선택 통계 요약
 - 실험 결과, 선택 성향은 데이터 출처에 크게 좌우되어 "LLM이 과도하게 Greedy인지 혹은 균등한지" 판단 어려움.
 - 일부 LLM(예: BNSN0)은 너무 Greedy한 경향, BSRN0는 너무 균등한 경향 나타내나, 다수 구성은 베이스라인과 유사 범위 내에 있음.
@@ -230,7 +230,7 @@ tags:
   - Ahn et al. (2022), Xu et al. (2023)은 LLM을 탑재한 로봇 개발.
 
 - 동시 수행된 관련 연구  
-  - Wu et al. (2024): 쉬운 bandit 문제(2 arms, gap $$\Delta = 0.6$$)에서 GPT-4가 빠르게 최적 팔 선택, 인간과 비교, 단일 프롬프트 사용. 본 논문의 어려운 MAB 문제와 실험 결과는 차이가 있으나 쉬운 문제에서는 유사한 성공을 보임.  
+  - Wu et al. (2024): 쉬운 bandit 문제(2 arms, gap $$\Delta = 0.6$$)에서 GPT-4가 빠르게 최적 arm 선택, 인간과 비교, 단일 프롬프트 사용. 본 논문의 어려운 MAB 문제와 실험 결과는 차이가 있으나 쉬운 문제에서는 유사한 성공을 보임.  
   - Park et al. (2024): 주로 적대적 환경과 짧은 시간 범위 ($$T=25$$ bandit) 연구, 중요도 가중 손실(importance-weighted losses) 적용.  
     - 뒤이어 발표된 업데이트판에서는 긴 시간 범위 $$T=100$$ 에서도 LLM 성능 평가, 중요도 가중 처리 유무가 탐험 행동에 큰 영향(중요도 가중 시 성공, 제거 시 실패 증가).  
     - 이와 같은 결과는 본 논문에서 제시한 이력 사전처리(요약 또는 중요도 가중)가 LLM의 탐험적 행동을 끌어내는 데 중요하다는 결론과 일치함.
