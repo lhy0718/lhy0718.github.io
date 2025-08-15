@@ -101,7 +101,7 @@ tags:
 - 사회적 층의 형성에 관여하는 인지적 기제
   - 내면의 층들(inner layers)인 '지원 무리'(support clique)와 '동정 그룹'(sympathy group)은 ToM(이론적 마음 이론)과 기억력의 조합으로 서로 다른 개인 간의 연결을 유지하는 능력에 의해 매개됨.
   - MRI 연구의 시사점:
-    - Powell 등은 안와전전두피질(orbital prefrontal cortex) 부피가 피험자의 내부 사회 네트워크 크기와 양의 상관관계가 있음을 보임: $$V_{\text{orbitofrontal}} \propto N_{\text{inner}}}$$
+    - Powell 등은 안와전전두피질(orbital prefrontal cortex) 부피가 피험자의 내부 사회 네트워크 크기와 양의 상관관계가 있음을 보임: $$V_{\text{orbitofrontal}} \propto N_{\text{inner}}$$
     - Stiller와 Dunbar의 연구는 기억이 sympathy group(약 12–15명) 설명에 기여하고, ToM이 support clique(약 4–7명) 설명에 기여함을 시사함. 
   - Lewis 등은 개인의 사회 네트워크 규모가 특정 유형의 ‘정신화(mentalising)’에 할당된 신경 물질의 양에 좌우됨을 보여줌.
 
